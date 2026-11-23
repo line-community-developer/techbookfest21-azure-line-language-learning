@@ -1,9 +1,10 @@
 # Language Learning
 
-LINE ミニアプリで問題を解き、LINE Bot の AI 講師と外国語で会話するサンプルアプリです。初期教材は日本語話者向けのイタリア語です。
 書籍『LINEでできること地図』第3章「LINEとAzureサーバーレスでつくるAI外国語学習アプリ」の参照実装です。
 
 章の最後で紹介した SwallowKit を使って初期化されたプロジェクトに対し、GitHub Copilot / Codex を活用して実装を進めたアプリです。
+
+LINE ミニアプリで問題を解き、LINE Bot の AI 講師と外国語で会話するサンプルアプリです。初期教材は日本語話者向けのイタリア語です。
 
 ミニアプリの演習・採点・履歴と、Bot の会話・弱点分析・復習問題を、同じ学習者の記録として扱います。
 React / TypeScript、C# / .NET 10、Azure Static Web Apps、Azure Functions、Cosmos DB、Microsoft Foundry を使用します。
