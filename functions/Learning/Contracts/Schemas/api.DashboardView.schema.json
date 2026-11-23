@@ -1,0 +1,482 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "learner": {
+      "type": "object",
+      "properties": {
+        "learnerName": {
+          "type": "string"
+        },
+        "currentLevel": {
+          "type": "string",
+          "enum": [
+            "A1",
+            "A2",
+            "B1",
+            "B2",
+            "C1",
+            "C2"
+          ]
+        },
+        "nativeLanguage": {
+          "type": "string"
+        },
+        "targetLanguage": {
+          "type": "string"
+        },
+        "learningGoals": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "learnerName",
+        "currentLevel",
+        "nativeLanguage",
+        "targetLanguage",
+        "learningGoals"
+      ],
+      "additionalProperties": false
+    },
+    "stats": {
+      "type": "object",
+      "properties": {
+        "answered": {
+          "type": "integer",
+          "minimum": -9007199254740991,
+          "maximum": 9007199254740991
+        },
+        "correct": {
+          "type": "integer",
+          "minimum": -9007199254740991,
+          "maximum": 9007199254740991
+        },
+        "accuracy": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "answered",
+        "correct",
+        "accuracy"
+      ],
+      "additionalProperties": false
+    },
+    "recommendation": {
+      "type": "object",
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": [
+            "recommended",
+            "review"
+          ]
+        },
+        "topics": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "topicId": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "titleJa": {
+                "type": "string"
+              },
+              "level": {
+                "type": "string",
+                "enum": [
+                  "A1",
+                  "A2",
+                  "B1",
+                  "B2",
+                  "C1",
+                  "C2"
+                ]
+              }
+            },
+            "required": [
+              "topicId",
+              "title",
+              "titleJa",
+              "level"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "reasonJa": {
+          "type": "string"
+        },
+        "reviewPlanId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "practiceSessionId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "mode",
+        "topics",
+        "reasonJa",
+        "reviewPlanId",
+        "practiceSessionId"
+      ],
+      "additionalProperties": false
+    },
+    "weakTopics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "topicId": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "titleJa": {
+            "type": "string"
+          },
+          "level": {
+            "type": "string",
+            "enum": [
+              "A1",
+              "A2",
+              "B1",
+              "B2",
+              "C1",
+              "C2"
+            ]
+          },
+          "score": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "unknown",
+              "weak",
+              "developing",
+              "strong"
+            ]
+          },
+          "attempts": {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          "correct": {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          "conversationErrors": {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          "lastObservedAt": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "topicId",
+          "title",
+          "titleJa",
+          "level",
+          "score",
+          "status",
+          "attempts",
+          "correct",
+          "conversationErrors",
+          "lastObservedAt"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "strongTopics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "topicId": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "titleJa": {
+            "type": "string"
+          },
+          "level": {
+            "type": "string",
+            "enum": [
+              "A1",
+              "A2",
+              "B1",
+              "B2",
+              "C1",
+              "C2"
+            ]
+          },
+          "score": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "unknown",
+              "weak",
+              "developing",
+              "strong"
+            ]
+          },
+          "attempts": {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          "correct": {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          "conversationErrors": {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          "lastObservedAt": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "topicId",
+          "title",
+          "titleJa",
+          "level",
+          "score",
+          "status",
+          "attempts",
+          "correct",
+          "conversationErrors",
+          "lastObservedAt"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "recentActivity": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "practice",
+              "conversation"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "detail": {
+            "type": "string"
+          },
+          "occurredAt": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "kind",
+          "id",
+          "title",
+          "detail",
+          "occurredAt"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "reviewPlans": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "sourceType": {
+            "type": "string",
+            "enum": [
+              "conversation",
+              "practice"
+            ]
+          },
+          "sourceId": {
+            "type": "string"
+          },
+          "sourceLabel": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "active",
+              "completed"
+            ]
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "topicId": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "titleJa": {
+                  "type": "string"
+                },
+                "level": {
+                  "type": "string",
+                  "enum": [
+                    "A1",
+                    "A2",
+                    "B1",
+                    "B2",
+                    "C1",
+                    "C2"
+                  ]
+                },
+                "priority": {
+                  "type": "string",
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ]
+                },
+                "priorityScore": {
+                  "type": "number"
+                },
+                "reasonJa": {
+                  "type": "string"
+                },
+                "evidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "observationId": {
+                        "type": "string"
+                      },
+                      "text": {
+                        "type": "string"
+                      },
+                      "certainty": {
+                        "type": "string",
+                        "enum": [
+                          "deterministic",
+                          "ai-inferred"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "observationId",
+                      "text",
+                      "certainty"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "required": [
+                "topicId",
+                "title",
+                "titleJa",
+                "level",
+                "priority",
+                "priorityScore",
+                "reasonJa",
+                "evidence"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "practiceSessionId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "practiceSessionStatus": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "in-progress",
+                  "completed"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "sourceType",
+          "sourceId",
+          "sourceLabel",
+          "status",
+          "createdAt",
+          "items",
+          "practiceSessionId",
+          "practiceSessionStatus"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "learner",
+    "stats",
+    "recommendation",
+    "weakTopics",
+    "strongTopics",
+    "recentActivity",
+    "reviewPlans"
+  ],
+  "additionalProperties": false
+}

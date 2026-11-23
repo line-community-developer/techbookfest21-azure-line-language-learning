@@ -1,0 +1,3625 @@
+[
+  {
+    "mode": "topic",
+    "level": "A2",
+    "targetTopicIds": [
+      "it-verb-a-infinitive",
+      "it-verb-di-infinitive"
+    ],
+    "reviewPlanId": null,
+    "origin": {
+      "kind": "demo-seed",
+      "refId": null
+    },
+    "status": "completed",
+    "questions": [
+      {
+        "sessionId": "ps-demo-a-di",
+        "order": 0,
+        "type": "multiple-choice",
+        "grammarTopicId": "it-verb-a-infinitive",
+        "difficulty": 2,
+        "instructionJa": "\u7A7A\u6B04\u306B\u5165\u308B\u6B63\u3057\u3044\u8A9E\u3092\u9078\u3093\u3067\u304F\u3060\u3055\u3044\u3002",
+        "prompt": "Finalmente sono riuscito ___ trovare casa.",
+        "choices": [
+          "a",
+          "di",
+          "per",
+          "da"
+        ],
+        "correctAnswer": "a",
+        "acceptedAnswers": [
+          "a"
+        ],
+        "explanationJa": "riuscire\uFF08\u301C\u3067\u304D\u308B\uFF09\u306F a \u002B \u4E0D\u5B9A\u8A5E\u3092\u3068\u308A\u307E\u3059\u3002\u6B63\u89E3\u306F a \u3067\u3059\u3002",
+        "ruleIds": [
+          "it-verb-a-infinitive-r2"
+        ],
+        "sourceIds": [
+          "it-verb-a-infinitive",
+          "src-original-it-verb-a-infinitive"
+        ],
+        "generatedBy": {
+          "kind": "mock",
+          "model": "mock-learning-model-v1"
+        },
+        "generationId": "gen-ps-demo-a-di-0",
+        "validation": {
+          "status": "passed",
+          "checks": [
+            {
+              "id": "instruction-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A2D\u554F\u306E\u6307\u793A\u6587\u304C\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "prompt-has-single-blank",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u554F\u984C\u6587\u306B\u7A7A\u6B04\uFF08___\uFF09\u304C\u3061\u3087\u3046\u30691\u3064\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-requested",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6307\u5B9A\u3055\u308C\u305F\u6587\u6CD5\u9805\u76EE\u3092\u5BFE\u8C61\u306B\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-grounded",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u691C\u7D22\u3067\u53D6\u5F97\u3057\u305F\u6587\u6CD5\u77E5\u8B58\u306B\u6839\u62E0\uFF08sourceIds\uFF09\u3092\u6301\u3064\u3053\u3068"
+            },
+            {
+              "id": "rules-exist",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u53C2\u7167\u3057\u3066\u3044\u308B\u30EB\u30FC\u30EBID\u304C\u6587\u6CD5\u77E5\u8B58\u306B\u5B58\u5728\u3059\u308B\u3053\u3068"
+            },
+            {
+              "id": "difficulty-in-range",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u96E3\u6613\u5EA6\u304C A2 \u306E\u7BC4\u56F2\uFF081\u301C3\uFF09\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-level-allowed",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6587\u6CD5\u9805\u76EE\u306E\u30EC\u30D9\u30EB\u304C\u5B66\u7FD2\u8005\u306B\u9069\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "answer-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u5B58\u5728\u3057\u3001\u8A31\u5BB9\u89E3\u7B54\u306B\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "explanation-mentions-answer",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u89E3\u8AAC\u304C\u6B63\u7B54\u306B\u8A00\u53CA\u3057\u3001\u554F\u984C\u3068\u6574\u5408\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "choice-count",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u9078\u629E\u80A2\u304C3\u301C5\u500B\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "choices-distinct",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u91CD\u8907\u30FB\u7A7A\u306E\u9078\u629E\u80A2\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "answer-in-choices",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u9078\u629E\u80A2\u306B\u3061\u3087\u3046\u30691\u3064\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "single-correct-choice",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u306B\u306A\u308A\u3046\u308B\u9078\u629E\u80A2\u304C\u8907\u6570\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "semantic-judge",
+              "kind": "semantic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u610F\u5473\u7684\u8A55\u4FA1\u3067\u554F\u984C\u304C\u898B\u3064\u304B\u3089\u306A\u3044\u3053\u3068"
+            }
+          ],
+          "semantic": {
+            "verdict": "pass",
+            "score": 0.75,
+            "rationaleJa": "Mock\u8A55\u4FA1\uFF1A\u610F\u5473\u7684\u306A\u59A5\u5F53\u6027\u306F\u5B9F\u969B\u306B\u306F\u8A55\u4FA1\u3057\u3066\u3044\u307E\u305B\u3093\u3002Foundry \u63A5\u7D9A\u6642\u306B\u30E2\u30C7\u30EB\u306B\u3088\u308B\u8A55\u4FA1\u3078\u7F6E\u304D\u63DB\u308F\u308A\u307E\u3059\u3002",
+            "evaluator": {
+              "kind": "mock",
+              "model": "mock-learning-model-v1"
+            }
+          },
+          "evaluatedAt": "2026-10-01T09:00:46.0000000\u002B00:00"
+        },
+        "id": "ps-demo-a-di-q1"
+      },
+      {
+        "sessionId": "ps-demo-a-di",
+        "order": 1,
+        "type": "multiple-choice",
+        "grammarTopicId": "it-verb-di-infinitive",
+        "difficulty": 2,
+        "instructionJa": "\u7A7A\u6B04\u306B\u5165\u308B\u6B63\u3057\u3044\u8A9E\u3092\u9078\u3093\u3067\u304F\u3060\u3055\u3044\u3002",
+        "prompt": "Ho finito ___ lavorare alle sette.",
+        "choices": [
+          "di",
+          "a",
+          "da",
+          "per"
+        ],
+        "correctAnswer": "di",
+        "acceptedAnswers": [
+          "di"
+        ],
+        "explanationJa": "finire\uFF08\u7D42\u3048\u308B\uFF09\u306F di \u002B \u4E0D\u5B9A\u8A5E\u3092\u3068\u308A\u307E\u3059\u3002\u6B63\u89E3\u306F di \u3067\u3059\uFF08cominciare a \u3068\u5BFE\u3067\u899A\u3048\u307E\u3057\u3087\u3046\uFF09\u3002",
+        "ruleIds": [
+          "it-verb-di-infinitive-r1"
+        ],
+        "sourceIds": [
+          "it-verb-di-infinitive",
+          "src-original-it-verb-di-infinitive"
+        ],
+        "generatedBy": {
+          "kind": "mock",
+          "model": "mock-learning-model-v1"
+        },
+        "generationId": "gen-ps-demo-a-di-0",
+        "validation": {
+          "status": "passed",
+          "checks": [
+            {
+              "id": "instruction-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A2D\u554F\u306E\u6307\u793A\u6587\u304C\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "prompt-has-single-blank",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u554F\u984C\u6587\u306B\u7A7A\u6B04\uFF08___\uFF09\u304C\u3061\u3087\u3046\u30691\u3064\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-requested",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6307\u5B9A\u3055\u308C\u305F\u6587\u6CD5\u9805\u76EE\u3092\u5BFE\u8C61\u306B\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-grounded",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u691C\u7D22\u3067\u53D6\u5F97\u3057\u305F\u6587\u6CD5\u77E5\u8B58\u306B\u6839\u62E0\uFF08sourceIds\uFF09\u3092\u6301\u3064\u3053\u3068"
+            },
+            {
+              "id": "rules-exist",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u53C2\u7167\u3057\u3066\u3044\u308B\u30EB\u30FC\u30EBID\u304C\u6587\u6CD5\u77E5\u8B58\u306B\u5B58\u5728\u3059\u308B\u3053\u3068"
+            },
+            {
+              "id": "difficulty-in-range",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u96E3\u6613\u5EA6\u304C A2 \u306E\u7BC4\u56F2\uFF081\u301C3\uFF09\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-level-allowed",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6587\u6CD5\u9805\u76EE\u306E\u30EC\u30D9\u30EB\u304C\u5B66\u7FD2\u8005\u306B\u9069\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "answer-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u5B58\u5728\u3057\u3001\u8A31\u5BB9\u89E3\u7B54\u306B\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "explanation-mentions-answer",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u89E3\u8AAC\u304C\u6B63\u7B54\u306B\u8A00\u53CA\u3057\u3001\u554F\u984C\u3068\u6574\u5408\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "choice-count",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u9078\u629E\u80A2\u304C3\u301C5\u500B\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "choices-distinct",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u91CD\u8907\u30FB\u7A7A\u306E\u9078\u629E\u80A2\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "answer-in-choices",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u9078\u629E\u80A2\u306B\u3061\u3087\u3046\u30691\u3064\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "single-correct-choice",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u306B\u306A\u308A\u3046\u308B\u9078\u629E\u80A2\u304C\u8907\u6570\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "semantic-judge",
+              "kind": "semantic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u610F\u5473\u7684\u8A55\u4FA1\u3067\u554F\u984C\u304C\u898B\u3064\u304B\u3089\u306A\u3044\u3053\u3068"
+            }
+          ],
+          "semantic": {
+            "verdict": "pass",
+            "score": 0.75,
+            "rationaleJa": "Mock\u8A55\u4FA1\uFF1A\u610F\u5473\u7684\u306A\u59A5\u5F53\u6027\u306F\u5B9F\u969B\u306B\u306F\u8A55\u4FA1\u3057\u3066\u3044\u307E\u305B\u3093\u3002Foundry \u63A5\u7D9A\u6642\u306B\u30E2\u30C7\u30EB\u306B\u3088\u308B\u8A55\u4FA1\u3078\u7F6E\u304D\u63DB\u308F\u308A\u307E\u3059\u3002",
+            "evaluator": {
+              "kind": "mock",
+              "model": "mock-learning-model-v1"
+            }
+          },
+          "evaluatedAt": "2026-10-01T09:00:47.0000000\u002B00:00"
+        },
+        "id": "ps-demo-a-di-q2"
+      },
+      {
+        "sessionId": "ps-demo-a-di",
+        "order": 2,
+        "type": "multiple-choice",
+        "grammarTopicId": "it-verb-a-infinitive",
+        "difficulty": 2,
+        "instructionJa": "\u7A7A\u6B04\u306B\u5165\u308B\u6B63\u3057\u3044\u8A9E\u3092\u9078\u3093\u3067\u304F\u3060\u3055\u3044\u3002",
+        "prompt": "Mi aiuti ___ portare le valigie?",
+        "choices": [
+          "a",
+          "di",
+          "per",
+          "da"
+        ],
+        "correctAnswer": "a",
+        "acceptedAnswers": [
+          "a"
+        ],
+        "explanationJa": "aiutare qualcuno\uFF08\u4EBA\u304C\u301C\u3059\u308B\u306E\u3092\u624B\u4F1D\u3046\uFF09\u306F a \u002B \u4E0D\u5B9A\u8A5E\u3067\u3059\u3002\u6B63\u89E3\u306F a \u3067\u3059\u3002",
+        "ruleIds": [
+          "it-verb-a-infinitive-r2"
+        ],
+        "sourceIds": [
+          "it-verb-a-infinitive",
+          "src-original-it-verb-a-infinitive"
+        ],
+        "generatedBy": {
+          "kind": "mock",
+          "model": "mock-learning-model-v1"
+        },
+        "generationId": "gen-ps-demo-a-di-0",
+        "validation": {
+          "status": "passed",
+          "checks": [
+            {
+              "id": "instruction-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A2D\u554F\u306E\u6307\u793A\u6587\u304C\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "prompt-has-single-blank",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u554F\u984C\u6587\u306B\u7A7A\u6B04\uFF08___\uFF09\u304C\u3061\u3087\u3046\u30691\u3064\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-requested",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6307\u5B9A\u3055\u308C\u305F\u6587\u6CD5\u9805\u76EE\u3092\u5BFE\u8C61\u306B\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-grounded",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u691C\u7D22\u3067\u53D6\u5F97\u3057\u305F\u6587\u6CD5\u77E5\u8B58\u306B\u6839\u62E0\uFF08sourceIds\uFF09\u3092\u6301\u3064\u3053\u3068"
+            },
+            {
+              "id": "rules-exist",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u53C2\u7167\u3057\u3066\u3044\u308B\u30EB\u30FC\u30EBID\u304C\u6587\u6CD5\u77E5\u8B58\u306B\u5B58\u5728\u3059\u308B\u3053\u3068"
+            },
+            {
+              "id": "difficulty-in-range",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u96E3\u6613\u5EA6\u304C A2 \u306E\u7BC4\u56F2\uFF081\u301C3\uFF09\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-level-allowed",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6587\u6CD5\u9805\u76EE\u306E\u30EC\u30D9\u30EB\u304C\u5B66\u7FD2\u8005\u306B\u9069\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "answer-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u5B58\u5728\u3057\u3001\u8A31\u5BB9\u89E3\u7B54\u306B\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "explanation-mentions-answer",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u89E3\u8AAC\u304C\u6B63\u7B54\u306B\u8A00\u53CA\u3057\u3001\u554F\u984C\u3068\u6574\u5408\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "choice-count",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u9078\u629E\u80A2\u304C3\u301C5\u500B\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "choices-distinct",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u91CD\u8907\u30FB\u7A7A\u306E\u9078\u629E\u80A2\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "answer-in-choices",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u9078\u629E\u80A2\u306B\u3061\u3087\u3046\u30691\u3064\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "single-correct-choice",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u306B\u306A\u308A\u3046\u308B\u9078\u629E\u80A2\u304C\u8907\u6570\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "semantic-judge",
+              "kind": "semantic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u610F\u5473\u7684\u8A55\u4FA1\u3067\u554F\u984C\u304C\u898B\u3064\u304B\u3089\u306A\u3044\u3053\u3068"
+            }
+          ],
+          "semantic": {
+            "verdict": "pass",
+            "score": 0.75,
+            "rationaleJa": "Mock\u8A55\u4FA1\uFF1A\u610F\u5473\u7684\u306A\u59A5\u5F53\u6027\u306F\u5B9F\u969B\u306B\u306F\u8A55\u4FA1\u3057\u3066\u3044\u307E\u305B\u3093\u3002Foundry \u63A5\u7D9A\u6642\u306B\u30E2\u30C7\u30EB\u306B\u3088\u308B\u8A55\u4FA1\u3078\u7F6E\u304D\u63DB\u308F\u308A\u307E\u3059\u3002",
+            "evaluator": {
+              "kind": "mock",
+              "model": "mock-learning-model-v1"
+            }
+          },
+          "evaluatedAt": "2026-10-01T09:00:48.0000000\u002B00:00"
+        },
+        "id": "ps-demo-a-di-q3"
+      },
+      {
+        "sessionId": "ps-demo-a-di",
+        "order": 3,
+        "type": "cloze",
+        "grammarTopicId": "it-verb-di-infinitive",
+        "difficulty": 2,
+        "instructionJa": "\u7A7A\u6B04\u306B\u5165\u308B\u8A9E\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044\u3002",
+        "prompt": "Cerco ___ parlare solo in italiano.",
+        "choices": [],
+        "correctAnswer": "di",
+        "acceptedAnswers": [
+          "di"
+        ],
+        "explanationJa": "cercare\uFF08\u301C\u3057\u3088\u3046\u3068\u52AA\u3081\u308B\uFF09\u306F di \u002B \u4E0D\u5B9A\u8A5E\u3067\u3059\u3002\u6B63\u89E3\u306F di \u3067\u3059\u3002",
+        "ruleIds": [
+          "it-verb-di-infinitive-r2"
+        ],
+        "sourceIds": [
+          "it-verb-di-infinitive",
+          "src-original-it-verb-di-infinitive"
+        ],
+        "generatedBy": {
+          "kind": "mock",
+          "model": "mock-learning-model-v1"
+        },
+        "generationId": "gen-ps-demo-a-di-0",
+        "validation": {
+          "status": "passed",
+          "checks": [
+            {
+              "id": "instruction-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A2D\u554F\u306E\u6307\u793A\u6587\u304C\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "prompt-has-single-blank",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u554F\u984C\u6587\u306B\u7A7A\u6B04\uFF08___\uFF09\u304C\u3061\u3087\u3046\u30691\u3064\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-requested",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6307\u5B9A\u3055\u308C\u305F\u6587\u6CD5\u9805\u76EE\u3092\u5BFE\u8C61\u306B\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-grounded",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u691C\u7D22\u3067\u53D6\u5F97\u3057\u305F\u6587\u6CD5\u77E5\u8B58\u306B\u6839\u62E0\uFF08sourceIds\uFF09\u3092\u6301\u3064\u3053\u3068"
+            },
+            {
+              "id": "rules-exist",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u53C2\u7167\u3057\u3066\u3044\u308B\u30EB\u30FC\u30EBID\u304C\u6587\u6CD5\u77E5\u8B58\u306B\u5B58\u5728\u3059\u308B\u3053\u3068"
+            },
+            {
+              "id": "difficulty-in-range",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u96E3\u6613\u5EA6\u304C A2 \u306E\u7BC4\u56F2\uFF081\u301C3\uFF09\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-level-allowed",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6587\u6CD5\u9805\u76EE\u306E\u30EC\u30D9\u30EB\u304C\u5B66\u7FD2\u8005\u306B\u9069\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "answer-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u5B58\u5728\u3057\u3001\u8A31\u5BB9\u89E3\u7B54\u306B\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "explanation-mentions-answer",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u89E3\u8AAC\u304C\u6B63\u7B54\u306B\u8A00\u53CA\u3057\u3001\u554F\u984C\u3068\u6574\u5408\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "cloze-has-no-choices",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u7A74\u57CB\u3081\u554F\u984C\u306B\u9078\u629E\u80A2\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "accepted-distinct",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A31\u5BB9\u89E3\u7B54\u306B\u91CD\u8907\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "answer-not-in-prompt",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "warning",
+              "messageJa": "\u554F\u984C\u6587\u306B\u6B63\u7B54\u304C\u305D\u306E\u307E\u307E\u66F8\u304B\u308C\u3066\u3044\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "semantic-judge",
+              "kind": "semantic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u610F\u5473\u7684\u8A55\u4FA1\u3067\u554F\u984C\u304C\u898B\u3064\u304B\u3089\u306A\u3044\u3053\u3068"
+            }
+          ],
+          "semantic": {
+            "verdict": "pass",
+            "score": 0.75,
+            "rationaleJa": "Mock\u8A55\u4FA1\uFF1A\u610F\u5473\u7684\u306A\u59A5\u5F53\u6027\u306F\u5B9F\u969B\u306B\u306F\u8A55\u4FA1\u3057\u3066\u3044\u307E\u305B\u3093\u3002Foundry \u63A5\u7D9A\u6642\u306B\u30E2\u30C7\u30EB\u306B\u3088\u308B\u8A55\u4FA1\u3078\u7F6E\u304D\u63DB\u308F\u308A\u307E\u3059\u3002",
+            "evaluator": {
+              "kind": "mock",
+              "model": "mock-learning-model-v1"
+            }
+          },
+          "evaluatedAt": "2026-10-01T09:00:49.0000000\u002B00:00"
+        },
+        "id": "ps-demo-a-di-q4"
+      },
+      {
+        "sessionId": "ps-demo-a-di",
+        "order": 4,
+        "type": "multiple-choice",
+        "grammarTopicId": "it-verb-a-infinitive",
+        "difficulty": 2,
+        "instructionJa": "\u7A7A\u6B04\u306B\u5165\u308B\u6B63\u3057\u3044\u8A9E\u3092\u9078\u3093\u3067\u304F\u3060\u3055\u3044\u3002",
+        "prompt": "Domani comincio ___ studiare il tedesco.",
+        "choices": [
+          "a",
+          "di",
+          "da",
+          "per"
+        ],
+        "correctAnswer": "a",
+        "acceptedAnswers": [
+          "a"
+        ],
+        "explanationJa": "cominciare\uFF08\u59CB\u3081\u308B\uFF09\u306F a \u002B \u4E0D\u5B9A\u8A5E\u3092\u3068\u308A\u307E\u3059\u3002\u6B63\u89E3\u306F a \u3067\u3059\u3002",
+        "ruleIds": [
+          "it-verb-a-infinitive-r1"
+        ],
+        "sourceIds": [
+          "it-verb-a-infinitive",
+          "src-original-it-verb-a-infinitive"
+        ],
+        "generatedBy": {
+          "kind": "mock",
+          "model": "mock-learning-model-v1"
+        },
+        "generationId": "gen-ps-demo-a-di-0",
+        "validation": {
+          "status": "passed",
+          "checks": [
+            {
+              "id": "instruction-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A2D\u554F\u306E\u6307\u793A\u6587\u304C\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "prompt-has-single-blank",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u554F\u984C\u6587\u306B\u7A7A\u6B04\uFF08___\uFF09\u304C\u3061\u3087\u3046\u30691\u3064\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-requested",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6307\u5B9A\u3055\u308C\u305F\u6587\u6CD5\u9805\u76EE\u3092\u5BFE\u8C61\u306B\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-grounded",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u691C\u7D22\u3067\u53D6\u5F97\u3057\u305F\u6587\u6CD5\u77E5\u8B58\u306B\u6839\u62E0\uFF08sourceIds\uFF09\u3092\u6301\u3064\u3053\u3068"
+            },
+            {
+              "id": "rules-exist",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u53C2\u7167\u3057\u3066\u3044\u308B\u30EB\u30FC\u30EBID\u304C\u6587\u6CD5\u77E5\u8B58\u306B\u5B58\u5728\u3059\u308B\u3053\u3068"
+            },
+            {
+              "id": "difficulty-in-range",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u96E3\u6613\u5EA6\u304C A2 \u306E\u7BC4\u56F2\uFF081\u301C3\uFF09\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-level-allowed",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6587\u6CD5\u9805\u76EE\u306E\u30EC\u30D9\u30EB\u304C\u5B66\u7FD2\u8005\u306B\u9069\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "answer-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u5B58\u5728\u3057\u3001\u8A31\u5BB9\u89E3\u7B54\u306B\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "explanation-mentions-answer",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u89E3\u8AAC\u304C\u6B63\u7B54\u306B\u8A00\u53CA\u3057\u3001\u554F\u984C\u3068\u6574\u5408\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "choice-count",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u9078\u629E\u80A2\u304C3\u301C5\u500B\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "choices-distinct",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u91CD\u8907\u30FB\u7A7A\u306E\u9078\u629E\u80A2\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "answer-in-choices",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u9078\u629E\u80A2\u306B\u3061\u3087\u3046\u30691\u3064\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "single-correct-choice",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u306B\u306A\u308A\u3046\u308B\u9078\u629E\u80A2\u304C\u8907\u6570\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "semantic-judge",
+              "kind": "semantic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u610F\u5473\u7684\u8A55\u4FA1\u3067\u554F\u984C\u304C\u898B\u3064\u304B\u3089\u306A\u3044\u3053\u3068"
+            }
+          ],
+          "semantic": {
+            "verdict": "pass",
+            "score": 0.75,
+            "rationaleJa": "Mock\u8A55\u4FA1\uFF1A\u610F\u5473\u7684\u306A\u59A5\u5F53\u6027\u306F\u5B9F\u969B\u306B\u306F\u8A55\u4FA1\u3057\u3066\u3044\u307E\u305B\u3093\u3002Foundry \u63A5\u7D9A\u6642\u306B\u30E2\u30C7\u30EB\u306B\u3088\u308B\u8A55\u4FA1\u3078\u7F6E\u304D\u63DB\u308F\u308A\u307E\u3059\u3002",
+            "evaluator": {
+              "kind": "mock",
+              "model": "mock-learning-model-v1"
+            }
+          },
+          "evaluatedAt": "2026-10-01T09:00:50.0000000\u002B00:00"
+        },
+        "id": "ps-demo-a-di-q5"
+      },
+      {
+        "sessionId": "ps-demo-a-di",
+        "order": 5,
+        "type": "multiple-choice",
+        "grammarTopicId": "it-verb-di-infinitive",
+        "difficulty": 2,
+        "instructionJa": "\u7A7A\u6B04\u306B\u5165\u308B\u6B63\u3057\u3044\u8A9E\u3092\u9078\u3093\u3067\u304F\u3060\u3055\u3044\u3002",
+        "prompt": "Devi smettere ___ fumare!",
+        "choices": [
+          "di",
+          "a",
+          "da",
+          "con"
+        ],
+        "correctAnswer": "di",
+        "acceptedAnswers": [
+          "di"
+        ],
+        "explanationJa": "smettere\uFF08\u3084\u3081\u308B\uFF09\u306F di \u002B \u4E0D\u5B9A\u8A5E\u3067\u3059\u3002\u6B63\u89E3\u306F di \u3067\u3059\u3002",
+        "ruleIds": [
+          "it-verb-di-infinitive-r1"
+        ],
+        "sourceIds": [
+          "it-verb-di-infinitive",
+          "src-original-it-verb-di-infinitive"
+        ],
+        "generatedBy": {
+          "kind": "mock",
+          "model": "mock-learning-model-v1"
+        },
+        "generationId": "gen-ps-demo-a-di-0",
+        "validation": {
+          "status": "passed",
+          "checks": [
+            {
+              "id": "instruction-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A2D\u554F\u306E\u6307\u793A\u6587\u304C\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "prompt-has-single-blank",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u554F\u984C\u6587\u306B\u7A7A\u6B04\uFF08___\uFF09\u304C\u3061\u3087\u3046\u30691\u3064\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-requested",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6307\u5B9A\u3055\u308C\u305F\u6587\u6CD5\u9805\u76EE\u3092\u5BFE\u8C61\u306B\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-grounded",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u691C\u7D22\u3067\u53D6\u5F97\u3057\u305F\u6587\u6CD5\u77E5\u8B58\u306B\u6839\u62E0\uFF08sourceIds\uFF09\u3092\u6301\u3064\u3053\u3068"
+            },
+            {
+              "id": "rules-exist",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u53C2\u7167\u3057\u3066\u3044\u308B\u30EB\u30FC\u30EBID\u304C\u6587\u6CD5\u77E5\u8B58\u306B\u5B58\u5728\u3059\u308B\u3053\u3068"
+            },
+            {
+              "id": "difficulty-in-range",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u96E3\u6613\u5EA6\u304C A2 \u306E\u7BC4\u56F2\uFF081\u301C3\uFF09\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-level-allowed",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6587\u6CD5\u9805\u76EE\u306E\u30EC\u30D9\u30EB\u304C\u5B66\u7FD2\u8005\u306B\u9069\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "answer-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u5B58\u5728\u3057\u3001\u8A31\u5BB9\u89E3\u7B54\u306B\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "explanation-mentions-answer",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u89E3\u8AAC\u304C\u6B63\u7B54\u306B\u8A00\u53CA\u3057\u3001\u554F\u984C\u3068\u6574\u5408\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "choice-count",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u9078\u629E\u80A2\u304C3\u301C5\u500B\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "choices-distinct",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u91CD\u8907\u30FB\u7A7A\u306E\u9078\u629E\u80A2\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "answer-in-choices",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u9078\u629E\u80A2\u306B\u3061\u3087\u3046\u30691\u3064\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "single-correct-choice",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u306B\u306A\u308A\u3046\u308B\u9078\u629E\u80A2\u304C\u8907\u6570\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "semantic-judge",
+              "kind": "semantic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u610F\u5473\u7684\u8A55\u4FA1\u3067\u554F\u984C\u304C\u898B\u3064\u304B\u3089\u306A\u3044\u3053\u3068"
+            }
+          ],
+          "semantic": {
+            "verdict": "pass",
+            "score": 0.75,
+            "rationaleJa": "Mock\u8A55\u4FA1\uFF1A\u610F\u5473\u7684\u306A\u59A5\u5F53\u6027\u306F\u5B9F\u969B\u306B\u306F\u8A55\u4FA1\u3057\u3066\u3044\u307E\u305B\u3093\u3002Foundry \u63A5\u7D9A\u6642\u306B\u30E2\u30C7\u30EB\u306B\u3088\u308B\u8A55\u4FA1\u3078\u7F6E\u304D\u63DB\u308F\u308A\u307E\u3059\u3002",
+            "evaluator": {
+              "kind": "mock",
+              "model": "mock-learning-model-v1"
+            }
+          },
+          "evaluatedAt": "2026-10-01T09:00:51.0000000\u002B00:00"
+        },
+        "id": "ps-demo-a-di-q6"
+      }
+    ],
+    "answers": [
+      {
+        "questionId": "ps-demo-a-di-q1",
+        "attemptId": "demo-ps-demo-a-di-q1",
+        "answer": "di",
+        "normalizedAnswer": "di",
+        "isCorrect": false,
+        "feedbackCode": "incorrect",
+        "masteryBefore": 0.5,
+        "masteryAfter": 0.375,
+        "answeredAt": "2026-10-01T09:00:53.0000000\u002B00:00"
+      },
+      {
+        "questionId": "ps-demo-a-di-q2",
+        "attemptId": "demo-ps-demo-a-di-q2",
+        "answer": "a",
+        "normalizedAnswer": "a",
+        "isCorrect": false,
+        "feedbackCode": "incorrect",
+        "masteryBefore": 0.5,
+        "masteryAfter": 0.375,
+        "answeredAt": "2026-10-01T09:00:57.0000000\u002B00:00"
+      },
+      {
+        "questionId": "ps-demo-a-di-q3",
+        "attemptId": "demo-ps-demo-a-di-q3",
+        "answer": "di",
+        "normalizedAnswer": "di",
+        "isCorrect": false,
+        "feedbackCode": "incorrect",
+        "masteryBefore": 0.375,
+        "masteryAfter": 0.2812,
+        "answeredAt": "2026-10-01T09:01:01.0000000\u002B00:00"
+      },
+      {
+        "questionId": "ps-demo-a-di-q4",
+        "attemptId": "demo-ps-demo-a-di-q4",
+        "answer": "di",
+        "normalizedAnswer": "di",
+        "isCorrect": true,
+        "feedbackCode": "correct",
+        "masteryBefore": 0.375,
+        "masteryAfter": 0.5,
+        "answeredAt": "2026-10-01T09:01:05.0000000\u002B00:00"
+      },
+      {
+        "questionId": "ps-demo-a-di-q5",
+        "attemptId": "demo-ps-demo-a-di-q5",
+        "answer": "di",
+        "normalizedAnswer": "di",
+        "isCorrect": false,
+        "feedbackCode": "incorrect",
+        "masteryBefore": 0.2812,
+        "masteryAfter": 0.2109,
+        "answeredAt": "2026-10-01T09:01:09.0000000\u002B00:00"
+      },
+      {
+        "questionId": "ps-demo-a-di-q6",
+        "attemptId": "demo-ps-demo-a-di-q6",
+        "answer": "a",
+        "normalizedAnswer": "a",
+        "isCorrect": false,
+        "feedbackCode": "incorrect",
+        "masteryBefore": 0.5,
+        "masteryAfter": 0.375,
+        "answeredAt": "2026-10-01T09:01:13.0000000\u002B00:00"
+      }
+    ],
+    "summary": {
+      "total": 6,
+      "answered": 6,
+      "correct": 1,
+      "accuracy": 0.1667
+    },
+    "completedAt": "2026-10-01T09:01:17.0000000\u002B00:00",
+    "userId": "local-demo-learner",
+    "schemaVersion": 1,
+    "id": "ps-demo-a-di",
+    "createdAt": "2026-10-01T09:00:52.0000000\u002B00:00",
+    "updatedAt": "2026-10-01T09:01:18.0000000\u002B00:00"
+  },
+  {
+    "mode": "topic",
+    "level": "A2",
+    "targetTopicIds": [
+      "it-definite-articles",
+      "it-present-regular"
+    ],
+    "reviewPlanId": null,
+    "origin": {
+      "kind": "demo-seed",
+      "refId": null
+    },
+    "status": "completed",
+    "questions": [
+      {
+        "sessionId": "ps-demo-basics",
+        "order": 0,
+        "type": "multiple-choice",
+        "grammarTopicId": "it-definite-articles",
+        "difficulty": 1,
+        "instructionJa": "\u7A7A\u6B04\u306B\u5165\u308B\u6B63\u3057\u3044\u8A9E\u3092\u9078\u3093\u3067\u304F\u3060\u3055\u3044\u3002",
+        "prompt": "___ amiche di Giulia sono simpatiche.",
+        "choices": [
+          "Le",
+          "Gli",
+          "I",
+          "La"
+        ],
+        "correctAnswer": "Le",
+        "acceptedAnswers": [
+          "Le"
+        ],
+        "explanationJa": "amiche \u306F\u5973\u6027\u8907\u6570\u540D\u8A5E\u306A\u306E\u3067 Le \u3092\u4F7F\u3044\u307E\u3059\u3002",
+        "ruleIds": [
+          "it-definite-articles-r3"
+        ],
+        "sourceIds": [
+          "it-definite-articles",
+          "src-original-it-definite-articles"
+        ],
+        "generatedBy": {
+          "kind": "mock",
+          "model": "mock-learning-model-v1"
+        },
+        "generationId": "gen-ps-demo-basics-0",
+        "validation": {
+          "status": "passed",
+          "checks": [
+            {
+              "id": "instruction-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A2D\u554F\u306E\u6307\u793A\u6587\u304C\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "prompt-has-single-blank",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u554F\u984C\u6587\u306B\u7A7A\u6B04\uFF08___\uFF09\u304C\u3061\u3087\u3046\u30691\u3064\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-requested",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6307\u5B9A\u3055\u308C\u305F\u6587\u6CD5\u9805\u76EE\u3092\u5BFE\u8C61\u306B\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-grounded",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u691C\u7D22\u3067\u53D6\u5F97\u3057\u305F\u6587\u6CD5\u77E5\u8B58\u306B\u6839\u62E0\uFF08sourceIds\uFF09\u3092\u6301\u3064\u3053\u3068"
+            },
+            {
+              "id": "rules-exist",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u53C2\u7167\u3057\u3066\u3044\u308B\u30EB\u30FC\u30EBID\u304C\u6587\u6CD5\u77E5\u8B58\u306B\u5B58\u5728\u3059\u308B\u3053\u3068"
+            },
+            {
+              "id": "difficulty-in-range",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u96E3\u6613\u5EA6\u304C A2 \u306E\u7BC4\u56F2\uFF081\u301C3\uFF09\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-level-allowed",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6587\u6CD5\u9805\u76EE\u306E\u30EC\u30D9\u30EB\u304C\u5B66\u7FD2\u8005\u306B\u9069\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "answer-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u5B58\u5728\u3057\u3001\u8A31\u5BB9\u89E3\u7B54\u306B\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "explanation-mentions-answer",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u89E3\u8AAC\u304C\u6B63\u7B54\u306B\u8A00\u53CA\u3057\u3001\u554F\u984C\u3068\u6574\u5408\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "choice-count",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u9078\u629E\u80A2\u304C3\u301C5\u500B\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "choices-distinct",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u91CD\u8907\u30FB\u7A7A\u306E\u9078\u629E\u80A2\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "answer-in-choices",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u9078\u629E\u80A2\u306B\u3061\u3087\u3046\u30691\u3064\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "single-correct-choice",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u306B\u306A\u308A\u3046\u308B\u9078\u629E\u80A2\u304C\u8907\u6570\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "semantic-judge",
+              "kind": "semantic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u610F\u5473\u7684\u8A55\u4FA1\u3067\u554F\u984C\u304C\u898B\u3064\u304B\u3089\u306A\u3044\u3053\u3068"
+            }
+          ],
+          "semantic": {
+            "verdict": "pass",
+            "score": 0.75,
+            "rationaleJa": "Mock\u8A55\u4FA1\uFF1A\u610F\u5473\u7684\u306A\u59A5\u5F53\u6027\u306F\u5B9F\u969B\u306B\u306F\u8A55\u4FA1\u3057\u3066\u3044\u307E\u305B\u3093\u3002Foundry \u63A5\u7D9A\u6642\u306B\u30E2\u30C7\u30EB\u306B\u3088\u308B\u8A55\u4FA1\u3078\u7F6E\u304D\u63DB\u308F\u308A\u307E\u3059\u3002",
+            "evaluator": {
+              "kind": "mock",
+              "model": "mock-learning-model-v1"
+            }
+          },
+          "evaluatedAt": "2026-10-01T09:00:03.0000000\u002B00:00"
+        },
+        "id": "ps-demo-basics-q1"
+      },
+      {
+        "sessionId": "ps-demo-basics",
+        "order": 1,
+        "type": "multiple-choice",
+        "grammarTopicId": "it-present-regular",
+        "difficulty": 2,
+        "instructionJa": "\u7A7A\u6B04\u306B\u5165\u308B\u6B63\u3057\u3044\u8A9E\u3092\u9078\u3093\u3067\u304F\u3060\u3055\u3044\u3002",
+        "prompt": "Loro ___ fino alle nove. (dormire)",
+        "choices": [
+          "dormono",
+          "dormano",
+          "dormiamo",
+          "dorme"
+        ],
+        "correctAnswer": "dormono",
+        "acceptedAnswers": [
+          "dormono"
+        ],
+        "explanationJa": "dormire \u306E3\u4EBA\u79F0\u8907\u6570\uFF08\u76F4\u8AAC\u6CD5\u73FE\u5728\uFF09\u306F dormono \u3067\u3059\u3002",
+        "ruleIds": [
+          "it-present-regular-r3"
+        ],
+        "sourceIds": [
+          "it-present-regular",
+          "src-original-it-present-regular"
+        ],
+        "generatedBy": {
+          "kind": "mock",
+          "model": "mock-learning-model-v1"
+        },
+        "generationId": "gen-ps-demo-basics-0",
+        "validation": {
+          "status": "passed",
+          "checks": [
+            {
+              "id": "instruction-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A2D\u554F\u306E\u6307\u793A\u6587\u304C\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "prompt-has-single-blank",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u554F\u984C\u6587\u306B\u7A7A\u6B04\uFF08___\uFF09\u304C\u3061\u3087\u3046\u30691\u3064\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-requested",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6307\u5B9A\u3055\u308C\u305F\u6587\u6CD5\u9805\u76EE\u3092\u5BFE\u8C61\u306B\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-grounded",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u691C\u7D22\u3067\u53D6\u5F97\u3057\u305F\u6587\u6CD5\u77E5\u8B58\u306B\u6839\u62E0\uFF08sourceIds\uFF09\u3092\u6301\u3064\u3053\u3068"
+            },
+            {
+              "id": "rules-exist",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u53C2\u7167\u3057\u3066\u3044\u308B\u30EB\u30FC\u30EBID\u304C\u6587\u6CD5\u77E5\u8B58\u306B\u5B58\u5728\u3059\u308B\u3053\u3068"
+            },
+            {
+              "id": "difficulty-in-range",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u96E3\u6613\u5EA6\u304C A2 \u306E\u7BC4\u56F2\uFF081\u301C3\uFF09\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-level-allowed",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6587\u6CD5\u9805\u76EE\u306E\u30EC\u30D9\u30EB\u304C\u5B66\u7FD2\u8005\u306B\u9069\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "answer-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u5B58\u5728\u3057\u3001\u8A31\u5BB9\u89E3\u7B54\u306B\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "explanation-mentions-answer",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u89E3\u8AAC\u304C\u6B63\u7B54\u306B\u8A00\u53CA\u3057\u3001\u554F\u984C\u3068\u6574\u5408\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "choice-count",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u9078\u629E\u80A2\u304C3\u301C5\u500B\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "choices-distinct",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u91CD\u8907\u30FB\u7A7A\u306E\u9078\u629E\u80A2\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "answer-in-choices",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u9078\u629E\u80A2\u306B\u3061\u3087\u3046\u30691\u3064\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "single-correct-choice",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u306B\u306A\u308A\u3046\u308B\u9078\u629E\u80A2\u304C\u8907\u6570\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "semantic-judge",
+              "kind": "semantic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u610F\u5473\u7684\u8A55\u4FA1\u3067\u554F\u984C\u304C\u898B\u3064\u304B\u3089\u306A\u3044\u3053\u3068"
+            }
+          ],
+          "semantic": {
+            "verdict": "pass",
+            "score": 0.75,
+            "rationaleJa": "Mock\u8A55\u4FA1\uFF1A\u610F\u5473\u7684\u306A\u59A5\u5F53\u6027\u306F\u5B9F\u969B\u306B\u306F\u8A55\u4FA1\u3057\u3066\u3044\u307E\u305B\u3093\u3002Foundry \u63A5\u7D9A\u6642\u306B\u30E2\u30C7\u30EB\u306B\u3088\u308B\u8A55\u4FA1\u3078\u7F6E\u304D\u63DB\u308F\u308A\u307E\u3059\u3002",
+            "evaluator": {
+              "kind": "mock",
+              "model": "mock-learning-model-v1"
+            }
+          },
+          "evaluatedAt": "2026-10-01T09:00:04.0000000\u002B00:00"
+        },
+        "id": "ps-demo-basics-q2"
+      },
+      {
+        "sessionId": "ps-demo-basics",
+        "order": 2,
+        "type": "multiple-choice",
+        "grammarTopicId": "it-definite-articles",
+        "difficulty": 1,
+        "instructionJa": "\u7A7A\u6B04\u306B\u5165\u308B\u6B63\u3057\u3044\u8A9E\u3092\u9078\u3093\u3067\u304F\u3060\u3055\u3044\u3002",
+        "prompt": "Sul tavolo ci sono ___ libri.",
+        "choices": [
+          "i",
+          "gli",
+          "le",
+          "il"
+        ],
+        "correctAnswer": "i",
+        "acceptedAnswers": [
+          "i"
+        ],
+        "explanationJa": "\u5358\u6570\u3067 il libro \u306A\u306E\u3067\u3001\u8907\u6570\u5F62\u306F i libri \u3067\u3059\u3002",
+        "ruleIds": [
+          "it-definite-articles-r3"
+        ],
+        "sourceIds": [
+          "it-definite-articles",
+          "src-original-it-definite-articles"
+        ],
+        "generatedBy": {
+          "kind": "mock",
+          "model": "mock-learning-model-v1"
+        },
+        "generationId": "gen-ps-demo-basics-0",
+        "validation": {
+          "status": "passed",
+          "checks": [
+            {
+              "id": "instruction-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A2D\u554F\u306E\u6307\u793A\u6587\u304C\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "prompt-has-single-blank",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u554F\u984C\u6587\u306B\u7A7A\u6B04\uFF08___\uFF09\u304C\u3061\u3087\u3046\u30691\u3064\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-requested",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6307\u5B9A\u3055\u308C\u305F\u6587\u6CD5\u9805\u76EE\u3092\u5BFE\u8C61\u306B\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-grounded",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u691C\u7D22\u3067\u53D6\u5F97\u3057\u305F\u6587\u6CD5\u77E5\u8B58\u306B\u6839\u62E0\uFF08sourceIds\uFF09\u3092\u6301\u3064\u3053\u3068"
+            },
+            {
+              "id": "rules-exist",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u53C2\u7167\u3057\u3066\u3044\u308B\u30EB\u30FC\u30EBID\u304C\u6587\u6CD5\u77E5\u8B58\u306B\u5B58\u5728\u3059\u308B\u3053\u3068"
+            },
+            {
+              "id": "difficulty-in-range",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u96E3\u6613\u5EA6\u304C A2 \u306E\u7BC4\u56F2\uFF081\u301C3\uFF09\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-level-allowed",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6587\u6CD5\u9805\u76EE\u306E\u30EC\u30D9\u30EB\u304C\u5B66\u7FD2\u8005\u306B\u9069\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "answer-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u5B58\u5728\u3057\u3001\u8A31\u5BB9\u89E3\u7B54\u306B\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "explanation-mentions-answer",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u89E3\u8AAC\u304C\u6B63\u7B54\u306B\u8A00\u53CA\u3057\u3001\u554F\u984C\u3068\u6574\u5408\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "choice-count",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u9078\u629E\u80A2\u304C3\u301C5\u500B\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "choices-distinct",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u91CD\u8907\u30FB\u7A7A\u306E\u9078\u629E\u80A2\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "answer-in-choices",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u9078\u629E\u80A2\u306B\u3061\u3087\u3046\u30691\u3064\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "single-correct-choice",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u306B\u306A\u308A\u3046\u308B\u9078\u629E\u80A2\u304C\u8907\u6570\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "semantic-judge",
+              "kind": "semantic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u610F\u5473\u7684\u8A55\u4FA1\u3067\u554F\u984C\u304C\u898B\u3064\u304B\u3089\u306A\u3044\u3053\u3068"
+            }
+          ],
+          "semantic": {
+            "verdict": "pass",
+            "score": 0.75,
+            "rationaleJa": "Mock\u8A55\u4FA1\uFF1A\u610F\u5473\u7684\u306A\u59A5\u5F53\u6027\u306F\u5B9F\u969B\u306B\u306F\u8A55\u4FA1\u3057\u3066\u3044\u307E\u305B\u3093\u3002Foundry \u63A5\u7D9A\u6642\u306B\u30E2\u30C7\u30EB\u306B\u3088\u308B\u8A55\u4FA1\u3078\u7F6E\u304D\u63DB\u308F\u308A\u307E\u3059\u3002",
+            "evaluator": {
+              "kind": "mock",
+              "model": "mock-learning-model-v1"
+            }
+          },
+          "evaluatedAt": "2026-10-01T09:00:05.0000000\u002B00:00"
+        },
+        "id": "ps-demo-basics-q3"
+      },
+      {
+        "sessionId": "ps-demo-basics",
+        "order": 3,
+        "type": "cloze",
+        "grammarTopicId": "it-present-regular",
+        "difficulty": 1,
+        "instructionJa": "\u7A7A\u6B04\u306B\u5165\u308B\u8A9E\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044\u3002",
+        "prompt": "Tu ___ il caff\u00E8? (prendere)",
+        "choices": [],
+        "correctAnswer": "prendi",
+        "acceptedAnswers": [
+          "prendi"
+        ],
+        "explanationJa": "prendere \u306E2\u4EBA\u79F0\u5358\u6570\u306F prendi \u3067\u3059\u3002",
+        "ruleIds": [
+          "it-present-regular-r2"
+        ],
+        "sourceIds": [
+          "it-present-regular",
+          "src-original-it-present-regular"
+        ],
+        "generatedBy": {
+          "kind": "mock",
+          "model": "mock-learning-model-v1"
+        },
+        "generationId": "gen-ps-demo-basics-0",
+        "validation": {
+          "status": "passed",
+          "checks": [
+            {
+              "id": "instruction-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A2D\u554F\u306E\u6307\u793A\u6587\u304C\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "prompt-has-single-blank",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u554F\u984C\u6587\u306B\u7A7A\u6B04\uFF08___\uFF09\u304C\u3061\u3087\u3046\u30691\u3064\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-requested",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6307\u5B9A\u3055\u308C\u305F\u6587\u6CD5\u9805\u76EE\u3092\u5BFE\u8C61\u306B\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-grounded",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u691C\u7D22\u3067\u53D6\u5F97\u3057\u305F\u6587\u6CD5\u77E5\u8B58\u306B\u6839\u62E0\uFF08sourceIds\uFF09\u3092\u6301\u3064\u3053\u3068"
+            },
+            {
+              "id": "rules-exist",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u53C2\u7167\u3057\u3066\u3044\u308B\u30EB\u30FC\u30EBID\u304C\u6587\u6CD5\u77E5\u8B58\u306B\u5B58\u5728\u3059\u308B\u3053\u3068"
+            },
+            {
+              "id": "difficulty-in-range",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u96E3\u6613\u5EA6\u304C A2 \u306E\u7BC4\u56F2\uFF081\u301C3\uFF09\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-level-allowed",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6587\u6CD5\u9805\u76EE\u306E\u30EC\u30D9\u30EB\u304C\u5B66\u7FD2\u8005\u306B\u9069\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "answer-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u5B58\u5728\u3057\u3001\u8A31\u5BB9\u89E3\u7B54\u306B\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "explanation-mentions-answer",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u89E3\u8AAC\u304C\u6B63\u7B54\u306B\u8A00\u53CA\u3057\u3001\u554F\u984C\u3068\u6574\u5408\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "cloze-has-no-choices",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u7A74\u57CB\u3081\u554F\u984C\u306B\u9078\u629E\u80A2\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "accepted-distinct",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A31\u5BB9\u89E3\u7B54\u306B\u91CD\u8907\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "answer-not-in-prompt",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "warning",
+              "messageJa": "\u554F\u984C\u6587\u306B\u6B63\u7B54\u304C\u305D\u306E\u307E\u307E\u66F8\u304B\u308C\u3066\u3044\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "semantic-judge",
+              "kind": "semantic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u610F\u5473\u7684\u8A55\u4FA1\u3067\u554F\u984C\u304C\u898B\u3064\u304B\u3089\u306A\u3044\u3053\u3068"
+            }
+          ],
+          "semantic": {
+            "verdict": "pass",
+            "score": 0.75,
+            "rationaleJa": "Mock\u8A55\u4FA1\uFF1A\u610F\u5473\u7684\u306A\u59A5\u5F53\u6027\u306F\u5B9F\u969B\u306B\u306F\u8A55\u4FA1\u3057\u3066\u3044\u307E\u305B\u3093\u3002Foundry \u63A5\u7D9A\u6642\u306B\u30E2\u30C7\u30EB\u306B\u3088\u308B\u8A55\u4FA1\u3078\u7F6E\u304D\u63DB\u308F\u308A\u307E\u3059\u3002",
+            "evaluator": {
+              "kind": "mock",
+              "model": "mock-learning-model-v1"
+            }
+          },
+          "evaluatedAt": "2026-10-01T09:00:06.0000000\u002B00:00"
+        },
+        "id": "ps-demo-basics-q4"
+      },
+      {
+        "sessionId": "ps-demo-basics",
+        "order": 4,
+        "type": "cloze",
+        "grammarTopicId": "it-definite-articles",
+        "difficulty": 1,
+        "instructionJa": "\u7A7A\u6B04\u306B\u5165\u308B\u8A9E\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044\u3002",
+        "prompt": "Dov\u0027\u00E8 ___ stazione?",
+        "choices": [],
+        "correctAnswer": "la",
+        "acceptedAnswers": [
+          "la"
+        ],
+        "explanationJa": "stazione \u306F\u5B50\u97F3\u3067\u59CB\u307E\u308B\u5973\u6027\u5358\u6570\u540D\u8A5E\u306A\u306E\u3067 la \u3092\u4F7F\u3044\u307E\u3059\u3002",
+        "ruleIds": [
+          "it-definite-articles-r2"
+        ],
+        "sourceIds": [
+          "it-definite-articles",
+          "src-original-it-definite-articles"
+        ],
+        "generatedBy": {
+          "kind": "mock",
+          "model": "mock-learning-model-v1"
+        },
+        "generationId": "gen-ps-demo-basics-0",
+        "validation": {
+          "status": "passed",
+          "checks": [
+            {
+              "id": "instruction-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A2D\u554F\u306E\u6307\u793A\u6587\u304C\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "prompt-has-single-blank",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u554F\u984C\u6587\u306B\u7A7A\u6B04\uFF08___\uFF09\u304C\u3061\u3087\u3046\u30691\u3064\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-requested",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6307\u5B9A\u3055\u308C\u305F\u6587\u6CD5\u9805\u76EE\u3092\u5BFE\u8C61\u306B\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-grounded",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u691C\u7D22\u3067\u53D6\u5F97\u3057\u305F\u6587\u6CD5\u77E5\u8B58\u306B\u6839\u62E0\uFF08sourceIds\uFF09\u3092\u6301\u3064\u3053\u3068"
+            },
+            {
+              "id": "rules-exist",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u53C2\u7167\u3057\u3066\u3044\u308B\u30EB\u30FC\u30EBID\u304C\u6587\u6CD5\u77E5\u8B58\u306B\u5B58\u5728\u3059\u308B\u3053\u3068"
+            },
+            {
+              "id": "difficulty-in-range",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u96E3\u6613\u5EA6\u304C A2 \u306E\u7BC4\u56F2\uFF081\u301C3\uFF09\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-level-allowed",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6587\u6CD5\u9805\u76EE\u306E\u30EC\u30D9\u30EB\u304C\u5B66\u7FD2\u8005\u306B\u9069\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "answer-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u5B58\u5728\u3057\u3001\u8A31\u5BB9\u89E3\u7B54\u306B\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "explanation-mentions-answer",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u89E3\u8AAC\u304C\u6B63\u7B54\u306B\u8A00\u53CA\u3057\u3001\u554F\u984C\u3068\u6574\u5408\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "cloze-has-no-choices",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u7A74\u57CB\u3081\u554F\u984C\u306B\u9078\u629E\u80A2\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "accepted-distinct",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A31\u5BB9\u89E3\u7B54\u306B\u91CD\u8907\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "answer-not-in-prompt",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "warning",
+              "messageJa": "\u554F\u984C\u6587\u306B\u6B63\u7B54\u304C\u305D\u306E\u307E\u307E\u66F8\u304B\u308C\u3066\u3044\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "semantic-judge",
+              "kind": "semantic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u610F\u5473\u7684\u8A55\u4FA1\u3067\u554F\u984C\u304C\u898B\u3064\u304B\u3089\u306A\u3044\u3053\u3068"
+            }
+          ],
+          "semantic": {
+            "verdict": "pass",
+            "score": 0.75,
+            "rationaleJa": "Mock\u8A55\u4FA1\uFF1A\u610F\u5473\u7684\u306A\u59A5\u5F53\u6027\u306F\u5B9F\u969B\u306B\u306F\u8A55\u4FA1\u3057\u3066\u3044\u307E\u305B\u3093\u3002Foundry \u63A5\u7D9A\u6642\u306B\u30E2\u30C7\u30EB\u306B\u3088\u308B\u8A55\u4FA1\u3078\u7F6E\u304D\u63DB\u308F\u308A\u307E\u3059\u3002",
+            "evaluator": {
+              "kind": "mock",
+              "model": "mock-learning-model-v1"
+            }
+          },
+          "evaluatedAt": "2026-10-01T09:00:07.0000000\u002B00:00"
+        },
+        "id": "ps-demo-basics-q5"
+      },
+      {
+        "sessionId": "ps-demo-basics",
+        "order": 5,
+        "type": "cloze",
+        "grammarTopicId": "it-present-regular",
+        "difficulty": 1,
+        "instructionJa": "\u7A7A\u6B04\u306B\u5165\u308B\u8A9E\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044\u3002",
+        "prompt": "Io ___ a Osaka. (abitare)",
+        "choices": [],
+        "correctAnswer": "abito",
+        "acceptedAnswers": [
+          "abito"
+        ],
+        "explanationJa": "abitare \u306E1\u4EBA\u79F0\u5358\u6570\u306F abito \u3067\u3059\u3002",
+        "ruleIds": [
+          "it-present-regular-r1"
+        ],
+        "sourceIds": [
+          "it-present-regular",
+          "src-original-it-present-regular"
+        ],
+        "generatedBy": {
+          "kind": "mock",
+          "model": "mock-learning-model-v1"
+        },
+        "generationId": "gen-ps-demo-basics-0",
+        "validation": {
+          "status": "passed",
+          "checks": [
+            {
+              "id": "instruction-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A2D\u554F\u306E\u6307\u793A\u6587\u304C\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "prompt-has-single-blank",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u554F\u984C\u6587\u306B\u7A7A\u6B04\uFF08___\uFF09\u304C\u3061\u3087\u3046\u30691\u3064\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-requested",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6307\u5B9A\u3055\u308C\u305F\u6587\u6CD5\u9805\u76EE\u3092\u5BFE\u8C61\u306B\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-grounded",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u691C\u7D22\u3067\u53D6\u5F97\u3057\u305F\u6587\u6CD5\u77E5\u8B58\u306B\u6839\u62E0\uFF08sourceIds\uFF09\u3092\u6301\u3064\u3053\u3068"
+            },
+            {
+              "id": "rules-exist",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u53C2\u7167\u3057\u3066\u3044\u308B\u30EB\u30FC\u30EBID\u304C\u6587\u6CD5\u77E5\u8B58\u306B\u5B58\u5728\u3059\u308B\u3053\u3068"
+            },
+            {
+              "id": "difficulty-in-range",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u96E3\u6613\u5EA6\u304C A2 \u306E\u7BC4\u56F2\uFF081\u301C3\uFF09\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-level-allowed",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6587\u6CD5\u9805\u76EE\u306E\u30EC\u30D9\u30EB\u304C\u5B66\u7FD2\u8005\u306B\u9069\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "answer-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u5B58\u5728\u3057\u3001\u8A31\u5BB9\u89E3\u7B54\u306B\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "explanation-mentions-answer",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u89E3\u8AAC\u304C\u6B63\u7B54\u306B\u8A00\u53CA\u3057\u3001\u554F\u984C\u3068\u6574\u5408\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "cloze-has-no-choices",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u7A74\u57CB\u3081\u554F\u984C\u306B\u9078\u629E\u80A2\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "accepted-distinct",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A31\u5BB9\u89E3\u7B54\u306B\u91CD\u8907\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "answer-not-in-prompt",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "warning",
+              "messageJa": "\u554F\u984C\u6587\u306B\u6B63\u7B54\u304C\u305D\u306E\u307E\u307E\u66F8\u304B\u308C\u3066\u3044\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "semantic-judge",
+              "kind": "semantic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u610F\u5473\u7684\u8A55\u4FA1\u3067\u554F\u984C\u304C\u898B\u3064\u304B\u3089\u306A\u3044\u3053\u3068"
+            }
+          ],
+          "semantic": {
+            "verdict": "pass",
+            "score": 0.75,
+            "rationaleJa": "Mock\u8A55\u4FA1\uFF1A\u610F\u5473\u7684\u306A\u59A5\u5F53\u6027\u306F\u5B9F\u969B\u306B\u306F\u8A55\u4FA1\u3057\u3066\u3044\u307E\u305B\u3093\u3002Foundry \u63A5\u7D9A\u6642\u306B\u30E2\u30C7\u30EB\u306B\u3088\u308B\u8A55\u4FA1\u3078\u7F6E\u304D\u63DB\u308F\u308A\u307E\u3059\u3002",
+            "evaluator": {
+              "kind": "mock",
+              "model": "mock-learning-model-v1"
+            }
+          },
+          "evaluatedAt": "2026-10-01T09:00:08.0000000\u002B00:00"
+        },
+        "id": "ps-demo-basics-q6"
+      },
+      {
+        "sessionId": "ps-demo-basics",
+        "order": 6,
+        "type": "cloze",
+        "grammarTopicId": "it-definite-articles",
+        "difficulty": 2,
+        "instructionJa": "\u7A7A\u6B04\u306B\u5165\u308B\u8A9E\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044\u3002",
+        "prompt": "___ studenti sono in classe.",
+        "choices": [],
+        "correctAnswer": "Gli",
+        "acceptedAnswers": [
+          "Gli"
+        ],
+        "explanationJa": "\u5358\u6570\u3067 lo studente \u306A\u306E\u3067\u3001\u8907\u6570\u5F62\u306F Gli studenti \u3067\u3059\u3002",
+        "ruleIds": [
+          "it-definite-articles-r3"
+        ],
+        "sourceIds": [
+          "it-definite-articles",
+          "src-original-it-definite-articles"
+        ],
+        "generatedBy": {
+          "kind": "mock",
+          "model": "mock-learning-model-v1"
+        },
+        "generationId": "gen-ps-demo-basics-0",
+        "validation": {
+          "status": "passed",
+          "checks": [
+            {
+              "id": "instruction-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A2D\u554F\u306E\u6307\u793A\u6587\u304C\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "prompt-has-single-blank",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u554F\u984C\u6587\u306B\u7A7A\u6B04\uFF08___\uFF09\u304C\u3061\u3087\u3046\u30691\u3064\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-requested",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6307\u5B9A\u3055\u308C\u305F\u6587\u6CD5\u9805\u76EE\u3092\u5BFE\u8C61\u306B\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-grounded",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u691C\u7D22\u3067\u53D6\u5F97\u3057\u305F\u6587\u6CD5\u77E5\u8B58\u306B\u6839\u62E0\uFF08sourceIds\uFF09\u3092\u6301\u3064\u3053\u3068"
+            },
+            {
+              "id": "rules-exist",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u53C2\u7167\u3057\u3066\u3044\u308B\u30EB\u30FC\u30EBID\u304C\u6587\u6CD5\u77E5\u8B58\u306B\u5B58\u5728\u3059\u308B\u3053\u3068"
+            },
+            {
+              "id": "difficulty-in-range",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u96E3\u6613\u5EA6\u304C A2 \u306E\u7BC4\u56F2\uFF081\u301C3\uFF09\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-level-allowed",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6587\u6CD5\u9805\u76EE\u306E\u30EC\u30D9\u30EB\u304C\u5B66\u7FD2\u8005\u306B\u9069\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "answer-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u5B58\u5728\u3057\u3001\u8A31\u5BB9\u89E3\u7B54\u306B\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "explanation-mentions-answer",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u89E3\u8AAC\u304C\u6B63\u7B54\u306B\u8A00\u53CA\u3057\u3001\u554F\u984C\u3068\u6574\u5408\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "cloze-has-no-choices",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u7A74\u57CB\u3081\u554F\u984C\u306B\u9078\u629E\u80A2\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "accepted-distinct",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A31\u5BB9\u89E3\u7B54\u306B\u91CD\u8907\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "answer-not-in-prompt",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "warning",
+              "messageJa": "\u554F\u984C\u6587\u306B\u6B63\u7B54\u304C\u305D\u306E\u307E\u307E\u66F8\u304B\u308C\u3066\u3044\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "semantic-judge",
+              "kind": "semantic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u610F\u5473\u7684\u8A55\u4FA1\u3067\u554F\u984C\u304C\u898B\u3064\u304B\u3089\u306A\u3044\u3053\u3068"
+            }
+          ],
+          "semantic": {
+            "verdict": "pass",
+            "score": 0.75,
+            "rationaleJa": "Mock\u8A55\u4FA1\uFF1A\u610F\u5473\u7684\u306A\u59A5\u5F53\u6027\u306F\u5B9F\u969B\u306B\u306F\u8A55\u4FA1\u3057\u3066\u3044\u307E\u305B\u3093\u3002Foundry \u63A5\u7D9A\u6642\u306B\u30E2\u30C7\u30EB\u306B\u3088\u308B\u8A55\u4FA1\u3078\u7F6E\u304D\u63DB\u308F\u308A\u307E\u3059\u3002",
+            "evaluator": {
+              "kind": "mock",
+              "model": "mock-learning-model-v1"
+            }
+          },
+          "evaluatedAt": "2026-10-01T09:00:09.0000000\u002B00:00"
+        },
+        "id": "ps-demo-basics-q7"
+      },
+      {
+        "sessionId": "ps-demo-basics",
+        "order": 7,
+        "type": "multiple-choice",
+        "grammarTopicId": "it-present-regular",
+        "difficulty": 1,
+        "instructionJa": "\u7A7A\u6B04\u306B\u5165\u308B\u6B63\u3057\u3044\u8A9E\u3092\u9078\u3093\u3067\u304F\u3060\u3055\u3044\u3002",
+        "prompt": "Noi ___ italiano ogni giorno.",
+        "choices": [
+          "parliamo",
+          "parlamo",
+          "parlano",
+          "parlate"
+        ],
+        "correctAnswer": "parliamo",
+        "acceptedAnswers": [
+          "parliamo"
+        ],
+        "explanationJa": "\u4E3B\u8A9E\u304C noi \u306A\u306E\u3067 parlare \u306E1\u4EBA\u79F0\u8907\u6570 parliamo \u3067\u3059\u3002",
+        "ruleIds": [
+          "it-present-regular-r1"
+        ],
+        "sourceIds": [
+          "it-present-regular",
+          "src-original-it-present-regular"
+        ],
+        "generatedBy": {
+          "kind": "mock",
+          "model": "mock-learning-model-v1"
+        },
+        "generationId": "gen-ps-demo-basics-0",
+        "validation": {
+          "status": "passed",
+          "checks": [
+            {
+              "id": "instruction-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A2D\u554F\u306E\u6307\u793A\u6587\u304C\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "prompt-has-single-blank",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u554F\u984C\u6587\u306B\u7A7A\u6B04\uFF08___\uFF09\u304C\u3061\u3087\u3046\u30691\u3064\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-requested",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6307\u5B9A\u3055\u308C\u305F\u6587\u6CD5\u9805\u76EE\u3092\u5BFE\u8C61\u306B\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-grounded",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u691C\u7D22\u3067\u53D6\u5F97\u3057\u305F\u6587\u6CD5\u77E5\u8B58\u306B\u6839\u62E0\uFF08sourceIds\uFF09\u3092\u6301\u3064\u3053\u3068"
+            },
+            {
+              "id": "rules-exist",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u53C2\u7167\u3057\u3066\u3044\u308B\u30EB\u30FC\u30EBID\u304C\u6587\u6CD5\u77E5\u8B58\u306B\u5B58\u5728\u3059\u308B\u3053\u3068"
+            },
+            {
+              "id": "difficulty-in-range",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u96E3\u6613\u5EA6\u304C A2 \u306E\u7BC4\u56F2\uFF081\u301C3\uFF09\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-level-allowed",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6587\u6CD5\u9805\u76EE\u306E\u30EC\u30D9\u30EB\u304C\u5B66\u7FD2\u8005\u306B\u9069\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "answer-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u5B58\u5728\u3057\u3001\u8A31\u5BB9\u89E3\u7B54\u306B\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "explanation-mentions-answer",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u89E3\u8AAC\u304C\u6B63\u7B54\u306B\u8A00\u53CA\u3057\u3001\u554F\u984C\u3068\u6574\u5408\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "choice-count",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u9078\u629E\u80A2\u304C3\u301C5\u500B\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "choices-distinct",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u91CD\u8907\u30FB\u7A7A\u306E\u9078\u629E\u80A2\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "answer-in-choices",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u9078\u629E\u80A2\u306B\u3061\u3087\u3046\u30691\u3064\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "single-correct-choice",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u306B\u306A\u308A\u3046\u308B\u9078\u629E\u80A2\u304C\u8907\u6570\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "semantic-judge",
+              "kind": "semantic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u610F\u5473\u7684\u8A55\u4FA1\u3067\u554F\u984C\u304C\u898B\u3064\u304B\u3089\u306A\u3044\u3053\u3068"
+            }
+          ],
+          "semantic": {
+            "verdict": "pass",
+            "score": 0.75,
+            "rationaleJa": "Mock\u8A55\u4FA1\uFF1A\u610F\u5473\u7684\u306A\u59A5\u5F53\u6027\u306F\u5B9F\u969B\u306B\u306F\u8A55\u4FA1\u3057\u3066\u3044\u307E\u305B\u3093\u3002Foundry \u63A5\u7D9A\u6642\u306B\u30E2\u30C7\u30EB\u306B\u3088\u308B\u8A55\u4FA1\u3078\u7F6E\u304D\u63DB\u308F\u308A\u307E\u3059\u3002",
+            "evaluator": {
+              "kind": "mock",
+              "model": "mock-learning-model-v1"
+            }
+          },
+          "evaluatedAt": "2026-10-01T09:00:10.0000000\u002B00:00"
+        },
+        "id": "ps-demo-basics-q8"
+      }
+    ],
+    "answers": [
+      {
+        "questionId": "ps-demo-basics-q1",
+        "attemptId": "demo-ps-demo-basics-q1",
+        "answer": "Le",
+        "normalizedAnswer": "le",
+        "isCorrect": true,
+        "feedbackCode": "correct",
+        "masteryBefore": 0.5,
+        "masteryAfter": 0.6,
+        "answeredAt": "2026-10-01T09:00:12.0000000\u002B00:00"
+      },
+      {
+        "questionId": "ps-demo-basics-q2",
+        "attemptId": "demo-ps-demo-basics-q2",
+        "answer": "dormono",
+        "normalizedAnswer": "dormono",
+        "isCorrect": true,
+        "feedbackCode": "correct",
+        "masteryBefore": 0.5,
+        "masteryAfter": 0.6,
+        "answeredAt": "2026-10-01T09:00:16.0000000\u002B00:00"
+      },
+      {
+        "questionId": "ps-demo-basics-q3",
+        "attemptId": "demo-ps-demo-basics-q3",
+        "answer": "i",
+        "normalizedAnswer": "i",
+        "isCorrect": true,
+        "feedbackCode": "correct",
+        "masteryBefore": 0.6,
+        "masteryAfter": 0.68,
+        "answeredAt": "2026-10-01T09:00:20.0000000\u002B00:00"
+      },
+      {
+        "questionId": "ps-demo-basics-q4",
+        "attemptId": "demo-ps-demo-basics-q4",
+        "answer": "prendi",
+        "normalizedAnswer": "prendi",
+        "isCorrect": true,
+        "feedbackCode": "correct",
+        "masteryBefore": 0.6,
+        "masteryAfter": 0.68,
+        "answeredAt": "2026-10-01T09:00:24.0000000\u002B00:00"
+      },
+      {
+        "questionId": "ps-demo-basics-q5",
+        "attemptId": "demo-ps-demo-basics-q5",
+        "answer": "la",
+        "normalizedAnswer": "la",
+        "isCorrect": true,
+        "feedbackCode": "correct",
+        "masteryBefore": 0.68,
+        "masteryAfter": 0.744,
+        "answeredAt": "2026-10-01T09:00:28.0000000\u002B00:00"
+      },
+      {
+        "questionId": "ps-demo-basics-q6",
+        "attemptId": "demo-ps-demo-basics-q6",
+        "answer": "abito",
+        "normalizedAnswer": "abito",
+        "isCorrect": true,
+        "feedbackCode": "correct",
+        "masteryBefore": 0.68,
+        "masteryAfter": 0.744,
+        "answeredAt": "2026-10-01T09:00:32.0000000\u002B00:00"
+      },
+      {
+        "questionId": "ps-demo-basics-q7",
+        "attemptId": "demo-ps-demo-basics-q7",
+        "answer": "Gli",
+        "normalizedAnswer": "gli",
+        "isCorrect": true,
+        "feedbackCode": "correct",
+        "masteryBefore": 0.744,
+        "masteryAfter": 0.7952,
+        "answeredAt": "2026-10-01T09:00:36.0000000\u002B00:00"
+      },
+      {
+        "questionId": "ps-demo-basics-q8",
+        "attemptId": "demo-ps-demo-basics-q8",
+        "answer": "parliamo",
+        "normalizedAnswer": "parliamo",
+        "isCorrect": true,
+        "feedbackCode": "correct",
+        "masteryBefore": 0.744,
+        "masteryAfter": 0.7952,
+        "answeredAt": "2026-10-01T09:00:40.0000000\u002B00:00"
+      }
+    ],
+    "summary": {
+      "total": 8,
+      "answered": 8,
+      "correct": 8,
+      "accuracy": 1
+    },
+    "completedAt": "2026-10-01T09:00:44.0000000\u002B00:00",
+    "userId": "local-demo-learner",
+    "schemaVersion": 1,
+    "id": "ps-demo-basics",
+    "createdAt": "2026-10-01T09:00:11.0000000\u002B00:00",
+    "updatedAt": "2026-10-01T09:00:45.0000000\u002B00:00"
+  },
+  {
+    "mode": "topic",
+    "level": "A2",
+    "targetTopicIds": [
+      "it-passato-prossimo-auxiliary"
+    ],
+    "reviewPlanId": null,
+    "origin": {
+      "kind": "demo-seed",
+      "refId": null
+    },
+    "status": "completed",
+    "questions": [
+      {
+        "sessionId": "ps-demo-passato",
+        "order": 0,
+        "type": "multiple-choice",
+        "grammarTopicId": "it-passato-prossimo-auxiliary",
+        "difficulty": 3,
+        "instructionJa": "\u7A7A\u6B04\u306B\u5165\u308B\u6B63\u3057\u3044\u8A9E\u3092\u9078\u3093\u3067\u304F\u3060\u3055\u3044\u3002",
+        "prompt": "Marco, che cosa ___ fatto tu ieri?",
+        "choices": [
+          "hai",
+          "sei",
+          "ha",
+          "\u00E8"
+        ],
+        "correctAnswer": "hai",
+        "acceptedAnswers": [
+          "hai"
+        ],
+        "explanationJa": "fare \u306F\u4ED6\u52D5\u8A5E\u306A\u306E\u3067 avere\u3002\u4E3B\u8A9E tu \u306A\u306E\u3067 hai \u3067\u3059\u3002",
+        "ruleIds": [
+          "it-passato-prossimo-auxiliary-r1"
+        ],
+        "sourceIds": [
+          "it-passato-prossimo-auxiliary",
+          "src-original-it-passato-prossimo-auxiliary"
+        ],
+        "generatedBy": {
+          "kind": "mock",
+          "model": "mock-learning-model-v1"
+        },
+        "generationId": "gen-ps-demo-passato-0",
+        "validation": {
+          "status": "passed",
+          "checks": [
+            {
+              "id": "instruction-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A2D\u554F\u306E\u6307\u793A\u6587\u304C\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "prompt-has-single-blank",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u554F\u984C\u6587\u306B\u7A7A\u6B04\uFF08___\uFF09\u304C\u3061\u3087\u3046\u30691\u3064\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-requested",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6307\u5B9A\u3055\u308C\u305F\u6587\u6CD5\u9805\u76EE\u3092\u5BFE\u8C61\u306B\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-grounded",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u691C\u7D22\u3067\u53D6\u5F97\u3057\u305F\u6587\u6CD5\u77E5\u8B58\u306B\u6839\u62E0\uFF08sourceIds\uFF09\u3092\u6301\u3064\u3053\u3068"
+            },
+            {
+              "id": "rules-exist",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u53C2\u7167\u3057\u3066\u3044\u308B\u30EB\u30FC\u30EBID\u304C\u6587\u6CD5\u77E5\u8B58\u306B\u5B58\u5728\u3059\u308B\u3053\u3068"
+            },
+            {
+              "id": "difficulty-in-range",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u96E3\u6613\u5EA6\u304C A2 \u306E\u7BC4\u56F2\uFF081\u301C3\uFF09\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-level-allowed",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6587\u6CD5\u9805\u76EE\u306E\u30EC\u30D9\u30EB\u304C\u5B66\u7FD2\u8005\u306B\u9069\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "answer-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u5B58\u5728\u3057\u3001\u8A31\u5BB9\u89E3\u7B54\u306B\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "explanation-mentions-answer",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u89E3\u8AAC\u304C\u6B63\u7B54\u306B\u8A00\u53CA\u3057\u3001\u554F\u984C\u3068\u6574\u5408\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "choice-count",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u9078\u629E\u80A2\u304C3\u301C5\u500B\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "choices-distinct",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u91CD\u8907\u30FB\u7A7A\u306E\u9078\u629E\u80A2\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "answer-in-choices",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u9078\u629E\u80A2\u306B\u3061\u3087\u3046\u30691\u3064\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "single-correct-choice",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u306B\u306A\u308A\u3046\u308B\u9078\u629E\u80A2\u304C\u8907\u6570\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "semantic-judge",
+              "kind": "semantic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u610F\u5473\u7684\u8A55\u4FA1\u3067\u554F\u984C\u304C\u898B\u3064\u304B\u3089\u306A\u3044\u3053\u3068"
+            }
+          ],
+          "semantic": {
+            "verdict": "pass",
+            "score": 0.75,
+            "rationaleJa": "Mock\u8A55\u4FA1\uFF1A\u610F\u5473\u7684\u306A\u59A5\u5F53\u6027\u306F\u5B9F\u969B\u306B\u306F\u8A55\u4FA1\u3057\u3066\u3044\u307E\u305B\u3093\u3002Foundry \u63A5\u7D9A\u6642\u306B\u30E2\u30C7\u30EB\u306B\u3088\u308B\u8A55\u4FA1\u3078\u7F6E\u304D\u63DB\u308F\u308A\u307E\u3059\u3002",
+            "evaluator": {
+              "kind": "mock",
+              "model": "mock-learning-model-v1"
+            }
+          },
+          "evaluatedAt": "2026-10-01T09:01:19.0000000\u002B00:00"
+        },
+        "id": "ps-demo-passato-q1"
+      },
+      {
+        "sessionId": "ps-demo-passato",
+        "order": 1,
+        "type": "cloze",
+        "grammarTopicId": "it-passato-prossimo-auxiliary",
+        "difficulty": 2,
+        "instructionJa": "\u7A7A\u6B04\u306B\u5165\u308B\u8A9E\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044\u3002",
+        "prompt": "Stamattina Anna ___ uscita presto.",
+        "choices": [],
+        "correctAnswer": "\u00E8",
+        "acceptedAnswers": [
+          "\u00E8"
+        ],
+        "explanationJa": "uscire \u306F essere \u3092\u3068\u308A\u307E\u3059\u3002\u4E3B\u8A9E Anna \u306F3\u4EBA\u79F0\u5358\u6570\u306A\u306E\u3067 \u00E8 \u3067\u3059\uFF08\u30A2\u30AF\u30BB\u30F3\u30C8\u8A18\u53F7\u306B\u6CE8\u610F\uFF09\u3002",
+        "ruleIds": [
+          "it-passato-prossimo-auxiliary-r2"
+        ],
+        "sourceIds": [
+          "it-passato-prossimo-auxiliary",
+          "src-original-it-passato-prossimo-auxiliary"
+        ],
+        "generatedBy": {
+          "kind": "mock",
+          "model": "mock-learning-model-v1"
+        },
+        "generationId": "gen-ps-demo-passato-0",
+        "validation": {
+          "status": "passed",
+          "checks": [
+            {
+              "id": "instruction-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A2D\u554F\u306E\u6307\u793A\u6587\u304C\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "prompt-has-single-blank",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u554F\u984C\u6587\u306B\u7A7A\u6B04\uFF08___\uFF09\u304C\u3061\u3087\u3046\u30691\u3064\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-requested",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6307\u5B9A\u3055\u308C\u305F\u6587\u6CD5\u9805\u76EE\u3092\u5BFE\u8C61\u306B\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-grounded",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u691C\u7D22\u3067\u53D6\u5F97\u3057\u305F\u6587\u6CD5\u77E5\u8B58\u306B\u6839\u62E0\uFF08sourceIds\uFF09\u3092\u6301\u3064\u3053\u3068"
+            },
+            {
+              "id": "rules-exist",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u53C2\u7167\u3057\u3066\u3044\u308B\u30EB\u30FC\u30EBID\u304C\u6587\u6CD5\u77E5\u8B58\u306B\u5B58\u5728\u3059\u308B\u3053\u3068"
+            },
+            {
+              "id": "difficulty-in-range",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u96E3\u6613\u5EA6\u304C A2 \u306E\u7BC4\u56F2\uFF081\u301C3\uFF09\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-level-allowed",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6587\u6CD5\u9805\u76EE\u306E\u30EC\u30D9\u30EB\u304C\u5B66\u7FD2\u8005\u306B\u9069\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "answer-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u5B58\u5728\u3057\u3001\u8A31\u5BB9\u89E3\u7B54\u306B\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "explanation-mentions-answer",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u89E3\u8AAC\u304C\u6B63\u7B54\u306B\u8A00\u53CA\u3057\u3001\u554F\u984C\u3068\u6574\u5408\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "cloze-has-no-choices",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u7A74\u57CB\u3081\u554F\u984C\u306B\u9078\u629E\u80A2\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "accepted-distinct",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A31\u5BB9\u89E3\u7B54\u306B\u91CD\u8907\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "answer-not-in-prompt",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "warning",
+              "messageJa": "\u554F\u984C\u6587\u306B\u6B63\u7B54\u304C\u305D\u306E\u307E\u307E\u66F8\u304B\u308C\u3066\u3044\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "semantic-judge",
+              "kind": "semantic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u610F\u5473\u7684\u8A55\u4FA1\u3067\u554F\u984C\u304C\u898B\u3064\u304B\u3089\u306A\u3044\u3053\u3068"
+            }
+          ],
+          "semantic": {
+            "verdict": "pass",
+            "score": 0.75,
+            "rationaleJa": "Mock\u8A55\u4FA1\uFF1A\u610F\u5473\u7684\u306A\u59A5\u5F53\u6027\u306F\u5B9F\u969B\u306B\u306F\u8A55\u4FA1\u3057\u3066\u3044\u307E\u305B\u3093\u3002Foundry \u63A5\u7D9A\u6642\u306B\u30E2\u30C7\u30EB\u306B\u3088\u308B\u8A55\u4FA1\u3078\u7F6E\u304D\u63DB\u308F\u308A\u307E\u3059\u3002",
+            "evaluator": {
+              "kind": "mock",
+              "model": "mock-learning-model-v1"
+            }
+          },
+          "evaluatedAt": "2026-10-01T09:01:20.0000000\u002B00:00"
+        },
+        "id": "ps-demo-passato-q2"
+      },
+      {
+        "sessionId": "ps-demo-passato",
+        "order": 2,
+        "type": "multiple-choice",
+        "grammarTopicId": "it-passato-prossimo-auxiliary",
+        "difficulty": 2,
+        "instructionJa": "\u7A7A\u6B04\u306B\u5165\u308B\u6B63\u3057\u3044\u8A9E\u3092\u9078\u3093\u3067\u304F\u3060\u3055\u3044\u3002",
+        "prompt": "I miei genitori ___ arrivati ieri.",
+        "choices": [
+          "sono",
+          "hanno",
+          "\u00E8",
+          "ha"
+        ],
+        "correctAnswer": "sono",
+        "acceptedAnswers": [
+          "sono"
+        ],
+        "explanationJa": "arrivare \u306F essere \u3092\u3068\u308A\u3001\u4E3B\u8A9E\u304C3\u4EBA\u79F0\u8907\u6570\u306A\u306E\u3067 sono \u3067\u3059\u3002",
+        "ruleIds": [
+          "it-passato-prossimo-auxiliary-r2"
+        ],
+        "sourceIds": [
+          "it-passato-prossimo-auxiliary",
+          "src-original-it-passato-prossimo-auxiliary"
+        ],
+        "generatedBy": {
+          "kind": "mock",
+          "model": "mock-learning-model-v1"
+        },
+        "generationId": "gen-ps-demo-passato-0",
+        "validation": {
+          "status": "passed",
+          "checks": [
+            {
+              "id": "instruction-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A2D\u554F\u306E\u6307\u793A\u6587\u304C\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "prompt-has-single-blank",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u554F\u984C\u6587\u306B\u7A7A\u6B04\uFF08___\uFF09\u304C\u3061\u3087\u3046\u30691\u3064\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-requested",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6307\u5B9A\u3055\u308C\u305F\u6587\u6CD5\u9805\u76EE\u3092\u5BFE\u8C61\u306B\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-grounded",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u691C\u7D22\u3067\u53D6\u5F97\u3057\u305F\u6587\u6CD5\u77E5\u8B58\u306B\u6839\u62E0\uFF08sourceIds\uFF09\u3092\u6301\u3064\u3053\u3068"
+            },
+            {
+              "id": "rules-exist",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u53C2\u7167\u3057\u3066\u3044\u308B\u30EB\u30FC\u30EBID\u304C\u6587\u6CD5\u77E5\u8B58\u306B\u5B58\u5728\u3059\u308B\u3053\u3068"
+            },
+            {
+              "id": "difficulty-in-range",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u96E3\u6613\u5EA6\u304C A2 \u306E\u7BC4\u56F2\uFF081\u301C3\uFF09\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-level-allowed",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6587\u6CD5\u9805\u76EE\u306E\u30EC\u30D9\u30EB\u304C\u5B66\u7FD2\u8005\u306B\u9069\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "answer-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u5B58\u5728\u3057\u3001\u8A31\u5BB9\u89E3\u7B54\u306B\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "explanation-mentions-answer",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u89E3\u8AAC\u304C\u6B63\u7B54\u306B\u8A00\u53CA\u3057\u3001\u554F\u984C\u3068\u6574\u5408\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "choice-count",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u9078\u629E\u80A2\u304C3\u301C5\u500B\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "choices-distinct",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u91CD\u8907\u30FB\u7A7A\u306E\u9078\u629E\u80A2\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "answer-in-choices",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u9078\u629E\u80A2\u306B\u3061\u3087\u3046\u30691\u3064\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "single-correct-choice",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u306B\u306A\u308A\u3046\u308B\u9078\u629E\u80A2\u304C\u8907\u6570\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "semantic-judge",
+              "kind": "semantic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u610F\u5473\u7684\u8A55\u4FA1\u3067\u554F\u984C\u304C\u898B\u3064\u304B\u3089\u306A\u3044\u3053\u3068"
+            }
+          ],
+          "semantic": {
+            "verdict": "pass",
+            "score": 0.75,
+            "rationaleJa": "Mock\u8A55\u4FA1\uFF1A\u610F\u5473\u7684\u306A\u59A5\u5F53\u6027\u306F\u5B9F\u969B\u306B\u306F\u8A55\u4FA1\u3057\u3066\u3044\u307E\u305B\u3093\u3002Foundry \u63A5\u7D9A\u6642\u306B\u30E2\u30C7\u30EB\u306B\u3088\u308B\u8A55\u4FA1\u3078\u7F6E\u304D\u63DB\u308F\u308A\u307E\u3059\u3002",
+            "evaluator": {
+              "kind": "mock",
+              "model": "mock-learning-model-v1"
+            }
+          },
+          "evaluatedAt": "2026-10-01T09:01:21.0000000\u002B00:00"
+        },
+        "id": "ps-demo-passato-q3"
+      },
+      {
+        "sessionId": "ps-demo-passato",
+        "order": 3,
+        "type": "multiple-choice",
+        "grammarTopicId": "it-passato-prossimo-auxiliary",
+        "difficulty": 2,
+        "instructionJa": "\u7A7A\u6B04\u306B\u5165\u308B\u6B63\u3057\u3044\u8A9E\u3092\u9078\u3093\u3067\u304F\u3060\u3055\u3044\u3002",
+        "prompt": "Ieri ___ andato al mare con gli amici.",
+        "choices": [
+          "sono",
+          "ho",
+          "hai",
+          "abbiamo"
+        ],
+        "correctAnswer": "sono",
+        "acceptedAnswers": [
+          "sono"
+        ],
+        "explanationJa": "andare \u306F\u79FB\u52D5\u3092\u8868\u3059\u81EA\u52D5\u8A5E\u306A\u306E\u3067\u52A9\u52D5\u8A5E\u306F essere\u3002\u4E3B\u8A9E\u306F io \u306A\u306E\u3067 sono \u3067\u3059\u3002",
+        "ruleIds": [
+          "it-passato-prossimo-auxiliary-r2"
+        ],
+        "sourceIds": [
+          "it-passato-prossimo-auxiliary",
+          "src-original-it-passato-prossimo-auxiliary"
+        ],
+        "generatedBy": {
+          "kind": "mock",
+          "model": "mock-learning-model-v1"
+        },
+        "generationId": "gen-ps-demo-passato-0",
+        "validation": {
+          "status": "passed",
+          "checks": [
+            {
+              "id": "instruction-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A2D\u554F\u306E\u6307\u793A\u6587\u304C\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "prompt-has-single-blank",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u554F\u984C\u6587\u306B\u7A7A\u6B04\uFF08___\uFF09\u304C\u3061\u3087\u3046\u30691\u3064\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-requested",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6307\u5B9A\u3055\u308C\u305F\u6587\u6CD5\u9805\u76EE\u3092\u5BFE\u8C61\u306B\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-grounded",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u691C\u7D22\u3067\u53D6\u5F97\u3057\u305F\u6587\u6CD5\u77E5\u8B58\u306B\u6839\u62E0\uFF08sourceIds\uFF09\u3092\u6301\u3064\u3053\u3068"
+            },
+            {
+              "id": "rules-exist",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u53C2\u7167\u3057\u3066\u3044\u308B\u30EB\u30FC\u30EBID\u304C\u6587\u6CD5\u77E5\u8B58\u306B\u5B58\u5728\u3059\u308B\u3053\u3068"
+            },
+            {
+              "id": "difficulty-in-range",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u96E3\u6613\u5EA6\u304C A2 \u306E\u7BC4\u56F2\uFF081\u301C3\uFF09\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-level-allowed",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6587\u6CD5\u9805\u76EE\u306E\u30EC\u30D9\u30EB\u304C\u5B66\u7FD2\u8005\u306B\u9069\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "answer-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u5B58\u5728\u3057\u3001\u8A31\u5BB9\u89E3\u7B54\u306B\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "explanation-mentions-answer",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u89E3\u8AAC\u304C\u6B63\u7B54\u306B\u8A00\u53CA\u3057\u3001\u554F\u984C\u3068\u6574\u5408\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "choice-count",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u9078\u629E\u80A2\u304C3\u301C5\u500B\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "choices-distinct",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u91CD\u8907\u30FB\u7A7A\u306E\u9078\u629E\u80A2\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "answer-in-choices",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u9078\u629E\u80A2\u306B\u3061\u3087\u3046\u30691\u3064\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "single-correct-choice",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u306B\u306A\u308A\u3046\u308B\u9078\u629E\u80A2\u304C\u8907\u6570\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "semantic-judge",
+              "kind": "semantic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u610F\u5473\u7684\u8A55\u4FA1\u3067\u554F\u984C\u304C\u898B\u3064\u304B\u3089\u306A\u3044\u3053\u3068"
+            }
+          ],
+          "semantic": {
+            "verdict": "pass",
+            "score": 0.75,
+            "rationaleJa": "Mock\u8A55\u4FA1\uFF1A\u610F\u5473\u7684\u306A\u59A5\u5F53\u6027\u306F\u5B9F\u969B\u306B\u306F\u8A55\u4FA1\u3057\u3066\u3044\u307E\u305B\u3093\u3002Foundry \u63A5\u7D9A\u6642\u306B\u30E2\u30C7\u30EB\u306B\u3088\u308B\u8A55\u4FA1\u3078\u7F6E\u304D\u63DB\u308F\u308A\u307E\u3059\u3002",
+            "evaluator": {
+              "kind": "mock",
+              "model": "mock-learning-model-v1"
+            }
+          },
+          "evaluatedAt": "2026-10-01T09:01:22.0000000\u002B00:00"
+        },
+        "id": "ps-demo-passato-q4"
+      }
+    ],
+    "answers": [
+      {
+        "questionId": "ps-demo-passato-q1",
+        "attemptId": "demo-ps-demo-passato-q1",
+        "answer": "sei",
+        "normalizedAnswer": "sei",
+        "isCorrect": false,
+        "feedbackCode": "incorrect",
+        "masteryBefore": 0.5,
+        "masteryAfter": 0.375,
+        "answeredAt": "2026-10-01T09:01:24.0000000\u002B00:00"
+      },
+      {
+        "questionId": "ps-demo-passato-q2",
+        "attemptId": "demo-ps-demo-passato-q2",
+        "answer": "ha",
+        "normalizedAnswer": "ha",
+        "isCorrect": false,
+        "feedbackCode": "incorrect",
+        "masteryBefore": 0.375,
+        "masteryAfter": 0.2812,
+        "answeredAt": "2026-10-01T09:01:28.0000000\u002B00:00"
+      },
+      {
+        "questionId": "ps-demo-passato-q3",
+        "attemptId": "demo-ps-demo-passato-q3",
+        "answer": "sono",
+        "normalizedAnswer": "sono",
+        "isCorrect": true,
+        "feedbackCode": "correct",
+        "masteryBefore": 0.2812,
+        "masteryAfter": 0.425,
+        "answeredAt": "2026-10-01T09:01:32.0000000\u002B00:00"
+      },
+      {
+        "questionId": "ps-demo-passato-q4",
+        "attemptId": "demo-ps-demo-passato-q4",
+        "answer": "ho",
+        "normalizedAnswer": "ho",
+        "isCorrect": false,
+        "feedbackCode": "incorrect",
+        "masteryBefore": 0.425,
+        "masteryAfter": 0.3188,
+        "answeredAt": "2026-10-01T09:01:36.0000000\u002B00:00"
+      }
+    ],
+    "summary": {
+      "total": 4,
+      "answered": 4,
+      "correct": 1,
+      "accuracy": 0.25
+    },
+    "completedAt": "2026-10-01T09:01:40.0000000\u002B00:00",
+    "userId": "local-demo-learner",
+    "schemaVersion": 1,
+    "id": "ps-demo-passato",
+    "createdAt": "2026-10-01T09:01:23.0000000\u002B00:00",
+    "updatedAt": "2026-10-01T09:01:41.0000000\u002B00:00"
+  },
+  {
+    "mode": "review",
+    "level": "A2",
+    "targetTopicIds": [
+      "it-verb-a-infinitive",
+      "it-verb-di-infinitive",
+      "it-passato-prossimo-auxiliary"
+    ],
+    "reviewPlanId": "rp-conv-ts-demo-weekend",
+    "origin": {
+      "kind": "review-workflow",
+      "refId": "wf-post-conversation-analysis-ts-demo-weekend"
+    },
+    "status": "completed",
+    "questions": [
+      {
+        "sessionId": "ps-review-rp-conv-ts-demo-weekend-1",
+        "order": 0,
+        "type": "multiple-choice",
+        "grammarTopicId": "it-verb-a-infinitive",
+        "difficulty": 2,
+        "instructionJa": "\u7A7A\u6B04\u306B\u5165\u308B\u6B63\u3057\u3044\u8A9E\u3092\u9078\u3093\u3067\u304F\u3060\u3055\u3044\u3002",
+        "prompt": "Ho iniziato ___ lavorare qui l\u0027anno scorso.",
+        "choices": [
+          "a",
+          "di",
+          "da",
+          "in"
+        ],
+        "correctAnswer": "a",
+        "acceptedAnswers": [
+          "a"
+        ],
+        "explanationJa": "iniziare\uFF08\u59CB\u3081\u308B\uFF09\u306F cominciare \u3068\u540C\u3058\u304F a \u002B \u4E0D\u5B9A\u8A5E\u3067\u3059\u3002\u6B63\u89E3\u306F a \u3067\u3059\u3002",
+        "ruleIds": [
+          "it-verb-a-infinitive-r1"
+        ],
+        "sourceIds": [
+          "it-verb-a-infinitive",
+          "src-original-it-verb-a-infinitive"
+        ],
+        "generatedBy": {
+          "kind": "mock",
+          "model": "mock-learning-model-v1"
+        },
+        "generationId": "gen-ps-review-rp-conv-ts-demo-weekend-1-0",
+        "validation": {
+          "status": "passed",
+          "checks": [
+            {
+              "id": "instruction-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A2D\u554F\u306E\u6307\u793A\u6587\u304C\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "prompt-has-single-blank",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u554F\u984C\u6587\u306B\u7A7A\u6B04\uFF08___\uFF09\u304C\u3061\u3087\u3046\u30691\u3064\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-requested",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6307\u5B9A\u3055\u308C\u305F\u6587\u6CD5\u9805\u76EE\u3092\u5BFE\u8C61\u306B\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-grounded",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u691C\u7D22\u3067\u53D6\u5F97\u3057\u305F\u6587\u6CD5\u77E5\u8B58\u306B\u6839\u62E0\uFF08sourceIds\uFF09\u3092\u6301\u3064\u3053\u3068"
+            },
+            {
+              "id": "rules-exist",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u53C2\u7167\u3057\u3066\u3044\u308B\u30EB\u30FC\u30EBID\u304C\u6587\u6CD5\u77E5\u8B58\u306B\u5B58\u5728\u3059\u308B\u3053\u3068"
+            },
+            {
+              "id": "difficulty-in-range",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u96E3\u6613\u5EA6\u304C A2 \u306E\u7BC4\u56F2\uFF081\u301C3\uFF09\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-level-allowed",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6587\u6CD5\u9805\u76EE\u306E\u30EC\u30D9\u30EB\u304C\u5B66\u7FD2\u8005\u306B\u9069\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "answer-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u5B58\u5728\u3057\u3001\u8A31\u5BB9\u89E3\u7B54\u306B\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "explanation-mentions-answer",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u89E3\u8AAC\u304C\u6B63\u7B54\u306B\u8A00\u53CA\u3057\u3001\u554F\u984C\u3068\u6574\u5408\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "choice-count",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u9078\u629E\u80A2\u304C3\u301C5\u500B\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "choices-distinct",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u91CD\u8907\u30FB\u7A7A\u306E\u9078\u629E\u80A2\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "answer-in-choices",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u9078\u629E\u80A2\u306B\u3061\u3087\u3046\u30691\u3064\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "single-correct-choice",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u306B\u306A\u308A\u3046\u308B\u9078\u629E\u80A2\u304C\u8907\u6570\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "semantic-judge",
+              "kind": "semantic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u610F\u5473\u7684\u8A55\u4FA1\u3067\u554F\u984C\u304C\u898B\u3064\u304B\u3089\u306A\u3044\u3053\u3068"
+            }
+          ],
+          "semantic": {
+            "verdict": "pass",
+            "score": 0.75,
+            "rationaleJa": "Mock\u8A55\u4FA1\uFF1A\u610F\u5473\u7684\u306A\u59A5\u5F53\u6027\u306F\u5B9F\u969B\u306B\u306F\u8A55\u4FA1\u3057\u3066\u3044\u307E\u305B\u3093\u3002Foundry \u63A5\u7D9A\u6642\u306B\u30E2\u30C7\u30EB\u306B\u3088\u308B\u8A55\u4FA1\u3078\u7F6E\u304D\u63DB\u308F\u308A\u307E\u3059\u3002",
+            "evaluator": {
+              "kind": "mock",
+              "model": "mock-learning-model-v1"
+            }
+          },
+          "evaluatedAt": "2026-10-01T09:02:41.0000000\u002B00:00"
+        },
+        "id": "ps-review-rp-conv-ts-demo-weekend-1-q1"
+      },
+      {
+        "sessionId": "ps-review-rp-conv-ts-demo-weekend-1",
+        "order": 1,
+        "type": "cloze",
+        "grammarTopicId": "it-verb-di-infinitive",
+        "difficulty": 2,
+        "instructionJa": "\u7A7A\u6B04\u306B\u5165\u308B\u8A9E\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044\u3002",
+        "prompt": "Cerco ___ parlare solo in italiano.",
+        "choices": [],
+        "correctAnswer": "di",
+        "acceptedAnswers": [
+          "di"
+        ],
+        "explanationJa": "cercare\uFF08\u301C\u3057\u3088\u3046\u3068\u52AA\u3081\u308B\uFF09\u306F di \u002B \u4E0D\u5B9A\u8A5E\u3067\u3059\u3002\u6B63\u89E3\u306F di \u3067\u3059\u3002",
+        "ruleIds": [
+          "it-verb-di-infinitive-r2"
+        ],
+        "sourceIds": [
+          "it-verb-di-infinitive",
+          "src-original-it-verb-di-infinitive"
+        ],
+        "generatedBy": {
+          "kind": "mock",
+          "model": "mock-learning-model-v1"
+        },
+        "generationId": "gen-ps-review-rp-conv-ts-demo-weekend-1-0",
+        "validation": {
+          "status": "passed",
+          "checks": [
+            {
+              "id": "instruction-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A2D\u554F\u306E\u6307\u793A\u6587\u304C\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "prompt-has-single-blank",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u554F\u984C\u6587\u306B\u7A7A\u6B04\uFF08___\uFF09\u304C\u3061\u3087\u3046\u30691\u3064\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-requested",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6307\u5B9A\u3055\u308C\u305F\u6587\u6CD5\u9805\u76EE\u3092\u5BFE\u8C61\u306B\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-grounded",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u691C\u7D22\u3067\u53D6\u5F97\u3057\u305F\u6587\u6CD5\u77E5\u8B58\u306B\u6839\u62E0\uFF08sourceIds\uFF09\u3092\u6301\u3064\u3053\u3068"
+            },
+            {
+              "id": "rules-exist",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u53C2\u7167\u3057\u3066\u3044\u308B\u30EB\u30FC\u30EBID\u304C\u6587\u6CD5\u77E5\u8B58\u306B\u5B58\u5728\u3059\u308B\u3053\u3068"
+            },
+            {
+              "id": "difficulty-in-range",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u96E3\u6613\u5EA6\u304C A2 \u306E\u7BC4\u56F2\uFF081\u301C3\uFF09\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-level-allowed",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6587\u6CD5\u9805\u76EE\u306E\u30EC\u30D9\u30EB\u304C\u5B66\u7FD2\u8005\u306B\u9069\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "answer-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u5B58\u5728\u3057\u3001\u8A31\u5BB9\u89E3\u7B54\u306B\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "explanation-mentions-answer",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u89E3\u8AAC\u304C\u6B63\u7B54\u306B\u8A00\u53CA\u3057\u3001\u554F\u984C\u3068\u6574\u5408\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "cloze-has-no-choices",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u7A74\u57CB\u3081\u554F\u984C\u306B\u9078\u629E\u80A2\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "accepted-distinct",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A31\u5BB9\u89E3\u7B54\u306B\u91CD\u8907\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "answer-not-in-prompt",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "warning",
+              "messageJa": "\u554F\u984C\u6587\u306B\u6B63\u7B54\u304C\u305D\u306E\u307E\u307E\u66F8\u304B\u308C\u3066\u3044\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "semantic-judge",
+              "kind": "semantic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u610F\u5473\u7684\u8A55\u4FA1\u3067\u554F\u984C\u304C\u898B\u3064\u304B\u3089\u306A\u3044\u3053\u3068"
+            }
+          ],
+          "semantic": {
+            "verdict": "pass",
+            "score": 0.75,
+            "rationaleJa": "Mock\u8A55\u4FA1\uFF1A\u610F\u5473\u7684\u306A\u59A5\u5F53\u6027\u306F\u5B9F\u969B\u306B\u306F\u8A55\u4FA1\u3057\u3066\u3044\u307E\u305B\u3093\u3002Foundry \u63A5\u7D9A\u6642\u306B\u30E2\u30C7\u30EB\u306B\u3088\u308B\u8A55\u4FA1\u3078\u7F6E\u304D\u63DB\u308F\u308A\u307E\u3059\u3002",
+            "evaluator": {
+              "kind": "mock",
+              "model": "mock-learning-model-v1"
+            }
+          },
+          "evaluatedAt": "2026-10-01T09:02:42.0000000\u002B00:00"
+        },
+        "id": "ps-review-rp-conv-ts-demo-weekend-1-q2"
+      },
+      {
+        "sessionId": "ps-review-rp-conv-ts-demo-weekend-1",
+        "order": 2,
+        "type": "cloze",
+        "grammarTopicId": "it-passato-prossimo-auxiliary",
+        "difficulty": 2,
+        "instructionJa": "\u7A7A\u6B04\u306B\u5165\u308B\u8A9E\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044\u3002",
+        "prompt": "Ieri sera (io) ___ dormito male.",
+        "choices": [],
+        "correctAnswer": "ho",
+        "acceptedAnswers": [
+          "ho"
+        ],
+        "explanationJa": "dormire \u306F avere \u3092\u3068\u308B\u81EA\u52D5\u8A5E\u3067\u3059\u3002\u4E3B\u8A9E io \u306A\u306E\u3067 ho \u3067\u3059\u3002",
+        "ruleIds": [
+          "it-passato-prossimo-auxiliary-r1"
+        ],
+        "sourceIds": [
+          "it-passato-prossimo-auxiliary",
+          "src-original-it-passato-prossimo-auxiliary"
+        ],
+        "generatedBy": {
+          "kind": "mock",
+          "model": "mock-learning-model-v1"
+        },
+        "generationId": "gen-ps-review-rp-conv-ts-demo-weekend-1-0",
+        "validation": {
+          "status": "passed",
+          "checks": [
+            {
+              "id": "instruction-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A2D\u554F\u306E\u6307\u793A\u6587\u304C\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "prompt-has-single-blank",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u554F\u984C\u6587\u306B\u7A7A\u6B04\uFF08___\uFF09\u304C\u3061\u3087\u3046\u30691\u3064\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-requested",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6307\u5B9A\u3055\u308C\u305F\u6587\u6CD5\u9805\u76EE\u3092\u5BFE\u8C61\u306B\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-grounded",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u691C\u7D22\u3067\u53D6\u5F97\u3057\u305F\u6587\u6CD5\u77E5\u8B58\u306B\u6839\u62E0\uFF08sourceIds\uFF09\u3092\u6301\u3064\u3053\u3068"
+            },
+            {
+              "id": "rules-exist",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u53C2\u7167\u3057\u3066\u3044\u308B\u30EB\u30FC\u30EBID\u304C\u6587\u6CD5\u77E5\u8B58\u306B\u5B58\u5728\u3059\u308B\u3053\u3068"
+            },
+            {
+              "id": "difficulty-in-range",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u96E3\u6613\u5EA6\u304C A2 \u306E\u7BC4\u56F2\uFF081\u301C3\uFF09\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-level-allowed",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6587\u6CD5\u9805\u76EE\u306E\u30EC\u30D9\u30EB\u304C\u5B66\u7FD2\u8005\u306B\u9069\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "answer-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u5B58\u5728\u3057\u3001\u8A31\u5BB9\u89E3\u7B54\u306B\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "explanation-mentions-answer",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u89E3\u8AAC\u304C\u6B63\u7B54\u306B\u8A00\u53CA\u3057\u3001\u554F\u984C\u3068\u6574\u5408\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "cloze-has-no-choices",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u7A74\u57CB\u3081\u554F\u984C\u306B\u9078\u629E\u80A2\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "accepted-distinct",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A31\u5BB9\u89E3\u7B54\u306B\u91CD\u8907\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "answer-not-in-prompt",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "warning",
+              "messageJa": "\u554F\u984C\u6587\u306B\u6B63\u7B54\u304C\u305D\u306E\u307E\u307E\u66F8\u304B\u308C\u3066\u3044\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "semantic-judge",
+              "kind": "semantic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u610F\u5473\u7684\u8A55\u4FA1\u3067\u554F\u984C\u304C\u898B\u3064\u304B\u3089\u306A\u3044\u3053\u3068"
+            }
+          ],
+          "semantic": {
+            "verdict": "pass",
+            "score": 0.75,
+            "rationaleJa": "Mock\u8A55\u4FA1\uFF1A\u610F\u5473\u7684\u306A\u59A5\u5F53\u6027\u306F\u5B9F\u969B\u306B\u306F\u8A55\u4FA1\u3057\u3066\u3044\u307E\u305B\u3093\u3002Foundry \u63A5\u7D9A\u6642\u306B\u30E2\u30C7\u30EB\u306B\u3088\u308B\u8A55\u4FA1\u3078\u7F6E\u304D\u63DB\u308F\u308A\u307E\u3059\u3002",
+            "evaluator": {
+              "kind": "mock",
+              "model": "mock-learning-model-v1"
+            }
+          },
+          "evaluatedAt": "2026-10-01T09:02:43.0000000\u002B00:00"
+        },
+        "id": "ps-review-rp-conv-ts-demo-weekend-1-q3"
+      },
+      {
+        "sessionId": "ps-review-rp-conv-ts-demo-weekend-1",
+        "order": 3,
+        "type": "cloze",
+        "grammarTopicId": "it-verb-a-infinitive",
+        "difficulty": 2,
+        "instructionJa": "\u7A7A\u6B04\u306B\u5165\u308B\u8A9E\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044\u3002",
+        "prompt": "Mia figlia impara ___ nuotare.",
+        "choices": [],
+        "correctAnswer": "a",
+        "acceptedAnswers": [
+          "a"
+        ],
+        "explanationJa": "imparare\uFF08\u7FD2\u3046\uFF09\u306F a \u002B \u4E0D\u5B9A\u8A5E\u3067\u3059\u3002\u6B63\u89E3\u306F a \u3067\u3059\u3002",
+        "ruleIds": [
+          "it-verb-a-infinitive-r2"
+        ],
+        "sourceIds": [
+          "it-verb-a-infinitive",
+          "src-original-it-verb-a-infinitive"
+        ],
+        "generatedBy": {
+          "kind": "mock",
+          "model": "mock-learning-model-v1"
+        },
+        "generationId": "gen-ps-review-rp-conv-ts-demo-weekend-1-0",
+        "validation": {
+          "status": "passed",
+          "checks": [
+            {
+              "id": "instruction-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A2D\u554F\u306E\u6307\u793A\u6587\u304C\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "prompt-has-single-blank",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u554F\u984C\u6587\u306B\u7A7A\u6B04\uFF08___\uFF09\u304C\u3061\u3087\u3046\u30691\u3064\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-requested",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6307\u5B9A\u3055\u308C\u305F\u6587\u6CD5\u9805\u76EE\u3092\u5BFE\u8C61\u306B\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-grounded",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u691C\u7D22\u3067\u53D6\u5F97\u3057\u305F\u6587\u6CD5\u77E5\u8B58\u306B\u6839\u62E0\uFF08sourceIds\uFF09\u3092\u6301\u3064\u3053\u3068"
+            },
+            {
+              "id": "rules-exist",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u53C2\u7167\u3057\u3066\u3044\u308B\u30EB\u30FC\u30EBID\u304C\u6587\u6CD5\u77E5\u8B58\u306B\u5B58\u5728\u3059\u308B\u3053\u3068"
+            },
+            {
+              "id": "difficulty-in-range",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u96E3\u6613\u5EA6\u304C A2 \u306E\u7BC4\u56F2\uFF081\u301C3\uFF09\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-level-allowed",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6587\u6CD5\u9805\u76EE\u306E\u30EC\u30D9\u30EB\u304C\u5B66\u7FD2\u8005\u306B\u9069\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "answer-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u5B58\u5728\u3057\u3001\u8A31\u5BB9\u89E3\u7B54\u306B\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "explanation-mentions-answer",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u89E3\u8AAC\u304C\u6B63\u7B54\u306B\u8A00\u53CA\u3057\u3001\u554F\u984C\u3068\u6574\u5408\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "cloze-has-no-choices",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u7A74\u57CB\u3081\u554F\u984C\u306B\u9078\u629E\u80A2\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "accepted-distinct",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A31\u5BB9\u89E3\u7B54\u306B\u91CD\u8907\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "answer-not-in-prompt",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "warning",
+              "messageJa": "\u554F\u984C\u6587\u306B\u6B63\u7B54\u304C\u305D\u306E\u307E\u307E\u66F8\u304B\u308C\u3066\u3044\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "semantic-judge",
+              "kind": "semantic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u610F\u5473\u7684\u8A55\u4FA1\u3067\u554F\u984C\u304C\u898B\u3064\u304B\u3089\u306A\u3044\u3053\u3068"
+            }
+          ],
+          "semantic": {
+            "verdict": "pass",
+            "score": 0.75,
+            "rationaleJa": "Mock\u8A55\u4FA1\uFF1A\u610F\u5473\u7684\u306A\u59A5\u5F53\u6027\u306F\u5B9F\u969B\u306B\u306F\u8A55\u4FA1\u3057\u3066\u3044\u307E\u305B\u3093\u3002Foundry \u63A5\u7D9A\u6642\u306B\u30E2\u30C7\u30EB\u306B\u3088\u308B\u8A55\u4FA1\u3078\u7F6E\u304D\u63DB\u308F\u308A\u307E\u3059\u3002",
+            "evaluator": {
+              "kind": "mock",
+              "model": "mock-learning-model-v1"
+            }
+          },
+          "evaluatedAt": "2026-10-01T09:02:44.0000000\u002B00:00"
+        },
+        "id": "ps-review-rp-conv-ts-demo-weekend-1-q4"
+      },
+      {
+        "sessionId": "ps-review-rp-conv-ts-demo-weekend-1",
+        "order": 4,
+        "type": "multiple-choice",
+        "grammarTopicId": "it-verb-di-infinitive",
+        "difficulty": 2,
+        "instructionJa": "\u7A7A\u6B04\u306B\u5165\u308B\u6B63\u3057\u3044\u8A9E\u3092\u9078\u3093\u3067\u304F\u3060\u3055\u3044\u3002",
+        "prompt": "Spero ___ vederti presto.",
+        "choices": [
+          "di",
+          "a",
+          "per",
+          "da"
+        ],
+        "correctAnswer": "di",
+        "acceptedAnswers": [
+          "di"
+        ],
+        "explanationJa": "sperare\uFF08\u671B\u3080\uFF09\u306F di \u002B \u4E0D\u5B9A\u8A5E\u3067\u3059\u3002\u6B63\u89E3\u306F di \u3067\u3059\u3002",
+        "ruleIds": [
+          "it-verb-di-infinitive-r2"
+        ],
+        "sourceIds": [
+          "it-verb-di-infinitive",
+          "src-original-it-verb-di-infinitive"
+        ],
+        "generatedBy": {
+          "kind": "mock",
+          "model": "mock-learning-model-v1"
+        },
+        "generationId": "gen-ps-review-rp-conv-ts-demo-weekend-1-0",
+        "validation": {
+          "status": "passed",
+          "checks": [
+            {
+              "id": "instruction-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u8A2D\u554F\u306E\u6307\u793A\u6587\u304C\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "prompt-has-single-blank",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u554F\u984C\u6587\u306B\u7A7A\u6B04\uFF08___\uFF09\u304C\u3061\u3087\u3046\u30691\u3064\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-requested",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6307\u5B9A\u3055\u308C\u305F\u6587\u6CD5\u9805\u76EE\u3092\u5BFE\u8C61\u306B\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-grounded",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u691C\u7D22\u3067\u53D6\u5F97\u3057\u305F\u6587\u6CD5\u77E5\u8B58\u306B\u6839\u62E0\uFF08sourceIds\uFF09\u3092\u6301\u3064\u3053\u3068"
+            },
+            {
+              "id": "rules-exist",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u53C2\u7167\u3057\u3066\u3044\u308B\u30EB\u30FC\u30EBID\u304C\u6587\u6CD5\u77E5\u8B58\u306B\u5B58\u5728\u3059\u308B\u3053\u3068"
+            },
+            {
+              "id": "difficulty-in-range",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u96E3\u6613\u5EA6\u304C A2 \u306E\u7BC4\u56F2\uFF081\u301C3\uFF09\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "topic-level-allowed",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6587\u6CD5\u9805\u76EE\u306E\u30EC\u30D9\u30EB\u304C\u5B66\u7FD2\u8005\u306B\u9069\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "answer-present",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u5B58\u5728\u3057\u3001\u8A31\u5BB9\u89E3\u7B54\u306B\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "explanation-mentions-answer",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u89E3\u8AAC\u304C\u6B63\u7B54\u306B\u8A00\u53CA\u3057\u3001\u554F\u984C\u3068\u6574\u5408\u3057\u3066\u3044\u308B\u3053\u3068"
+            },
+            {
+              "id": "choice-count",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u9078\u629E\u80A2\u304C3\u301C5\u500B\u3067\u3042\u308B\u3053\u3068"
+            },
+            {
+              "id": "choices-distinct",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u91CD\u8907\u30FB\u7A7A\u306E\u9078\u629E\u80A2\u304C\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "answer-in-choices",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u304C\u9078\u629E\u80A2\u306B\u3061\u3087\u3046\u30691\u3064\u542B\u307E\u308C\u308B\u3053\u3068"
+            },
+            {
+              "id": "single-correct-choice",
+              "kind": "deterministic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u6B63\u7B54\u306B\u306A\u308A\u3046\u308B\u9078\u629E\u80A2\u304C\u8907\u6570\u306A\u3044\u3053\u3068"
+            },
+            {
+              "id": "semantic-judge",
+              "kind": "semantic",
+              "passed": true,
+              "severity": "error",
+              "messageJa": "\u610F\u5473\u7684\u8A55\u4FA1\u3067\u554F\u984C\u304C\u898B\u3064\u304B\u3089\u306A\u3044\u3053\u3068"
+            }
+          ],
+          "semantic": {
+            "verdict": "pass",
+            "score": 0.75,
+            "rationaleJa": "Mock\u8A55\u4FA1\uFF1A\u610F\u5473\u7684\u306A\u59A5\u5F53\u6027\u306F\u5B9F\u969B\u306B\u306F\u8A55\u4FA1\u3057\u3066\u3044\u307E\u305B\u3093\u3002Foundry \u63A5\u7D9A\u6642\u306B\u30E2\u30C7\u30EB\u306B\u3088\u308B\u8A55\u4FA1\u3078\u7F6E\u304D\u63DB\u308F\u308A\u307E\u3059\u3002",
+            "evaluator": {
+              "kind": "mock",
+              "model": "mock-learning-model-v1"
+            }
+          },
+          "evaluatedAt": "2026-10-01T09:02:45.0000000\u002B00:00"
+        },
+        "id": "ps-review-rp-conv-ts-demo-weekend-1-q5"
+      }
+    ],
+    "answers": [
+      {
+        "questionId": "ps-review-rp-conv-ts-demo-weekend-1-q1",
+        "attemptId": "seed-ps-review-rp-conv-ts-demo-weekend-1-q1",
+        "answer": "a",
+        "normalizedAnswer": "a",
+        "isCorrect": true,
+        "feedbackCode": "correct",
+        "masteryBefore": 0.1856,
+        "masteryAfter": 0.3485,
+        "answeredAt": "2026-10-01T09:02:55.0000000\u002B00:00"
+      },
+      {
+        "questionId": "ps-review-rp-conv-ts-demo-weekend-1-q2",
+        "attemptId": "seed-ps-review-rp-conv-ts-demo-weekend-1-q2",
+        "answer": "di",
+        "normalizedAnswer": "di",
+        "isCorrect": true,
+        "feedbackCode": "correct",
+        "masteryBefore": 0.33,
+        "masteryAfter": 0.464,
+        "answeredAt": "2026-10-01T09:02:59.0000000\u002B00:00"
+      },
+      {
+        "questionId": "ps-review-rp-conv-ts-demo-weekend-1-q3",
+        "attemptId": "seed-ps-review-rp-conv-ts-demo-weekend-1-q3",
+        "answer": "ho",
+        "normalizedAnswer": "ho",
+        "isCorrect": true,
+        "feedbackCode": "correct",
+        "masteryBefore": 0.3409,
+        "masteryAfter": 0.4727,
+        "answeredAt": "2026-10-01T09:03:03.0000000\u002B00:00"
+      },
+      {
+        "questionId": "ps-review-rp-conv-ts-demo-weekend-1-q4",
+        "attemptId": "seed-ps-review-rp-conv-ts-demo-weekend-1-q4",
+        "answer": "a",
+        "normalizedAnswer": "a",
+        "isCorrect": true,
+        "feedbackCode": "correct",
+        "masteryBefore": 0.3485,
+        "masteryAfter": 0.4788,
+        "answeredAt": "2026-10-01T09:03:07.0000000\u002B00:00"
+      },
+      {
+        "questionId": "ps-review-rp-conv-ts-demo-weekend-1-q5",
+        "attemptId": "seed-ps-review-rp-conv-ts-demo-weekend-1-q5",
+        "answer": "di",
+        "normalizedAnswer": "di",
+        "isCorrect": true,
+        "feedbackCode": "correct",
+        "masteryBefore": 0.464,
+        "masteryAfter": 0.5712,
+        "answeredAt": "2026-10-01T09:03:11.0000000\u002B00:00"
+      }
+    ],
+    "summary": {
+      "total": 5,
+      "answered": 5,
+      "correct": 5,
+      "accuracy": 1
+    },
+    "completedAt": "2026-10-01T09:03:15.0000000\u002B00:00",
+    "userId": "local-demo-learner",
+    "schemaVersion": 1,
+    "id": "ps-review-rp-conv-ts-demo-weekend-1",
+    "createdAt": "2026-10-01T09:02:50.0000000\u002B00:00",
+    "updatedAt": "2026-10-01T09:03:16.0000000\u002B00:00"
+  }
+]

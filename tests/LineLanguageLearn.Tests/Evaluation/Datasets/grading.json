@@ -1,0 +1,14 @@
+{
+  "datasetId": "grading-v1",
+  "description": "Deterministic grading cases including normalization edge cases.",
+  "cases": [
+    { "id": "gr-mc-correct", "question": { "type": "multiple-choice", "correctAnswer": "a", "acceptedAnswers": ["a"], "choices": ["a", "di", "da", "per"] }, "answer": "a", "expectedCorrect": true, "expectedFeedback": "correct" },
+    { "id": "gr-mc-wrong", "question": { "type": "multiple-choice", "correctAnswer": "a", "acceptedAnswers": ["a"], "choices": ["a", "di", "da", "per"] }, "answer": "di", "expectedCorrect": false, "expectedFeedback": "incorrect" },
+    { "id": "gr-mc-not-offered", "question": { "type": "multiple-choice", "correctAnswer": "sono", "acceptedAnswers": ["sono"], "choices": ["ho", "hai", "abbiamo", "hanno"] }, "answer": "sono", "expectedCorrect": false, "expectedFeedback": "incorrect" },
+    { "id": "gr-cloze-case-space", "question": { "type": "cloze", "correctAnswer": "Gli", "acceptedAnswers": ["Gli"], "choices": [] }, "answer": "  gli ", "expectedCorrect": true, "expectedFeedback": "correct" },
+    { "id": "gr-cloze-apostrophe", "question": { "type": "cloze", "correctAnswer": "dall'", "acceptedAnswers": ["dall'"], "choices": [] }, "answer": "dall’", "expectedCorrect": true, "expectedFeedback": "correct" },
+    { "id": "gr-cloze-accent-missing", "question": { "type": "cloze", "correctAnswer": "è", "acceptedAnswers": ["è"], "choices": [] }, "answer": "e", "expectedCorrect": false, "expectedFeedback": "accent-mismatch" },
+    { "id": "gr-cloze-alternative", "question": { "type": "cloze", "correctAnswer": "sono andato", "acceptedAnswers": ["sono andato", "sono andata"], "choices": [] }, "answer": "Sono andata.", "expectedCorrect": true, "expectedFeedback": "correct" },
+    { "id": "gr-cloze-empty", "question": { "type": "cloze", "correctAnswer": "di", "acceptedAnswers": ["di"], "choices": [] }, "answer": "", "expectedCorrect": false, "expectedFeedback": "incorrect" }
+  ]
+}

@@ -1,0 +1,229 @@
+[
+  {
+    "tutorProfileId": "tutor-it-giulia",
+    "channel": "demo-seed",
+    "theme": "\u9031\u672B\u306E\u51FA\u6765\u4E8B",
+    "focusTopicIds": [
+      "it-verb-a-infinitive",
+      "it-passato-prossimo-auxiliary"
+    ],
+    "status": "ended",
+    "messages": [
+      {
+        "sessionId": "ts-demo-weekend",
+        "role": "tutor",
+        "text": "Ciao! Sono Giulia, la tua insegnante di italiano. Com\u0027\u00E8 andato il weekend? Che cosa hai fatto?",
+        "externalEventId": null,
+        "corrections": [],
+        "retrievedSourceIds": [],
+        "toolCalls": [],
+        "id": "msg-1",
+        "createdAt": "2026-10-01T09:01:42.0000000\u002B00:00",
+        "updatedAt": "2026-10-01T09:01:42.0000000\u002B00:00"
+      },
+      {
+        "sessionId": "ts-demo-weekend",
+        "role": "learner",
+        "text": "Ciao Giulia! Sabato ho andato al mare con i miei amici.",
+        "externalEventId": "demo-event-1",
+        "corrections": [],
+        "retrievedSourceIds": [],
+        "toolCalls": [],
+        "id": "msg-2",
+        "createdAt": "2026-10-01T09:01:44.0000000\u002B00:00",
+        "updatedAt": "2026-10-01T09:01:44.0000000\u002B00:00"
+      },
+      {
+        "sessionId": "ts-demo-weekend",
+        "role": "tutor",
+        "text": "Capisco! Si dice: \u00ABsono andato/a\u00BB. Quando hai cominciato a studiare l\u0027italiano?\n\n\uD83D\uDCA1\u300Cho andato\u300D\u2192\u300Csono andato/a\u300D\uFF1A\u79FB\u52D5\u30FB\u72B6\u614B\u5909\u5316\u306E\u81EA\u52D5\u8A5E\uFF08andare\u3001venire\u3001partire\u3001arrivare\u3001uscire\u3001tornare\u3001nascere\u3001restare \u306A\u3069\uFF09\u306F essere\u3002",
+        "externalEventId": null,
+        "corrections": [
+          {
+            "grammarTopicId": "it-passato-prossimo-auxiliary",
+            "incorrect": "ho andato",
+            "suggestion": "sono andato/a",
+            "explanationJa": "\u79FB\u52D5\u30FB\u72B6\u614B\u5909\u5316\u306E\u81EA\u52D5\u8A5E\uFF08andare\u3001venire\u3001partire\u3001arrivare\u3001uscire\u3001tornare\u3001nascere\u3001restare \u306A\u3069\uFF09\u306F essere\u3002"
+          }
+        ],
+        "retrievedSourceIds": [
+          "it-passato-prossimo-auxiliary",
+          "src-original-it-passato-prossimo-auxiliary"
+        ],
+        "toolCalls": [
+          {
+            "callId": "msg-2-call1",
+            "name": "get_learning_profile",
+            "status": "succeeded",
+            "durationMs": 0,
+            "errorCode": null
+          },
+          {
+            "callId": "msg-2-call2",
+            "name": "get_recent_mistakes",
+            "status": "succeeded",
+            "durationMs": 0,
+            "errorCode": null
+          },
+          {
+            "callId": "msg-2-call3",
+            "name": "record_learning_observation",
+            "status": "succeeded",
+            "durationMs": 0,
+            "errorCode": null
+          },
+          {
+            "callId": "msg-2-call4",
+            "name": "search_grammar_rules",
+            "status": "succeeded",
+            "durationMs": 0,
+            "errorCode": null
+          }
+        ],
+        "id": "msg-3",
+        "createdAt": "2026-10-01T09:01:48.0000000\u002B00:00",
+        "updatedAt": "2026-10-01T09:01:48.0000000\u002B00:00"
+      },
+      {
+        "sessionId": "ts-demo-weekend",
+        "role": "learner",
+        "text": "S\u00EC, e ho mangiato una pizza buonissima. Domenica ho finito a studiare alle cinque.",
+        "externalEventId": "demo-event-2",
+        "corrections": [],
+        "retrievedSourceIds": [],
+        "toolCalls": [],
+        "id": "msg-4",
+        "createdAt": "2026-10-01T09:01:50.0000000\u002B00:00",
+        "updatedAt": "2026-10-01T09:01:50.0000000\u002B00:00"
+      },
+      {
+        "sessionId": "ts-demo-weekend",
+        "role": "tutor",
+        "text": "Che bello! Si dice: \u00ABfinito di studiare\u00BB. E dopo, a che ora sei tornato/a a casa?\n\n\uD83D\uDCA1\u300Cfinito a studiare\u300D\u2192\u300Cfinito di studiare\u300D\uFF1Afinire\uFF08\u7D42\u3048\u308B\uFF09\u3001smettere\uFF08\u3084\u3081\u308B\uFF09\u306F di \u002B \u4E0D\u5B9A\u8A5E\u3002",
+        "externalEventId": null,
+        "corrections": [
+          {
+            "grammarTopicId": "it-verb-di-infinitive",
+            "incorrect": "finito a studiare",
+            "suggestion": "finito di studiare",
+            "explanationJa": "finire\uFF08\u7D42\u3048\u308B\uFF09\u3001smettere\uFF08\u3084\u3081\u308B\uFF09\u306F di \u002B \u4E0D\u5B9A\u8A5E\u3002"
+          }
+        ],
+        "retrievedSourceIds": [
+          "it-verb-di-infinitive",
+          "src-original-it-verb-di-infinitive"
+        ],
+        "toolCalls": [
+          {
+            "callId": "msg-4-call1",
+            "name": "record_learning_observation",
+            "status": "succeeded",
+            "durationMs": 0,
+            "errorCode": null
+          },
+          {
+            "callId": "msg-4-call2",
+            "name": "search_grammar_rules",
+            "status": "succeeded",
+            "durationMs": 0,
+            "errorCode": null
+          },
+          {
+            "callId": "msg-4-call3",
+            "name": "record_learning_observation",
+            "status": "succeeded",
+            "durationMs": 0,
+            "errorCode": null
+          }
+        ],
+        "id": "msg-5",
+        "createdAt": "2026-10-01T09:01:56.0000000\u002B00:00",
+        "updatedAt": "2026-10-01T09:01:56.0000000\u002B00:00"
+      },
+      {
+        "sessionId": "ts-demo-weekend",
+        "role": "learner",
+        "text": "Adesso comincio di studiare il tedesco, ma \u00E8 difficile.",
+        "externalEventId": "demo-event-3",
+        "corrections": [],
+        "retrievedSourceIds": [],
+        "toolCalls": [],
+        "id": "msg-6",
+        "createdAt": "2026-10-01T09:01:58.0000000\u002B00:00",
+        "updatedAt": "2026-10-01T09:01:58.0000000\u002B00:00"
+      },
+      {
+        "sessionId": "ts-demo-weekend",
+        "role": "tutor",
+        "text": "Capisco! Si dice: \u00ABcomincio a studiare\u00BB. A che ora hai finito di lavorare ieri?\n\n\uD83D\uDCA1\u300Ccomincio di studiare\u300D\u2192\u300Ccomincio a studiare\u300D\uFF1Acominciare / iniziare\uFF08\u59CB\u3081\u308B\uFF09\u3001continuare\uFF08\u7D9A\u3051\u308B\uFF09\u306F a \u002B \u4E0D\u5B9A\u8A5E\u3002",
+        "externalEventId": null,
+        "corrections": [
+          {
+            "grammarTopicId": "it-verb-a-infinitive",
+            "incorrect": "comincio di studiare",
+            "suggestion": "comincio a studiare",
+            "explanationJa": "cominciare / iniziare\uFF08\u59CB\u3081\u308B\uFF09\u3001continuare\uFF08\u7D9A\u3051\u308B\uFF09\u306F a \u002B \u4E0D\u5B9A\u8A5E\u3002"
+          }
+        ],
+        "retrievedSourceIds": [
+          "it-verb-a-infinitive",
+          "src-original-it-verb-a-infinitive"
+        ],
+        "toolCalls": [
+          {
+            "callId": "msg-6-call1",
+            "name": "record_learning_observation",
+            "status": "succeeded",
+            "durationMs": 0,
+            "errorCode": null
+          },
+          {
+            "callId": "msg-6-call2",
+            "name": "search_grammar_rules",
+            "status": "succeeded",
+            "durationMs": 0,
+            "errorCode": null
+          }
+        ],
+        "id": "msg-7",
+        "createdAt": "2026-10-01T09:02:02.0000000\u002B00:00",
+        "updatedAt": "2026-10-01T09:02:02.0000000\u002B00:00"
+      },
+      {
+        "sessionId": "ts-demo-weekend",
+        "role": "learner",
+        "text": "Stasera ho voglia di mangiare il sushi.",
+        "externalEventId": "demo-event-4",
+        "corrections": [],
+        "retrievedSourceIds": [],
+        "toolCalls": [],
+        "id": "msg-8",
+        "createdAt": "2026-10-01T09:02:04.0000000\u002B00:00",
+        "updatedAt": "2026-10-01T09:02:04.0000000\u002B00:00"
+      },
+      {
+        "sessionId": "ts-demo-weekend",
+        "role": "tutor",
+        "text": "Che bello! Raccontami ancora: che cosa fai questo fine settimana?",
+        "externalEventId": null,
+        "corrections": [],
+        "retrievedSourceIds": [],
+        "toolCalls": [],
+        "id": "msg-9",
+        "createdAt": "2026-10-01T09:02:06.0000000\u002B00:00",
+        "updatedAt": "2026-10-01T09:02:06.0000000\u002B00:00"
+      }
+    ],
+    "agent": {
+      "kind": "mock",
+      "model": "mock-tutor-agent-v1"
+    },
+    "endedAt": "2026-10-01T09:02:08.0000000\u002B00:00",
+    "analysisWorkflowRunId": "wf-post-conversation-analysis-ts-demo-weekend",
+    "userId": "local-demo-learner",
+    "schemaVersion": 1,
+    "id": "ts-demo-weekend",
+    "createdAt": "2026-10-01T09:01:43.0000000\u002B00:00",
+    "updatedAt": "2026-10-01T09:02:10.0000000\u002B00:00"
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "grammar-error",
+              "possible-misunderstanding",
+              "correct-use",
+              "new-expression",
+              "needs-review"
+            ]
+          },
+          "grammarTopicId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "messageId": {
+            "type": "string"
+          },
+          "evidenceText": {
+            "type": "string"
+          },
+          "correction": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "explanationJa": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "required": [
+          "kind",
+          "grammarTopicId",
+          "messageId",
+          "evidenceText",
+          "correction",
+          "explanationJa",
+          "confidence"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "summaryJa": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "findings",
+    "summaryJa"
+  ],
+  "additionalProperties": false
+}

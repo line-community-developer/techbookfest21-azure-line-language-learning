@@ -1,0 +1,87 @@
+{
+  "datasetId": "question-quality-v1",
+  "description": "Hand-verified generated-question cases for the deterministic quality gate. Expected labels were checked by a human against the grammar knowledge base.",
+  "cases": [
+    {
+      "id": "qq-valid-mc",
+      "level": "A2",
+      "topicIds": ["it-verb-a-infinitive"],
+      "question": { "type": "multiple-choice", "grammarTopicId": "it-verb-a-infinitive", "difficulty": 2, "instructionJa": "空欄に入る正しい語を選んでください。", "prompt": "Ho cominciato ___ lavorare a giugno.", "choices": ["a", "di", "da", "per"], "correctAnswer": "a", "acceptedAnswers": ["a"], "explanationJa": "cominciare は a + 不定詞です。正解は a です。", "ruleIds": ["it-verb-a-infinitive-r1"], "sourceIds": ["it-verb-a-infinitive", "src-original-it-verb-a-infinitive"] },
+      "expectedStatus": "passed",
+      "expectedFailedChecks": []
+    },
+    {
+      "id": "qq-valid-cloze",
+      "level": "A2",
+      "topicIds": ["it-passato-prossimo-auxiliary"],
+      "question": { "type": "cloze", "grammarTopicId": "it-passato-prossimo-auxiliary", "difficulty": 2, "instructionJa": "空欄に入る語を入力してください。", "prompt": "Ieri Marta ___ partita per Roma.", "choices": [], "correctAnswer": "è", "acceptedAnswers": ["è"], "explanationJa": "partire は essere をとるので è です。", "ruleIds": ["it-passato-prossimo-auxiliary-r2"], "sourceIds": ["it-passato-prossimo-auxiliary"] },
+      "expectedStatus": "passed",
+      "expectedFailedChecks": []
+    },
+    {
+      "id": "qq-answer-missing-from-choices",
+      "level": "A2",
+      "topicIds": ["it-verb-di-infinitive"],
+      "question": { "type": "multiple-choice", "grammarTopicId": "it-verb-di-infinitive", "difficulty": 2, "instructionJa": "選んでください。", "prompt": "Ho finito ___ mangiare.", "choices": ["a", "da", "per", "in"], "correctAnswer": "di", "acceptedAnswers": ["di"], "explanationJa": "finire は di です。", "ruleIds": ["it-verb-di-infinitive-r1"], "sourceIds": ["it-verb-di-infinitive"] },
+      "expectedStatus": "failed",
+      "expectedFailedChecks": ["answer-in-choices", "single-correct-choice"]
+    },
+    {
+      "id": "qq-two-correct-choices",
+      "level": "A2",
+      "topicIds": ["it-andare-in"],
+      "question": { "type": "multiple-choice", "grammarTopicId": "it-andare-in", "difficulty": 1, "instructionJa": "選んでください。", "prompt": "Vado ___ treno.", "choices": ["in", "col", "a", "da"], "correctAnswer": "in", "acceptedAnswers": ["in", "col"], "explanationJa": "交通手段は in + 乗り物。正解は in です。", "ruleIds": ["it-andare-in-r2"], "sourceIds": ["it-andare-in"] },
+      "expectedStatus": "failed",
+      "expectedFailedChecks": ["single-correct-choice"]
+    },
+    {
+      "id": "qq-duplicate-choices",
+      "level": "A2",
+      "topicIds": ["it-piacere"],
+      "question": { "type": "multiple-choice", "grammarTopicId": "it-piacere", "difficulty": 2, "instructionJa": "選んでください。", "prompt": "Mi ___ i libri.", "choices": ["piacciono", "Piacciono", "piace", "piaccio"], "correctAnswer": "piacciono", "acceptedAnswers": ["piacciono"], "explanationJa": "複数なので piacciono。", "ruleIds": ["it-piacere-r1"], "sourceIds": ["it-piacere"] },
+      "expectedStatus": "failed",
+      "expectedFailedChecks": ["choices-distinct", "answer-in-choices", "single-correct-choice"]
+    },
+    {
+      "id": "qq-explanation-inconsistent",
+      "level": "A2",
+      "topicIds": ["it-avere-voglia-di"],
+      "question": { "type": "cloze", "grammarTopicId": "it-avere-voglia-di", "difficulty": 2, "instructionJa": "入力してください。", "prompt": "Ho voglia ___ dormire.", "choices": [], "correctAnswer": "di", "acceptedAnswers": ["di"], "explanationJa": "voglia の後は a を使います。", "ruleIds": ["it-avere-voglia-di-r1"], "sourceIds": ["it-avere-voglia-di"] },
+      "expectedStatus": "failed",
+      "expectedFailedChecks": ["explanation-mentions-answer"]
+    },
+    {
+      "id": "qq-wrong-topic",
+      "level": "A2",
+      "topicIds": ["it-verb-a-infinitive"],
+      "question": { "type": "cloze", "grammarTopicId": "it-piacere", "difficulty": 2, "instructionJa": "入力してください。", "prompt": "Mi ___ la pizza.", "choices": [], "correctAnswer": "piace", "acceptedAnswers": ["piace"], "explanationJa": "単数なので piace。", "ruleIds": ["it-piacere-r1"], "sourceIds": ["it-piacere"] },
+      "expectedStatus": "failed",
+      "expectedFailedChecks": ["topic-requested", "topic-grounded", "rules-exist", "topic-level-allowed"]
+    },
+    {
+      "id": "qq-invented-source",
+      "level": "A2",
+      "topicIds": ["it-verb-di-infinitive"],
+      "question": { "type": "cloze", "grammarTopicId": "it-verb-di-infinitive", "difficulty": 2, "instructionJa": "入力してください。", "prompt": "Ho deciso ___ partire.", "choices": [], "correctAnswer": "di", "acceptedAnswers": ["di"], "explanationJa": "decidere は di。", "ruleIds": ["it-verb-di-infinitive-r9"], "sourceIds": ["it-verb-di-infinitive", "web:random-blog"] },
+      "expectedStatus": "failed",
+      "expectedFailedChecks": ["topic-grounded", "rules-exist"]
+    },
+    {
+      "id": "qq-too-hard-for-a1",
+      "level": "A1",
+      "topicIds": ["it-reflexive-passato"],
+      "question": { "type": "multiple-choice", "grammarTopicId": "it-reflexive-passato", "difficulty": 4, "instructionJa": "選んでください。", "prompt": "Ci ___ divertiti.", "choices": ["siamo", "abbiamo", "sono", "hanno"], "correctAnswer": "siamo", "acceptedAnswers": ["siamo"], "explanationJa": "再帰動詞は essere。正解は siamo。", "ruleIds": ["it-reflexive-passato-r1"], "sourceIds": ["it-reflexive-passato"] },
+      "expectedStatus": "failed",
+      "expectedFailedChecks": ["difficulty-in-range"]
+    },
+    {
+      "id": "qq-no-blank",
+      "level": "A2",
+      "topicIds": ["it-definite-articles"],
+      "question": { "type": "cloze", "grammarTopicId": "it-definite-articles", "difficulty": 1, "instructionJa": "入力してください。", "prompt": "Lo studente legge.", "choices": [], "correctAnswer": "lo", "acceptedAnswers": ["lo"], "explanationJa": "lo を使います。", "ruleIds": ["it-definite-articles-r1"], "sourceIds": ["it-definite-articles"] },
+      "expectedStatus": "failed",
+      "expectedFailedChecks": ["prompt-has-single-blank"]
+    }
+  ]
+}
+

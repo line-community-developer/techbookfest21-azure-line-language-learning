@@ -1,0 +1,169 @@
+name: Initialize Azure Cosmos DB seed data
+
+on:
+  workflow_dispatch:
+    inputs:
+      seed_name:
+        description: Existing directory name under dev-seeds/
+        required: true
+        type: string
+      function_app_name:
+        description: Confirm the Azure Functions app name configured in AZURE_FUNCTIONAPP_NAME
+        required: true
+        type: string
+      force:
+        description: Create or overwrite seed items; keep items absent from the seed (not atomic)
+        required: false
+        default: false
+        type: boolean
+
+concurrency:
+  group: swallowkit-functions-${{ github.repository }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  initialize:
+    runs-on: ubuntu-latest
+    name: Validate, initialize, and restore Functions
+    steps:
+      - uses: actions/checkout@v4
+      - name: Confirm trusted branch
+        run: |
+          if [ "$GITHUB_REF" != "refs/heads/main" ]; then
+            echo "::error::Bootstrap initialization is allowed only from main."
+            exit 1
+          fi
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install dependencies
+        run: |
+          pnpm install --frozen-lockfile
+
+      - name: Build shared package
+        run: |
+          pnpm --filter shared run build
+      - name: Confirm Function App name
+        env:
+          CONFIRMED_FUNCTION_APP_NAME: ${{ inputs.function_app_name }}
+          CONFIGURED_FUNCTION_APP_NAME: ${{ secrets.AZURE_FUNCTIONAPP_NAME }}
+        run: |
+          if [ -z "$CONFIGURED_FUNCTION_APP_NAME" ]; then
+            echo "::error::AZURE_FUNCTIONAPP_NAME is not configured."
+            exit 1
+          fi
+          if ! [[ "$CONFIRMED_FUNCTION_APP_NAME" =~ ^[A-Za-z0-9-]{2,60}$ ]]; then
+            echo "::error::The confirmed Function App name has an invalid format."
+            exit 1
+          fi
+          if [ "$CONFIRMED_FUNCTION_APP_NAME" != "$CONFIGURED_FUNCTION_APP_NAME" ]; then
+            echo "::error::The confirmed Function App name does not match AZURE_FUNCTIONAPP_NAME."
+            exit 1
+          fi
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Build ordinary Functions package
+        run: dotnet publish ./functions -c Release -o "$RUNNER_TEMP/functions-normal"
+      - name: Generate temporary initialization token
+        id: bootstrap-token
+        run: |
+          node -e 'const fs=require("node:fs");const crypto=require("node:crypto");const token=crypto.randomUUID();console.log("::add-mask::"+token);const hash=crypto.createHash("sha256").update(token,"utf8").digest("hex");const expires=Math.floor(Date.now()/1000)+900;fs.appendFileSync(process.env.GITHUB_ENV,"BOOTSTRAP_TOKEN="+token+"\n");fs.appendFileSync(process.env.GITHUB_OUTPUT,"hash="+hash+"\n");fs.appendFileSync(process.env.GITHUB_OUTPUT,"expires="+expires+"\n");'
+
+      - name: Validate selected seed and generate temporary Function
+        env:
+          SEED_NAME: ${{ inputs.seed_name }}
+          BOOTSTRAP_FORCE: ${{ inputs.force && 'true' || 'false' }}
+          BOOTSTRAP_TOKEN_HASH: ${{ steps.bootstrap-token.outputs.hash }}
+          BOOTSTRAP_EXPIRES_AT: ${{ steps.bootstrap-token.outputs.expires }}
+        run: node .github/scripts/prepare-cosmos-bootstrap.mjs "$SEED_NAME"
+
+      - name: Build temporary Functions package
+        run: dotnet publish ./functions -c Release -o "$RUNNER_TEMP/functions-bootstrap"
+      - name: Mark temporary deployment attempt
+        id: temporary-attempt
+        run: echo "attempted=true" >> "$GITHUB_OUTPUT"
+
+      - name: Deploy temporary Functions package
+        id: deploy-temporary
+        uses: Azure/functions-action@v1
+        with:
+          app-name: ${{ secrets.AZURE_FUNCTIONAPP_NAME }}
+          package: "${{ runner.temp }}/functions-bootstrap"
+          publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
+          sku: flexconsumption
+
+      - name: Initialize Cosmos DB
+        if: success()
+        env:
+          FUNCTION_APP_URL: ${{ steps.deploy-temporary.outputs.app-url }}
+        run: |
+          cleanup_bootstrap_token() {
+            unset BOOTSTRAP_TOKEN
+            echo "BOOTSTRAP_TOKEN=" >> "$GITHUB_ENV"
+          }
+          trap cleanup_bootstrap_token EXIT
+          if [[ "$FUNCTION_APP_URL" != https://* ]]; then
+            echo "::error::Deployment did not return a valid HTTPS Function App URL."
+            exit 1
+          fi
+          BOOTSTRAP_URL="${FUNCTION_APP_URL%/}/api/seed-bootstrap"
+          ready=false
+          for attempt in {1..12}; do
+            if status=$(curl --silent --show-error --output /dev/null --write-out '%{http_code}' \
+              --connect-timeout 5 --max-time 10 \
+              --header "Authorization: Bearer $BOOTSTRAP_TOKEN" \
+              "$BOOTSTRAP_URL"); then
+              if [ "$status" = "200" ]; then
+                ready=true
+                break
+              fi
+              if [ "$status" != "404" ] && [ "$status" != "502" ] && [ "$status" != "503" ] && [ "$status" != "504" ]; then
+                echo "::error::Bootstrap readiness check failed with HTTP $status; no initialization POST was sent."
+                exit 1
+              fi
+              echo "Bootstrap route is not ready (HTTP $status; attempt $attempt/12)."
+            else
+              echo "Bootstrap readiness request failed (attempt $attempt/12)."
+            fi
+            if [ "$attempt" -lt 12 ]; then sleep 5; fi
+          done
+          if [ "$ready" != "true" ]; then
+            echo "::error::Bootstrap route did not become ready; no initialization POST was sent. Check the deployed hostname, Function registration, startup logs, and network access."
+            exit 1
+          fi
+          if ! curl --fail-with-body --silent --show-error --max-time 210 \
+            --request POST \
+            --header "Authorization: Bearer $BOOTSTRAP_TOKEN" \
+            "$BOOTSTRAP_URL"; then
+            echo "::error::Seed initialization failed or its write outcome is indeterminate. The workflow will restore the ordinary Functions package; retry only after reviewing the reported partial result."
+            exit 1
+          fi
+
+      - name: Restore ordinary Functions package
+        id: restore-normal
+        if: always() && steps.temporary-attempt.outputs.attempted == 'true'
+        uses: Azure/functions-action@v1
+        with:
+          app-name: ${{ secrets.AZURE_FUNCTIONAPP_NAME }}
+          package: "${{ runner.temp }}/functions-normal"
+          publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
+          sku: flexconsumption
+
+      - name: Report failed restoration
+        if: always() && steps.temporary-attempt.outputs.attempted == 'true' && steps.restore-normal.outcome != 'success'
+        run: |
+          echo "::error::The ordinary Functions package could not be restored. Manually redeploy the ordinary Functions package with the existing AZURE_FUNCTIONAPP_PUBLISH_PROFILE before considering the app recovered."
+          exit 1

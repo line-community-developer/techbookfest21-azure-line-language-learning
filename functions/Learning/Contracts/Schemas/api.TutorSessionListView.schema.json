@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "sessions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "tutor": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "avatarEmoji": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "avatarEmoji"
+            ],
+            "additionalProperties": false
+          },
+          "channel": {
+            "type": "string",
+            "enum": [
+              "local-simulator",
+              "line",
+              "demo-seed"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "active",
+              "ended"
+            ]
+          },
+          "theme": {
+            "type": "string"
+          },
+          "focusTopics": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "topicId": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "titleJa": {
+                  "type": "string"
+                },
+                "level": {
+                  "type": "string",
+                  "enum": [
+                    "A1",
+                    "A2",
+                    "B1",
+                    "B2",
+                    "C1",
+                    "C2"
+                  ]
+                }
+              },
+              "required": [
+                "topicId",
+                "title",
+                "titleJa",
+                "level"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "agent": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "mock",
+                  "foundry",
+                  "unavailable"
+                ]
+              },
+              "model": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "model"
+            ],
+            "additionalProperties": false
+          },
+          "analysisWorkflowRunId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "messageCount": {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          }
+        },
+        "required": [
+          "id",
+          "tutor",
+          "channel",
+          "status",
+          "theme",
+          "focusTopics",
+          "agent",
+          "analysisWorkflowRunId",
+          "createdAt",
+          "messageCount"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "sessions"
+  ],
+  "additionalProperties": false
+}

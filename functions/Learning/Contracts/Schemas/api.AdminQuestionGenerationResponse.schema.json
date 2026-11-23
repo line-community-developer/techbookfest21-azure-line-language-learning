@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "topicId": {
+      "type": "string"
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "multiple-choice",
+                  "cloze"
+                ]
+              },
+              "grammarTopicId": {
+                "type": "string"
+              },
+              "difficulty": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 5
+              },
+              "instructionJa": {
+                "type": "string"
+              },
+              "prompt": {
+                "type": "string"
+              },
+              "choices": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "correctAnswer": {
+                "type": "string"
+              },
+              "acceptedAnswers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "explanationJa": {
+                "type": "string"
+              },
+              "ruleIds": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "sourceIds": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "type",
+              "grammarTopicId",
+              "difficulty",
+              "instructionJa",
+              "prompt",
+              "choices",
+              "correctAnswer",
+              "acceptedAnswers",
+              "explanationJa",
+              "ruleIds",
+              "sourceIds"
+            ],
+            "additionalProperties": false
+          },
+          "generationId": {
+            "type": "string"
+          },
+          "provider": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "mock",
+                  "foundry",
+                  "unavailable"
+                ]
+              },
+              "model": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "model"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "question",
+          "generationId",
+          "provider"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "topicId",
+    "questions"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "string"
+    },
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "grammarTopicId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sourceType": {
+      "type": "string",
+      "enum": [
+        "practice",
+        "conversation"
+      ]
+    },
+    "sourceId": {
+      "type": "string"
+    },
+    "sourceItemId": {
+      "type": "string"
+    },
+    "observationType": {
+      "type": "string",
+      "enum": [
+        "correct-answer",
+        "incorrect-answer",
+        "grammar-error",
+        "possible-misunderstanding",
+        "correct-use",
+        "new-expression"
+      ]
+    },
+    "certainty": {
+      "type": "string",
+      "enum": [
+        "deterministic",
+        "ai-inferred"
+      ]
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "evidence": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "expected": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "actual": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "text",
+        "expected",
+        "actual"
+      ],
+      "additionalProperties": false
+    },
+    "detectedBy": {
+      "type": "string"
+    },
+    "occurredAt": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "userId",
+    "schemaVersion",
+    "grammarTopicId",
+    "sourceType",
+    "sourceId",
+    "sourceItemId",
+    "observationType",
+    "certainty",
+    "confidence",
+    "evidence",
+    "detectedBy",
+    "occurredAt"
+  ],
+  "additionalProperties": false
+}

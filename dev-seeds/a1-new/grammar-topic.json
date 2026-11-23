@@ -1,0 +1,1201 @@
+[
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Articoli determinativi",
+    "titleJa": "\u5B9A\u51A0\u8A5E il / lo / la / l\u0027 / i / gli / le",
+    "level": "A1",
+    "category": "article",
+    "description": "Italian definite articles agree in gender and number and change form depending on the first sound of the next word.",
+    "usageJa": "\u5B9A\u51A0\u8A5E\u306F\u540D\u8A5E\u306E\u6027\u30FB\u6570\u306B\u5408\u308F\u305B\u3001\u3055\u3089\u306B\u6B21\u306E\u8A9E\u306E\u6700\u521D\u306E\u97F3\u3067\u5F62\u304C\u5909\u308F\u308A\u307E\u3059\u3002\u7279\u5B9A\u306E\u3082\u306E\u30FB\u8A71\u3057\u624B\u3068\u805E\u304D\u624B\u304C\u5206\u304B\u3063\u3066\u3044\u308B\u3082\u306E\u306B\u4ED8\u3051\u307E\u3059\u3002",
+    "rules": [
+      {
+        "id": "it-definite-articles-r1",
+        "summaryJa": "\u7537\u6027\u5358\u6570\uFF1A\u5B50\u97F3\u306E\u524D\u306F il\u3001s\u002B\u5B50\u97F3\u30FBz\u30FBgn\u30FBps\u30FBx\u30FBy \u306E\u524D\u306F lo\u3001\u6BCD\u97F3\u306E\u524D\u306F l\u0027\u3002",
+        "pattern": "il / lo / l\u0027 \u002B \u7537\u6027\u5358\u6570\u540D\u8A5E"
+      },
+      {
+        "id": "it-definite-articles-r2",
+        "summaryJa": "\u5973\u6027\u5358\u6570\uFF1A\u5B50\u97F3\u306E\u524D\u306F la\u3001\u6BCD\u97F3\u306E\u524D\u306F l\u0027\u3002",
+        "pattern": "la / l\u0027 \u002B \u5973\u6027\u5358\u6570\u540D\u8A5E"
+      },
+      {
+        "id": "it-definite-articles-r3",
+        "summaryJa": "\u7537\u6027\u8907\u6570\uFF1Ail \u2192 i\u3001lo / l\u0027 \u2192 gli\u3002\u5973\u6027\u8907\u6570\u306F\u5E38\u306B le\u3002",
+        "pattern": "i / gli / le \u002B \u8907\u6570\u540D\u8A5E"
+      }
+    ],
+    "examples": [
+      {
+        "id": "it-definite-articles-ex1",
+        "text": "Il libro \u00E8 sul tavolo.",
+        "translationJa": "\u305D\u306E\u672C\u306F\u30C6\u30FC\u30D6\u30EB\u306E\u4E0A\u306B\u3042\u308A\u307E\u3059\u3002",
+        "noteJa": null
+      },
+      {
+        "id": "it-definite-articles-ex2",
+        "text": "Lo studente legge l\u0027articolo.",
+        "translationJa": "\u305D\u306E\u5B66\u751F\u306F\u8A18\u4E8B\u3092\u8AAD\u3093\u3067\u3044\u307E\u3059\u3002",
+        "noteJa": "studente \u306F s\u002B\u5B50\u97F3\u3067\u59CB\u307E\u308B\u306E\u3067 lo\u3002"
+      },
+      {
+        "id": "it-definite-articles-ex3",
+        "text": "Gli amici di Marta sono simpatici.",
+        "translationJa": "\u30DE\u30EB\u30BF\u306E\u53CB\u4EBA\u305F\u3061\u306F\u611F\u3058\u304C\u3044\u3044\u3067\u3059\u3002",
+        "noteJa": "amici \u306F\u6BCD\u97F3\u3067\u59CB\u307E\u308B\u7537\u6027\u8907\u6570\u306A\u306E\u3067 gli\u3002"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "id": "it-definite-articles-m1",
+        "incorrect": "il studente",
+        "correct": "lo studente",
+        "explanationJa": "s\u002B\u5B50\u97F3\u3067\u59CB\u307E\u308B\u7537\u6027\u540D\u8A5E\u306B\u306F il \u3067\u306F\u306A\u304F lo \u3092\u4F7F\u3044\u307E\u3059\u3002"
+      },
+      {
+        "id": "it-definite-articles-m2",
+        "incorrect": "i amici",
+        "correct": "gli amici",
+        "explanationJa": "\u6BCD\u97F3\u3067\u59CB\u307E\u308B\u7537\u6027\u8907\u6570\u540D\u8A5E\u306B\u306F gli \u3092\u4F7F\u3044\u307E\u3059\u3002"
+      }
+    ],
+    "relatedTopics": [
+      "it-indefinite-articles",
+      "it-articulated-prepositions"
+    ],
+    "keywords": [
+      "\u5B9A\u51A0\u8A5E",
+      "\u51A0\u8A5E",
+      "articolo determinativo",
+      "il",
+      "lo",
+      "la",
+      "gli",
+      "le"
+    ],
+    "sourceReferences": [
+      {
+        "id": "src-original-it-definite-articles",
+        "kind": "original-note",
+        "label": "\u672C\u30A2\u30D7\u30EA\u72EC\u81EA\u306E\u5B66\u7FD2\u30E1\u30E2\uFF08\u751F\u6210AI\u306E\u652F\u63F4\u3067\u4F5C\u6210\u30FB\u5C02\u9580\u5BB6\u306B\u3088\u308B\u76E3\u4FEE\u524D\uFF09",
+        "url": null
+      }
+    ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "\u30CD\u30A4\u30C6\u30A3\u30D6\u8B1B\u5E2B\u306B\u3088\u308B\u76E3\u4FEE\u524D\u306E\u30C9\u30E9\u30D5\u30C8\u6559\u6750\u3067\u3059\u3002",
+    "id": "it-definite-articles"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Articoli indeterminativi",
+    "titleJa": "\u4E0D\u5B9A\u51A0\u8A5E un / uno / una / un\u0027",
+    "level": "A1",
+    "category": "article",
+    "description": "Indefinite articles introduce a non-specific singular noun; the masculine form depends on the next sound, and only the feminine form takes an apostrophe.",
+    "usageJa": "\u4E0D\u5B9A\u51A0\u8A5E\u306F\u300C\u3042\u308B\u301C\u3001\u3072\u3068\u3064\u306E\u301C\u300D\u3092\u8868\u3057\u3001\u5358\u6570\u540D\u8A5E\u306B\u3060\u3051\u4ED8\u304D\u307E\u3059\u3002\u7537\u6027\u5F62\u306F un / uno\u3001\u5973\u6027\u5F62\u306F una / un\u0027 \u3067\u3059\u3002",
+    "rules": [
+      {
+        "id": "it-indefinite-articles-r1",
+        "summaryJa": "\u7537\u6027\uFF1A\u901A\u5E38\u306F un\u3001s\u002B\u5B50\u97F3\u30FBz\u30FBgn\u30FBps \u306A\u3069\u306E\u524D\u306F uno\u3002\u6BCD\u97F3\u306E\u524D\u3067\u3082 un\uFF08\u30A2\u30DD\u30B9\u30C8\u30ED\u30D5\u30A3\u306A\u3057\uFF09\u3002",
+        "pattern": "un / uno \u002B \u7537\u6027\u5358\u6570\u540D\u8A5E"
+      },
+      {
+        "id": "it-indefinite-articles-r2",
+        "summaryJa": "\u5973\u6027\uFF1A\u5B50\u97F3\u306E\u524D\u306F una\u3001\u6BCD\u97F3\u306E\u524D\u306F un\u0027\uFF08\u30A2\u30DD\u30B9\u30C8\u30ED\u30D5\u30A3\u3042\u308A\uFF09\u3002",
+        "pattern": "una / un\u0027 \u002B \u5973\u6027\u5358\u6570\u540D\u8A5E"
+      }
+    ],
+    "examples": [
+      {
+        "id": "it-indefinite-articles-ex1",
+        "text": "Vorrei un espresso, per favore.",
+        "translationJa": "\u30A8\u30B9\u30D7\u30EC\u30C3\u30BD\u3092\u3072\u3068\u3064\u304A\u9858\u3044\u3057\u307E\u3059\u3002",
+        "noteJa": "espresso \u306F\u7537\u6027\u540D\u8A5E\u306A\u306E\u3067\u6BCD\u97F3\u306E\u524D\u3067\u3082 un\u3002"
+      },
+      {
+        "id": "it-indefinite-articles-ex2",
+        "text": "C\u0027\u00E8 uno studente nuovo.",
+        "translationJa": "\u65B0\u3057\u3044\u5B66\u751F\u304C\u3072\u3068\u308A\u3044\u307E\u3059\u3002",
+        "noteJa": null
+      },
+      {
+        "id": "it-indefinite-articles-ex3",
+        "text": "Ho un\u0027amica a Firenze.",
+        "translationJa": "\u30D5\u30A3\u30EC\u30F3\u30C4\u30A7\u306B\u5973\u53CB\u9054\u304C\u3044\u307E\u3059\u3002",
+        "noteJa": null
+      }
+    ],
+    "commonMistakes": [
+      {
+        "id": "it-indefinite-articles-m1",
+        "incorrect": "un\u0027amico",
+        "correct": "un amico",
+        "explanationJa": "\u7537\u6027\u540D\u8A5E\u306B\u306F\u30A2\u30DD\u30B9\u30C8\u30ED\u30D5\u30A3\u3092\u4ED8\u3051\u307E\u305B\u3093\u3002un\u0027 \u306F\u5973\u6027\u5F62 una \u306E\u7701\u7565\u3067\u3059\u3002"
+      },
+      {
+        "id": "it-indefinite-articles-m2",
+        "incorrect": "un studente",
+        "correct": "uno studente",
+        "explanationJa": "s\u002B\u5B50\u97F3\u3067\u59CB\u307E\u308B\u7537\u6027\u540D\u8A5E\u306B\u306F uno \u3092\u4F7F\u3044\u307E\u3059\u3002"
+      }
+    ],
+    "relatedTopics": [
+      "it-definite-articles"
+    ],
+    "keywords": [
+      "\u4E0D\u5B9A\u51A0\u8A5E",
+      "\u51A0\u8A5E",
+      "articolo indeterminativo",
+      "un",
+      "uno",
+      "una",
+      "un\u0027"
+    ],
+    "sourceReferences": [
+      {
+        "id": "src-original-it-indefinite-articles",
+        "kind": "original-note",
+        "label": "\u672C\u30A2\u30D7\u30EA\u72EC\u81EA\u306E\u5B66\u7FD2\u30E1\u30E2\uFF08\u751F\u6210AI\u306E\u652F\u63F4\u3067\u4F5C\u6210\u30FB\u5C02\u9580\u5BB6\u306B\u3088\u308B\u76E3\u4FEE\u524D\uFF09",
+        "url": null
+      }
+    ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "\u30CD\u30A4\u30C6\u30A3\u30D6\u8B1B\u5E2B\u306B\u3088\u308B\u76E3\u4FEE\u524D\u306E\u30C9\u30E9\u30D5\u30C8\u6559\u6750\u3067\u3059\u3002",
+    "id": "it-indefinite-articles"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Preposizioni articolate",
+    "titleJa": "\u524D\u7F6E\u8A5E\u3068\u5B9A\u51A0\u8A5E\u306E\u7D50\u5408\u5F62\uFF08del / al / nel / dal / sul\uFF09",
+    "level": "A2",
+    "category": "preposition",
+    "description": "The prepositions di, a, da, in, su merge with the following definite article (di \u002B il = del, a \u002B la = alla, in \u002B lo = nello, ...).",
+    "usageJa": "\u524D\u7F6E\u8A5E di / a / da / in / su \u306E\u5F8C\u306B\u5B9A\u51A0\u8A5E\u304C\u7D9A\u304F\u3068\u3001\u3072\u3068\u3064\u306E\u8A9E\u306B\u7D50\u5408\u3057\u307E\u3059\u3002in \u306F ne-\u3001di \u306F de- \u306B\u5F62\u304C\u5909\u308F\u308B\u70B9\u306B\u6CE8\u610F\u3057\u307E\u3059\u3002",
+    "rules": [
+      {
+        "id": "it-articulated-prepositions-r1",
+        "summaryJa": "di / a / da / in / su \u002B \u5B9A\u51A0\u8A5E\u306F\u5FC5\u305A\u7D50\u5408\u3059\u308B\uFF08di il \u2192 del\u3001a la \u2192 alla\u3001in il \u2192 nel\u3001su il \u2192 sul\u3001da il \u2192 dal\uFF09\u3002",
+        "pattern": "\u524D\u7F6E\u8A5E \u002B \u5B9A\u51A0\u8A5E \u2192 \u7D50\u5408\u5F62"
+      },
+      {
+        "id": "it-articulated-prepositions-r2",
+        "summaryJa": "\u7D50\u5408\u5F8C\u3082\u51A0\u8A5E\u90E8\u5206\u306F\u540D\u8A5E\u306E\u6027\u30FB\u6570\u30FB\u8A9E\u982D\u306E\u97F3\u306B\u5F93\u3046\uFF08dello studente\u3001dall\u0027ufficio\u3001negli Stati Uniti\uFF09\u3002",
+        "pattern": null
+      }
+    ],
+    "examples": [
+      {
+        "id": "it-articulated-prepositions-ex1",
+        "text": "Il libro \u00E8 sul tavolo.",
+        "translationJa": "\u672C\u306F\u30C6\u30FC\u30D6\u30EB\u306E\u4E0A\u306B\u3042\u308A\u307E\u3059\u3002",
+        "noteJa": "su \u002B il = sul"
+      },
+      {
+        "id": "it-articulated-prepositions-ex2",
+        "text": "Vado alla stazione.",
+        "translationJa": "\u99C5\u306B\u884C\u304D\u307E\u3059\u3002",
+        "noteJa": "a \u002B la = alla"
+      },
+      {
+        "id": "it-articulated-prepositions-ex3",
+        "text": "Le chiavi sono nella borsa.",
+        "translationJa": "\u9375\u306F\u304B\u3070\u3093\u306E\u4E2D\u306B\u3042\u308A\u307E\u3059\u3002",
+        "noteJa": "in \u002B la = nella"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "id": "it-articulated-prepositions-m1",
+        "incorrect": "in il cassetto",
+        "correct": "nel cassetto",
+        "explanationJa": "in \u002B il \u306F nel \u306B\u7D50\u5408\u3057\u307E\u3059\u3002"
+      },
+      {
+        "id": "it-articulated-prepositions-m2",
+        "incorrect": "a la stazione",
+        "correct": "alla stazione",
+        "explanationJa": "a \u002B la \u306F\u5206\u3051\u305A\u306B alla \u3068\u66F8\u304D\u307E\u3059\u3002"
+      }
+    ],
+    "relatedTopics": [
+      "it-definite-articles",
+      "it-andare-a",
+      "it-andare-da"
+    ],
+    "keywords": [
+      "\u7D50\u5408\u5F62",
+      "\u524D\u7F6E\u8A5E",
+      "\u51A0\u8A5E\u524D\u7F6E\u8A5E",
+      "preposizioni articolate",
+      "del",
+      "al",
+      "nel",
+      "dal",
+      "sul",
+      "alla",
+      "nella"
+    ],
+    "sourceReferences": [
+      {
+        "id": "src-original-it-articulated-prepositions",
+        "kind": "original-note",
+        "label": "\u672C\u30A2\u30D7\u30EA\u72EC\u81EA\u306E\u5B66\u7FD2\u30E1\u30E2\uFF08\u751F\u6210AI\u306E\u652F\u63F4\u3067\u4F5C\u6210\u30FB\u5C02\u9580\u5BB6\u306B\u3088\u308B\u76E3\u4FEE\u524D\uFF09",
+        "url": null
+      }
+    ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "\u30CD\u30A4\u30C6\u30A3\u30D6\u8B1B\u5E2B\u306B\u3088\u308B\u76E3\u4FEE\u524D\u306E\u30C9\u30E9\u30D5\u30C8\u6559\u6750\u3067\u3059\u3002",
+    "id": "it-articulated-prepositions"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Presente indicativo dei verbi regolari",
+    "titleJa": "\u76F4\u8AAC\u6CD5\u73FE\u5728\uFF08\u898F\u5247\u52D5\u8A5E -are / -ere / -ire\uFF09",
+    "level": "A1",
+    "category": "tense",
+    "description": "Regular verbs in -are, -ere and -ire conjugate in the present by replacing the infinitive ending with person endings; some -ire verbs insert -isc-.",
+    "usageJa": "\u4E0D\u5B9A\u8A5E\u306E\u8A9E\u5C3E -are / -ere / -ire \u3092\u53D6\u308A\u3001\u4EBA\u79F0\u3054\u3068\u306E\u8A9E\u5C3E\u3092\u4ED8\u3051\u307E\u3059\u3002-ire \u52D5\u8A5E\u306E\u4E00\u90E8\uFF08capire \u306A\u3069\uFF09\u306F -isc- \u304C\u5165\u308A\u307E\u3059\u3002",
+    "rules": [
+      {
+        "id": "it-present-regular-r1",
+        "summaryJa": "-are \u52D5\u8A5E\uFF1A-o, -i, -a, -iamo, -ate, -ano\uFF08parlo, parli, parla, parliamo, parlate, parlano\uFF09\u3002",
+        "pattern": "parl- \u002B o / i / a / iamo / ate / ano"
+      },
+      {
+        "id": "it-present-regular-r2",
+        "summaryJa": "-ere \u52D5\u8A5E\uFF1A-o, -i, -e, -iamo, -ete, -ono\uFF08prendo, prendi, prende, prendiamo, prendete, prendono\uFF09\u3002",
+        "pattern": "prend- \u002B o / i / e / iamo / ete / ono"
+      },
+      {
+        "id": "it-present-regular-r3",
+        "summaryJa": "-ire \u52D5\u8A5E\uFF1A-o, -i, -e, -iamo, -ite, -ono\uFF08dormo ... dormono\uFF09\u3002capire \u578B\u306F capisco, capisci, capisce, capiamo, capite, capiscono\u3002",
+        "pattern": null
+      }
+    ],
+    "examples": [
+      {
+        "id": "it-present-regular-ex1",
+        "text": "Noi parliamo italiano ogni giorno.",
+        "translationJa": "\u79C1\u305F\u3061\u306F\u6BCE\u65E5\u30A4\u30BF\u30EA\u30A2\u8A9E\u3092\u8A71\u3057\u307E\u3059\u3002",
+        "noteJa": null
+      },
+      {
+        "id": "it-present-regular-ex2",
+        "text": "Tu prendi un caff\u00E8?",
+        "translationJa": "\u30B3\u30FC\u30D2\u30FC\u98F2\u3080\uFF1F",
+        "noteJa": null
+      },
+      {
+        "id": "it-present-regular-ex3",
+        "text": "I bambini dormono fino alle otto.",
+        "translationJa": "\u5B50\u3069\u3082\u305F\u3061\u306F8\u6642\u307E\u3067\u5BDD\u3066\u3044\u307E\u3059\u3002",
+        "noteJa": null
+      }
+    ],
+    "commonMistakes": [
+      {
+        "id": "it-present-regular-m1",
+        "incorrect": "io parla",
+        "correct": "io parlo",
+        "explanationJa": "1\u4EBA\u79F0\u5358\u6570\u306E\u8A9E\u5C3E\u306F -o \u3067\u3059\u3002"
+      },
+      {
+        "id": "it-present-regular-m2",
+        "incorrect": "noi parlamo",
+        "correct": "noi parliamo",
+        "explanationJa": "1\u4EBA\u79F0\u8907\u6570\u306F\u8A9E\u5E79 \u002B -iamo \u3067\u3059\u3002"
+      }
+    ],
+    "relatedTopics": [
+      "it-reflexive-verbs"
+    ],
+    "keywords": [
+      "\u73FE\u5728\u5F62",
+      "\u6D3B\u7528",
+      "\u898F\u5247\u52D5\u8A5E",
+      "presente",
+      "coniugazione",
+      "-are",
+      "-ere",
+      "-ire"
+    ],
+    "sourceReferences": [
+      {
+        "id": "src-original-it-present-regular",
+        "kind": "original-note",
+        "label": "\u672C\u30A2\u30D7\u30EA\u72EC\u81EA\u306E\u5B66\u7FD2\u30E1\u30E2\uFF08\u751F\u6210AI\u306E\u652F\u63F4\u3067\u4F5C\u6210\u30FB\u5C02\u9580\u5BB6\u306B\u3088\u308B\u76E3\u4FEE\u524D\uFF09",
+        "url": null
+      }
+    ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "\u30CD\u30A4\u30C6\u30A3\u30D6\u8B1B\u5E2B\u306B\u3088\u308B\u76E3\u4FEE\u524D\u306E\u30C9\u30E9\u30D5\u30C8\u6559\u6750\u3067\u3059\u3002",
+    "id": "it-present-regular"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Verbi \u002B a \u002B infinito",
+    "titleJa": "\u52D5\u8A5E \u002B a \u002B \u4E0D\u5B9A\u8A5E\uFF08cominciare a / imparare a / riuscire a\uFF09",
+    "level": "A2",
+    "category": "verb-pattern",
+    "description": "Some verbs introduce a following infinitive with the preposition a: cominciare a, iniziare a, imparare a, riuscire a, continuare a, aiutare qualcuno a.",
+    "usageJa": "\u300C\u301C\u3057\u59CB\u3081\u308B\u300D\u300C\u301C\u3067\u304D\u308B\u3088\u3046\u306B\u306A\u308B\u300D\u300C\u301C\u3057\u7D9A\u3051\u308B\u300D\u306A\u3069\u3001\u958B\u59CB\u30FB\u7FD2\u5F97\u30FB\u7D99\u7D9A\u30FB\u5230\u9054\u3092\u8868\u3059\u52D5\u8A5E\u306E\u591A\u304F\u306F a \u002B \u4E0D\u5B9A\u8A5E\u3092\u3068\u308A\u307E\u3059\u3002\u3069\u306E\u524D\u7F6E\u8A5E\u3092\u3068\u308B\u304B\u306F\u52D5\u8A5E\u3054\u3068\u306B\u6C7A\u307E\u3063\u3066\u3044\u308B\u306E\u3067\u3001\u30BB\u30C3\u30C8\u3067\u899A\u3048\u308B\u306E\u304C\u57FA\u672C\u3067\u3059\u3002",
+    "rules": [
+      {
+        "id": "it-verb-a-infinitive-r1",
+        "summaryJa": "cominciare / iniziare\uFF08\u59CB\u3081\u308B\uFF09\u3001continuare\uFF08\u7D9A\u3051\u308B\uFF09\u306F a \u002B \u4E0D\u5B9A\u8A5E\u3002",
+        "pattern": "cominciare a \u002B \u4E0D\u5B9A\u8A5E"
+      },
+      {
+        "id": "it-verb-a-infinitive-r2",
+        "summaryJa": "imparare\uFF08\u7FD2\u3046\uFF09\u3001riuscire\uFF08\u301C\u3067\u304D\u308B\u30FB\u3046\u307E\u304F\u3044\u304F\uFF09\u3001aiutare qualcuno\uFF08\u4EBA\u304C\u301C\u3059\u308B\u306E\u3092\u624B\u4F1D\u3046\uFF09\u3082 a \u002B \u4E0D\u5B9A\u8A5E\u3002",
+        "pattern": "imparare a / riuscire a / aiutare qualcuno a \u002B \u4E0D\u5B9A\u8A5E"
+      }
+    ],
+    "examples": [
+      {
+        "id": "it-verb-a-infinitive-ex1",
+        "text": "Ho cominciato a studiare l\u0027italiano due anni fa.",
+        "translationJa": "2\u5E74\u524D\u306B\u30A4\u30BF\u30EA\u30A2\u8A9E\u3092\u52C9\u5F37\u3057\u59CB\u3081\u307E\u3057\u305F\u3002",
+        "noteJa": null
+      },
+      {
+        "id": "it-verb-a-infinitive-ex2",
+        "text": "Finalmente sono riuscita a trovare casa.",
+        "translationJa": "\u3084\u3063\u3068\u5BB6\u3092\u898B\u3064\u3051\u308B\u3053\u3068\u304C\u3067\u304D\u307E\u3057\u305F\u3002",
+        "noteJa": null
+      },
+      {
+        "id": "it-verb-a-infinitive-ex3",
+        "text": "Mi aiuti a portare le valigie?",
+        "translationJa": "\u30B9\u30FC\u30C4\u30B1\u30FC\u30B9\u3092\u904B\u3076\u306E\u3092\u624B\u4F1D\u3063\u3066\u304F\u308C\u308B\uFF1F",
+        "noteJa": null
+      }
+    ],
+    "commonMistakes": [
+      {
+        "id": "it-verb-a-infinitive-m1",
+        "incorrect": "Comincio di studiare.",
+        "correct": "Comincio a studiare.",
+        "explanationJa": "cominciare \u306F di \u3067\u306F\u306A\u304F a \u002B \u4E0D\u5B9A\u8A5E\u3092\u3068\u308A\u307E\u3059\u3002"
+      },
+      {
+        "id": "it-verb-a-infinitive-m2",
+        "incorrect": "Ho imparato di nuotare.",
+        "correct": "Ho imparato a nuotare.",
+        "explanationJa": "imparare \u3082 a \u002B \u4E0D\u5B9A\u8A5E\u3067\u3059\u3002"
+      }
+    ],
+    "relatedTopics": [
+      "it-verb-di-infinitive",
+      "it-avere-voglia-di",
+      "it-andare-a"
+    ],
+    "keywords": [
+      "a \u3068 di",
+      "a/di",
+      "\u524D\u7F6E\u8A5E a",
+      "\u4E0D\u5B9A\u8A5E",
+      "\u59CB\u3081\u308B",
+      "cominciare a",
+      "iniziare a",
+      "imparare a",
+      "riuscire a",
+      "continuare a",
+      "aiutare a"
+    ],
+    "sourceReferences": [
+      {
+        "id": "src-original-it-verb-a-infinitive",
+        "kind": "original-note",
+        "label": "\u672C\u30A2\u30D7\u30EA\u72EC\u81EA\u306E\u5B66\u7FD2\u30E1\u30E2\uFF08\u751F\u6210AI\u306E\u652F\u63F4\u3067\u4F5C\u6210\u30FB\u5C02\u9580\u5BB6\u306B\u3088\u308B\u76E3\u4FEE\u524D\uFF09",
+        "url": null
+      }
+    ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "\u30CD\u30A4\u30C6\u30A3\u30D6\u8B1B\u5E2B\u306B\u3088\u308B\u76E3\u4FEE\u524D\u306E\u30C9\u30E9\u30D5\u30C8\u6559\u6750\u3067\u3059\u3002\u52D5\u8A5E\u3054\u3068\u306E\u524D\u7F6E\u8A5E\u306F\u8F9E\u66F8\u3067\u3082\u78BA\u8A8D\u3057\u3066\u304F\u3060\u3055\u3044\u3002",
+    "id": "it-verb-a-infinitive"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Verbi \u002B di \u002B infinito",
+    "titleJa": "\u52D5\u8A5E \u002B di \u002B \u4E0D\u5B9A\u8A5E\uFF08finire di / decidere di / cercare di\uFF09",
+    "level": "A2",
+    "category": "verb-pattern",
+    "description": "Many verbs introduce a following infinitive with di: finire di, smettere di, decidere di, cercare di, sperare di, dimenticare / dimenticarsi di.",
+    "usageJa": "\u300C\u301C\u3057\u7D42\u3048\u308B\u300D\u300C\u301C\u3059\u308B\u306E\u3092\u3084\u3081\u308B\u300D\u300C\u301C\u3059\u308B\u3053\u3068\u306B\u6C7A\u3081\u308B\u300D\u300C\u301C\u3057\u3088\u3046\u3068\u3059\u308B\u300D\u300C\u301C\u3059\u308B\u3053\u3068\u3092\u671B\u3080\u300D\u306A\u3069\u306F di \u002B \u4E0D\u5B9A\u8A5E\u3092\u3068\u308A\u307E\u3059\u3002\u7279\u306B finire\uFF08\u7D42\u3048\u308B\uFF09\u306F di\u3001cominciare\uFF08\u59CB\u3081\u308B\uFF09\u306F a \u3068\u5BFE\u3067\u899A\u3048\u308B\u3068\u6DF7\u540C\u3057\u306B\u304F\u304F\u306A\u308A\u307E\u3059\u3002",
+    "rules": [
+      {
+        "id": "it-verb-di-infinitive-r1",
+        "summaryJa": "finire\uFF08\u7D42\u3048\u308B\uFF09\u3001smettere\uFF08\u3084\u3081\u308B\uFF09\u306F di \u002B \u4E0D\u5B9A\u8A5E\u3002",
+        "pattern": "finire di / smettere di \u002B \u4E0D\u5B9A\u8A5E"
+      },
+      {
+        "id": "it-verb-di-infinitive-r2",
+        "summaryJa": "decidere\uFF08\u6C7A\u3081\u308B\uFF09\u3001cercare\uFF08\u301C\u3057\u3088\u3046\u3068\u52AA\u3081\u308B\uFF09\u3001sperare\uFF08\u671B\u3080\uFF09\u3001dimenticare\uFF08\u5FD8\u308C\u308B\uFF09\u3082 di \u002B \u4E0D\u5B9A\u8A5E\u3002",
+        "pattern": "decidere di / cercare di / sperare di \u002B \u4E0D\u5B9A\u8A5E"
+      }
+    ],
+    "examples": [
+      {
+        "id": "it-verb-di-infinitive-ex1",
+        "text": "Ho finito di lavorare alle sette.",
+        "translationJa": "7\u6642\u306B\u4ED5\u4E8B\u3092\u7D42\u3048\u307E\u3057\u305F\u3002",
+        "noteJa": null
+      },
+      {
+        "id": "it-verb-di-infinitive-ex2",
+        "text": "Abbiamo deciso di partire domani.",
+        "translationJa": "\u660E\u65E5\u51FA\u767A\u3059\u308B\u3053\u3068\u306B\u3057\u307E\u3057\u305F\u3002",
+        "noteJa": null
+      },
+      {
+        "id": "it-verb-di-infinitive-ex3",
+        "text": "Cerco di parlare solo in italiano.",
+        "translationJa": "\u30A4\u30BF\u30EA\u30A2\u8A9E\u3060\u3051\u3067\u8A71\u3059\u3088\u3046\u306B\u3057\u3066\u3044\u307E\u3059\u3002",
+        "noteJa": "cercare di \u306F\u300C\u301C\u3057\u3088\u3046\u3068\u52AA\u3081\u308B\u300D\u3002"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "id": "it-verb-di-infinitive-m1",
+        "incorrect": "Ho finito a lavorare.",
+        "correct": "Ho finito di lavorare.",
+        "explanationJa": "finire \u306F a \u3067\u306F\u306A\u304F di \u002B \u4E0D\u5B9A\u8A5E\u3092\u3068\u308A\u307E\u3059\uFF08cominciare a \u3068\u6DF7\u540C\u3057\u3084\u3059\u3044\uFF09\u3002"
+      },
+      {
+        "id": "it-verb-di-infinitive-m2",
+        "incorrect": "Ho deciso a partire.",
+        "correct": "Ho deciso di partire.",
+        "explanationJa": "decidere \u306F di \u002B \u4E0D\u5B9A\u8A5E\u3067\u3059\u3002"
+      }
+    ],
+    "relatedTopics": [
+      "it-verb-a-infinitive",
+      "it-avere-voglia-di"
+    ],
+    "keywords": [
+      "a \u3068 di",
+      "a/di",
+      "\u524D\u7F6E\u8A5E di",
+      "\u4E0D\u5B9A\u8A5E",
+      "\u7D42\u3048\u308B",
+      "finire di",
+      "smettere di",
+      "decidere di",
+      "cercare di",
+      "sperare di",
+      "dimenticare di"
+    ],
+    "sourceReferences": [
+      {
+        "id": "src-original-it-verb-di-infinitive",
+        "kind": "original-note",
+        "label": "\u672C\u30A2\u30D7\u30EA\u72EC\u81EA\u306E\u5B66\u7FD2\u30E1\u30E2\uFF08\u751F\u6210AI\u306E\u652F\u63F4\u3067\u4F5C\u6210\u30FB\u5C02\u9580\u5BB6\u306B\u3088\u308B\u76E3\u4FEE\u524D\uFF09",
+        "url": null
+      }
+    ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "\u30CD\u30A4\u30C6\u30A3\u30D6\u8B1B\u5E2B\u306B\u3088\u308B\u76E3\u4FEE\u524D\u306E\u30C9\u30E9\u30D5\u30C8\u6559\u6750\u3067\u3059\u3002\u52D5\u8A5E\u3054\u3068\u306E\u524D\u7F6E\u8A5E\u306F\u8F9E\u66F8\u3067\u3082\u78BA\u8A8D\u3057\u3066\u304F\u3060\u3055\u3044\u3002",
+    "id": "it-verb-di-infinitive"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Avere voglia di",
+    "titleJa": "avere voglia di\uFF08\u301C\u3057\u305F\u3044\u6C17\u5206\u3060\uFF09",
+    "level": "A2",
+    "category": "construction",
+    "description": "Avere voglia di \u002B infinitive or noun expresses a wish or mood: Ho voglia di un gelato. Non ho voglia di uscire.",
+    "usageJa": "\u300C\u301C\u3057\u305F\u3044\u6C17\u5206\u3060\u300D\u300C\u301C\u304C\u6B32\u3057\u3044\u300D\u3092\u8868\u3059\u6C7A\u307E\u3063\u305F\u8868\u73FE\u3067\u3059\u3002\u52D5\u8A5E\u306F avere \u3092\u4F7F\u3044\u3001\u5F8C\u308D\u306F\u5FC5\u305A di\uFF08\u002B \u4E0D\u5B9A\u8A5E / \u540D\u8A5E\uFF09\u3067\u3059\u3002",
+    "rules": [
+      {
+        "id": "it-avere-voglia-di-r1",
+        "summaryJa": "avere voglia di \u002B \u4E0D\u5B9A\u8A5E / \u540D\u8A5E\u3002\u524D\u7F6E\u8A5E\u306F\u5E38\u306B di\u3002",
+        "pattern": "avere voglia di \u002B \u4E0D\u5B9A\u8A5E / \u540D\u8A5E"
+      },
+      {
+        "id": "it-avere-voglia-di-r2",
+        "summaryJa": "\u52D5\u8A5E\u306F essere \u3067\u306F\u306A\u304F avere \u3092\u6D3B\u7528\u3055\u305B\u308B\uFF08ho voglia, hai voglia ...\uFF09\u3002",
+        "pattern": null
+      }
+    ],
+    "examples": [
+      {
+        "id": "it-avere-voglia-di-ex1",
+        "text": "Ho voglia di un gelato.",
+        "translationJa": "\u30A2\u30A4\u30B9\u304C\u98DF\u3079\u305F\u3044\u6C17\u5206\u3067\u3059\u3002",
+        "noteJa": null
+      },
+      {
+        "id": "it-avere-voglia-di-ex2",
+        "text": "Stasera non ho voglia di uscire.",
+        "translationJa": "\u4ECA\u591C\u306F\u51FA\u304B\u3051\u308B\u6C17\u5206\u3058\u3083\u306A\u3044\u3002",
+        "noteJa": null
+      },
+      {
+        "id": "it-avere-voglia-di-ex3",
+        "text": "Hai voglia di andare al cinema?",
+        "translationJa": "\u6620\u753B\u306B\u884C\u304D\u305F\u3044\uFF1F",
+        "noteJa": null
+      }
+    ],
+    "commonMistakes": [
+      {
+        "id": "it-avere-voglia-di-m1",
+        "incorrect": "Ho voglia a mangiare.",
+        "correct": "Ho voglia di mangiare.",
+        "explanationJa": "voglia \u306E\u5F8C\u306F a \u3067\u306F\u306A\u304F di \u3067\u3059\u3002"
+      },
+      {
+        "id": "it-avere-voglia-di-m2",
+        "incorrect": "Sono voglia di dormire.",
+        "correct": "Ho voglia di dormire.",
+        "explanationJa": "essere \u3067\u306F\u306A\u304F avere \u3092\u4F7F\u3044\u307E\u3059\u3002"
+      }
+    ],
+    "relatedTopics": [
+      "it-verb-di-infinitive"
+    ],
+    "keywords": [
+      "\u3057\u305F\u3044",
+      "\u6C17\u5206",
+      "voglia",
+      "avere voglia di",
+      "ho voglia"
+    ],
+    "sourceReferences": [
+      {
+        "id": "src-original-it-avere-voglia-di",
+        "kind": "original-note",
+        "label": "\u672C\u30A2\u30D7\u30EA\u72EC\u81EA\u306E\u5B66\u7FD2\u30E1\u30E2\uFF08\u751F\u6210AI\u306E\u652F\u63F4\u3067\u4F5C\u6210\u30FB\u5C02\u9580\u5BB6\u306B\u3088\u308B\u76E3\u4FEE\u524D\uFF09",
+        "url": null
+      }
+    ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "\u30CD\u30A4\u30C6\u30A3\u30D6\u8B1B\u5E2B\u306B\u3088\u308B\u76E3\u4FEE\u524D\u306E\u30C9\u30E9\u30D5\u30C8\u6559\u6750\u3067\u3059\u3002",
+    "id": "it-avere-voglia-di"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Andare a",
+    "titleJa": "andare a\uFF08\u90FD\u5E02\u30FB\u4E00\u90E8\u306E\u5834\u6240\u30FB\u4E0D\u5B9A\u8A5E\uFF09",
+    "level": "A1",
+    "category": "preposition",
+    "description": "Andare a is used with cities and small islands (a Roma), some fixed places (a casa, a scuola, a letto) and with an infinitive of purpose (vado a mangiare).",
+    "usageJa": "andare a \u306F\u300C\u90FD\u5E02\u540D\u300D\u300Ccasa / scuola / letto \u306A\u3069\u6C7A\u307E\u3063\u305F\u5834\u6240\u300D\u300C\u76EE\u7684\u306E\u4E0D\u5B9A\u8A5E\uFF08\u301C\u3057\u306B\u884C\u304F\uFF09\u300D\u3068\u7D44\u307F\u5408\u308F\u305B\u307E\u3059\u3002\u56FD\u540D\u306F in \u3092\u4F7F\u3046\u70B9\u306B\u6CE8\u610F\u3057\u307E\u3059\u3002",
+    "rules": [
+      {
+        "id": "it-andare-a-r1",
+        "summaryJa": "\u90FD\u5E02\u30FB\u5C0F\u3055\u306A\u5CF6\uFF1Aandare a Roma / a Capri\u3002",
+        "pattern": "andare a \u002B \u90FD\u5E02\u540D"
+      },
+      {
+        "id": "it-andare-a-r2",
+        "summaryJa": "\u6C7A\u307E\u3063\u305F\u5834\u6240\uFF1Aa casa\u3001a scuola\u3001a letto\u3001a teatro \u306A\u3069\uFF08\u51A0\u8A5E\u306A\u3057\uFF09\u3002",
+        "pattern": null
+      },
+      {
+        "id": "it-andare-a-r3",
+        "summaryJa": "\u76EE\u7684\uFF1Aandare a \u002B \u4E0D\u5B9A\u8A5E\uFF08\u301C\u3057\u306B\u884C\u304F\uFF09\u3002",
+        "pattern": "andare a \u002B \u4E0D\u5B9A\u8A5E"
+      }
+    ],
+    "examples": [
+      {
+        "id": "it-andare-a-ex1",
+        "text": "Quest\u0027estate vado a Roma.",
+        "translationJa": "\u3053\u306E\u590F\u30ED\u30FC\u30DE\u306B\u884C\u304D\u307E\u3059\u3002",
+        "noteJa": null
+      },
+      {
+        "id": "it-andare-a-ex2",
+        "text": "Stasera andiamo a mangiare fuori.",
+        "translationJa": "\u4ECA\u591C\u306F\u5916\u98DF\u3057\u306B\u884C\u304D\u307E\u3059\u3002",
+        "noteJa": null
+      },
+      {
+        "id": "it-andare-a-ex3",
+        "text": "I bambini vanno a scuola in autobus.",
+        "translationJa": "\u5B50\u3069\u3082\u305F\u3061\u306F\u30D0\u30B9\u3067\u5B66\u6821\u306B\u884C\u304D\u307E\u3059\u3002",
+        "noteJa": null
+      }
+    ],
+    "commonMistakes": [
+      {
+        "id": "it-andare-a-m1",
+        "incorrect": "Vado in Roma.",
+        "correct": "Vado a Roma.",
+        "explanationJa": "\u90FD\u5E02\u540D\u306B\u306F in \u3067\u306F\u306A\u304F a \u3092\u4F7F\u3044\u307E\u3059\u3002"
+      },
+      {
+        "id": "it-andare-a-m2",
+        "incorrect": "Vado di mangiare.",
+        "correct": "Vado a mangiare.",
+        "explanationJa": "\u300C\u301C\u3057\u306B\u884C\u304F\u300D\u306F andare a \u002B \u4E0D\u5B9A\u8A5E\u3067\u3059\u3002"
+      }
+    ],
+    "relatedTopics": [
+      "it-andare-in",
+      "it-andare-da",
+      "it-verb-a-infinitive"
+    ],
+    "keywords": [
+      "\u884C\u304F",
+      "\u5834\u6240",
+      "\u90FD\u5E02",
+      "andare a",
+      "vado a",
+      "a Roma",
+      "a casa",
+      "a scuola"
+    ],
+    "sourceReferences": [
+      {
+        "id": "src-original-it-andare-a",
+        "kind": "original-note",
+        "label": "\u672C\u30A2\u30D7\u30EA\u72EC\u81EA\u306E\u5B66\u7FD2\u30E1\u30E2\uFF08\u751F\u6210AI\u306E\u652F\u63F4\u3067\u4F5C\u6210\u30FB\u5C02\u9580\u5BB6\u306B\u3088\u308B\u76E3\u4FEE\u524D\uFF09",
+        "url": null
+      }
+    ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "\u30CD\u30A4\u30C6\u30A3\u30D6\u8B1B\u5E2B\u306B\u3088\u308B\u76E3\u4FEE\u524D\u306E\u30C9\u30E9\u30D5\u30C8\u6559\u6750\u3067\u3059\u3002",
+    "id": "it-andare-a"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Andare da",
+    "titleJa": "andare da\uFF08\u4EBA\u306E\u3068\u3053\u308D\u3078\u884C\u304F\uFF09",
+    "level": "A2",
+    "category": "preposition",
+    "description": "Andare da \u002B person means going to someone\u0027s home or workplace: vado da Marco, vado dal medico, vado da mia nonna.",
+    "usageJa": "\u884C\u304D\u5148\u304C\u300C\u4EBA\uFF08\u306E\u5BB6\u30FB\u5E97\u30FB\u8A3A\u7642\u6240\uFF09\u300D\u306E\u3068\u304D\u306F da \u3092\u4F7F\u3044\u307E\u3059\u3002\u8077\u696D\u540D\u306B\u306F\u5B9A\u51A0\u8A5E\u3092\u7D50\u5408\u3055\u305B\u3066 dal medico\u3001dalla parrucchiera \u306E\u3088\u3046\u306B\u306A\u308A\u307E\u3059\u3002",
+    "rules": [
+      {
+        "id": "it-andare-da-r1",
+        "summaryJa": "\u4EBA\u540D\u30FB\u5BB6\u65CF\uFF1Aandare da Marco / da mia nonna\u3002",
+        "pattern": "andare da \u002B \u4EBA"
+      },
+      {
+        "id": "it-andare-da-r2",
+        "summaryJa": "\u8077\u696D\u306E\u4EBA\uFF08\u306E\u5E97\u30FB\u8A3A\u7642\u6240\uFF09\uFF1Ada \u002B \u5B9A\u51A0\u8A5E\u306E\u7D50\u5408\u5F62\uFF08dal medico\u3001dal parrucchiere\uFF09\u3002",
+        "pattern": "andare dal / dalla \u002B \u8077\u696D\u540D"
+      }
+    ],
+    "examples": [
+      {
+        "id": "it-andare-da-ex1",
+        "text": "Domani vado da Marco per studiare insieme.",
+        "translationJa": "\u660E\u65E5\u3001\u4E00\u7DD2\u306B\u52C9\u5F37\u3059\u308B\u305F\u3081\u306B\u30DE\u30EB\u30B3\u306E\u5BB6\u306B\u884C\u304D\u307E\u3059\u3002",
+        "noteJa": null
+      },
+      {
+        "id": "it-andare-da-ex2",
+        "text": "Stasera vado da mia nonna.",
+        "translationJa": "\u4ECA\u591C\u306F\u7956\u6BCD\u306E\u3068\u3053\u308D\u306B\u884C\u304D\u307E\u3059\u3002",
+        "noteJa": null
+      },
+      {
+        "id": "it-andare-da-ex3",
+        "text": "Ho mal di denti: devo andare dal dentista.",
+        "translationJa": "\u6B6F\u304C\u75DB\u3044\u306E\u3067\u6B6F\u533B\u8005\u306B\u884C\u304B\u306A\u3051\u308C\u3070\u3002",
+        "noteJa": "\u53E3\u8A9E\u3067\u306F al dentista \u3082\u805E\u304B\u308C\u307E\u3059\u304C\u3001\u5B66\u7FD2\u3067\u306F dal \u3092\u57FA\u672C\u3068\u3057\u307E\u3059\u3002"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "id": "it-andare-da-m1",
+        "incorrect": "Vado a Marco.",
+        "correct": "Vado da Marco.",
+        "explanationJa": "\u4EBA\u306E\u3068\u3053\u308D\u3078\u884C\u304F\u3068\u304D\u306F a \u3067\u306F\u306A\u304F da \u3067\u3059\u3002"
+      }
+    ],
+    "relatedTopics": [
+      "it-andare-a",
+      "it-articulated-prepositions"
+    ],
+    "keywords": [
+      "\u4EBA\u306E\u3068\u3053\u308D",
+      "\u5BB6\u306B\u884C\u304F",
+      "andare da",
+      "vado da",
+      "dal medico",
+      "dal dentista"
+    ],
+    "sourceReferences": [
+      {
+        "id": "src-original-it-andare-da",
+        "kind": "original-note",
+        "label": "\u672C\u30A2\u30D7\u30EA\u72EC\u81EA\u306E\u5B66\u7FD2\u30E1\u30E2\uFF08\u751F\u6210AI\u306E\u652F\u63F4\u3067\u4F5C\u6210\u30FB\u5C02\u9580\u5BB6\u306B\u3088\u308B\u76E3\u4FEE\u524D\uFF09",
+        "url": null
+      }
+    ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "\u76E3\u4FEE\u524D\u306E\u30C9\u30E9\u30D5\u30C8\u6559\u6750\u3067\u3059\u3002\u5730\u57DF\u3084\u53E3\u8A9E\u3067 al medico \u306A\u3069\u3082\u4F7F\u308F\u308C\u308B\u305F\u3081\u3001\u6B63\u8AA4\u5224\u5B9A\u306F dal \u3092\u57FA\u672C\u5F62\u3068\u3057\u3066\u6271\u3063\u3066\u3044\u307E\u3059\u3002",
+    "id": "it-andare-da"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Andare in",
+    "titleJa": "andare in\uFF08\u56FD\u30FB\u5730\u65B9\u30FB\u4E57\u308A\u7269\u30FB\u4E00\u90E8\u306E\u5834\u6240\uFF09",
+    "level": "A1",
+    "category": "preposition",
+    "description": "Andare in is used with countries and regions (in Italia, in Toscana), means of transport (in treno) and some places (in banca, in ufficio, in montagna).",
+    "usageJa": "\u56FD\u30FB\u5730\u65B9\u30FB\u5927\u304D\u306A\u5CF6\u3001\u4E57\u308A\u7269\u3001banca / ufficio / biblioteca / montagna \u306A\u3069\u306E\u5834\u6240\u306B\u306F in \u3092\u4F7F\u3044\u307E\u3059\uFF08\u51A0\u8A5E\u306A\u3057\uFF09\u3002",
+    "rules": [
+      {
+        "id": "it-andare-in-r1",
+        "summaryJa": "\u56FD\u30FB\u5730\u65B9\uFF1Ain Italia\u3001in Giappone\u3001in Sicilia\u3002",
+        "pattern": "andare in \u002B \u56FD\u540D"
+      },
+      {
+        "id": "it-andare-in-r2",
+        "summaryJa": "\u4E57\u308A\u7269\uFF1Ain treno\u3001in macchina\u3001in bici\u3002",
+        "pattern": "in \u002B \u4E57\u308A\u7269"
+      },
+      {
+        "id": "it-andare-in-r3",
+        "summaryJa": "\u4E00\u90E8\u306E\u5834\u6240\uFF1Ain banca\u3001in ufficio\u3001in biblioteca\u3001in centro\u3001in montagna\u3002",
+        "pattern": null
+      }
+    ],
+    "examples": [
+      {
+        "id": "it-andare-in-ex1",
+        "text": "L\u0027anno prossimo vado in Giappone.",
+        "translationJa": "\u6765\u5E74\u65E5\u672C\u306B\u884C\u304D\u307E\u3059\u3002",
+        "noteJa": null
+      },
+      {
+        "id": "it-andare-in-ex2",
+        "text": "Vado al lavoro in treno.",
+        "translationJa": "\u96FB\u8ECA\u3067\u4ED5\u4E8B\u306B\u884C\u304D\u307E\u3059\u3002",
+        "noteJa": null
+      },
+      {
+        "id": "it-andare-in-ex3",
+        "text": "Ad agosto andiamo in montagna.",
+        "translationJa": "8\u6708\u306F\u5C71\u306B\u884C\u304D\u307E\u3059\u3002",
+        "noteJa": null
+      }
+    ],
+    "commonMistakes": [
+      {
+        "id": "it-andare-in-m1",
+        "incorrect": "Vado a Giappone.",
+        "correct": "Vado in Giappone.",
+        "explanationJa": "\u56FD\u540D\u306B\u306F a \u3067\u306F\u306A\u304F in \u3092\u4F7F\u3044\u307E\u3059\u3002"
+      },
+      {
+        "id": "it-andare-in-m2",
+        "incorrect": "Vado con treno.",
+        "correct": "Vado in treno.",
+        "explanationJa": "\u4EA4\u901A\u624B\u6BB5\u306F in \u002B \u4E57\u308A\u7269\uFF08\u51A0\u8A5E\u306A\u3057\uFF09\u3067\u8868\u3057\u307E\u3059\u3002"
+      }
+    ],
+    "relatedTopics": [
+      "it-andare-a"
+    ],
+    "keywords": [
+      "\u56FD",
+      "\u4E57\u308A\u7269",
+      "andare in",
+      "vado in",
+      "in Italia",
+      "in treno",
+      "in banca"
+    ],
+    "sourceReferences": [
+      {
+        "id": "src-original-it-andare-in",
+        "kind": "original-note",
+        "label": "\u672C\u30A2\u30D7\u30EA\u72EC\u81EA\u306E\u5B66\u7FD2\u30E1\u30E2\uFF08\u751F\u6210AI\u306E\u652F\u63F4\u3067\u4F5C\u6210\u30FB\u5C02\u9580\u5BB6\u306B\u3088\u308B\u76E3\u4FEE\u524D\uFF09",
+        "url": null
+      }
+    ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "\u30CD\u30A4\u30C6\u30A3\u30D6\u8B1B\u5E2B\u306B\u3088\u308B\u76E3\u4FEE\u524D\u306E\u30C9\u30E9\u30D5\u30C8\u6559\u6750\u3067\u3059\u3002",
+    "id": "it-andare-in"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Passato prossimo: avere o essere?",
+    "titleJa": "\u8FD1\u904E\u53BB\u306E\u52A9\u52D5\u8A5E avere / essere \u306E\u9078\u3073\u65B9",
+    "level": "A2",
+    "category": "tense",
+    "description": "The passato prossimo uses avere with transitive verbs and many intransitive verbs, and essere with most verbs of motion or change of state (andare, venire, partire, arrivare, uscire, tornare, nascere) and with reflexive verbs.",
+    "usageJa": "\u8FD1\u904E\u53BB\u306F\u300C\u52A9\u52D5\u8A5E avere / essere \u306E\u73FE\u5728\u5F62 \u002B \u904E\u53BB\u5206\u8A5E\u300D\u3067\u3059\u3002\u76EE\u7684\u8A9E\u3092\u3068\u308B\u52D5\u8A5E\u3084 dormire\u30FBlavorare \u306A\u3069\u306F avere\u3001andare\u30FBvenire\u30FBpartire\u30FBtornare \u306A\u3069\u79FB\u52D5\u3084\u72B6\u614B\u306E\u5909\u5316\u3092\u8868\u3059\u81EA\u52D5\u8A5E\u3068\u518D\u5E30\u52D5\u8A5E\u306F essere \u3092\u4F7F\u3044\u307E\u3059\u3002",
+    "rules": [
+      {
+        "id": "it-passato-prossimo-auxiliary-r1",
+        "summaryJa": "\u4ED6\u52D5\u8A5E\uFF08mangiare\u3001fare\u3001vedere \u306A\u3069\uFF09\u3068\u591A\u304F\u306E\u81EA\u52D5\u8A5E\uFF08dormire\u3001lavorare \u306A\u3069\uFF09\u306F avere\u3002",
+        "pattern": "avere \u002B \u904E\u53BB\u5206\u8A5E"
+      },
+      {
+        "id": "it-passato-prossimo-auxiliary-r2",
+        "summaryJa": "\u79FB\u52D5\u30FB\u72B6\u614B\u5909\u5316\u306E\u81EA\u52D5\u8A5E\uFF08andare\u3001venire\u3001partire\u3001arrivare\u3001uscire\u3001tornare\u3001nascere\u3001restare \u306A\u3069\uFF09\u306F essere\u3002",
+        "pattern": "essere \u002B \u904E\u53BB\u5206\u8A5E"
+      },
+      {
+        "id": "it-passato-prossimo-auxiliary-r3",
+        "summaryJa": "essere \u3092\u4F7F\u3046\u3068\u304D\u306F\u904E\u53BB\u5206\u8A5E\u3092\u4E3B\u8A9E\u306E\u6027\u30FB\u6570\u306B\u4E00\u81F4\u3055\u305B\u308B\uFF08\u8A73\u3057\u304F\u306F\u904E\u53BB\u5206\u8A5E\u306E\u4E00\u81F4\uFF09\u3002",
+        "pattern": null
+      }
+    ],
+    "examples": [
+      {
+        "id": "it-passato-prossimo-auxiliary-ex1",
+        "text": "Ieri sono andato al mare con gli amici.",
+        "translationJa": "\u6628\u65E5\u53CB\u9054\u3068\u6D77\u306B\u884C\u304D\u307E\u3057\u305F\u3002",
+        "noteJa": "andare \u306F essere\u3002"
+      },
+      {
+        "id": "it-passato-prossimo-auxiliary-ex2",
+        "text": "Sabato ho mangiato una pizza buonissima.",
+        "translationJa": "\u571F\u66DC\u65E5\u306B\u3068\u3066\u3082\u304A\u3044\u3057\u3044\u30D4\u30B6\u3092\u98DF\u3079\u307E\u3057\u305F\u3002",
+        "noteJa": "mangiare \u306F avere\u3002"
+      },
+      {
+        "id": "it-passato-prossimo-auxiliary-ex3",
+        "text": "Noi siamo tornati a casa tardi.",
+        "translationJa": "\u79C1\u305F\u3061\u306F\u9045\u304F\u306B\u5E30\u5B85\u3057\u307E\u3057\u305F\u3002",
+        "noteJa": null
+      }
+    ],
+    "commonMistakes": [
+      {
+        "id": "it-passato-prossimo-auxiliary-m1",
+        "incorrect": "Ho andato al mare.",
+        "correct": "Sono andato/a al mare.",
+        "explanationJa": "andare \u306F\u79FB\u52D5\u3092\u8868\u3059\u81EA\u52D5\u8A5E\u306A\u306E\u3067 essere \u3092\u4F7F\u3044\u307E\u3059\u3002"
+      },
+      {
+        "id": "it-passato-prossimo-auxiliary-m2",
+        "incorrect": "Sono mangiato la pizza.",
+        "correct": "Ho mangiato la pizza.",
+        "explanationJa": "\u76EE\u7684\u8A9E\u3092\u3068\u308B mangiare \u306F avere \u3092\u4F7F\u3044\u307E\u3059\u3002"
+      },
+      {
+        "id": "it-passato-prossimo-auxiliary-m3",
+        "incorrect": "Ho tornato a casa.",
+        "correct": "Sono tornato/a a casa.",
+        "explanationJa": "tornare\uFF08\u5E30\u308B\uFF09\u306F essere \u3067\u3059\u3002"
+      }
+    ],
+    "relatedTopics": [
+      "it-passato-prossimo-agreement",
+      "it-reflexive-passato"
+    ],
+    "keywords": [
+      "\u8FD1\u904E\u53BB",
+      "\u52A9\u52D5\u8A5E",
+      "\u904E\u53BB\u5F62",
+      "avere",
+      "essere",
+      "passato prossimo",
+      "ausiliare",
+      "sono andato",
+      "ho mangiato"
+    ],
+    "sourceReferences": [
+      {
+        "id": "src-original-it-passato-prossimo-auxiliary",
+        "kind": "original-note",
+        "label": "\u672C\u30A2\u30D7\u30EA\u72EC\u81EA\u306E\u5B66\u7FD2\u30E1\u30E2\uFF08\u751F\u6210AI\u306E\u652F\u63F4\u3067\u4F5C\u6210\u30FB\u5C02\u9580\u5BB6\u306B\u3088\u308B\u76E3\u4FEE\u524D\uFF09",
+        "url": null
+      }
+    ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "\u76E3\u4FEE\u524D\u306E\u30C9\u30E9\u30D5\u30C8\u6559\u6750\u3067\u3059\u3002correre \u3084 vivere \u306A\u3069\u4E21\u65B9\u306E\u52A9\u52D5\u8A5E\u3092\u3068\u308B\u52D5\u8A5E\u306F\u6271\u3063\u3066\u3044\u307E\u305B\u3093\u3002",
+    "id": "it-passato-prossimo-auxiliary"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Accordo del participio passato con essere",
+    "titleJa": "essere \u3092\u4F7F\u3046\u8FD1\u904E\u53BB\u306E\u904E\u53BB\u5206\u8A5E\u306E\u4E00\u81F4",
+    "level": "A2",
+    "category": "tense",
+    "description": "With the auxiliary essere, the past participle agrees with the subject in gender and number: Maria \u00E8 andata, i ragazzi sono partiti, le ragazze sono arrivate.",
+    "usageJa": "\u52A9\u52D5\u8A5E\u304C essere \u306E\u3068\u304D\u3001\u904E\u53BB\u5206\u8A5E\u306E\u8A9E\u5C3E\u3092\u4E3B\u8A9E\u306E\u6027\u30FB\u6570\u306B\u5408\u308F\u305B\u307E\u3059\uFF08-o / -a / -i / -e\uFF09\u3002",
+    "rules": [
+      {
+        "id": "it-passato-prossimo-agreement-r1",
+        "summaryJa": "\u7537\u6027\u5358\u6570 -o\u3001\u5973\u6027\u5358\u6570 -a\u3001\u7537\u6027\uFF08\u6DF7\u5408\uFF09\u8907\u6570 -i\u3001\u5973\u6027\u8907\u6570 -e\u3002",
+        "pattern": "essere \u002B \u904E\u53BB\u5206\u8A5E\uFF08-o / -a / -i / -e\uFF09"
+      }
+    ],
+    "examples": [
+      {
+        "id": "it-passato-prossimo-agreement-ex1",
+        "text": "Maria \u00E8 andata a Milano.",
+        "translationJa": "\u30DE\u30EA\u30A2\u306F\u30DF\u30E9\u30CE\u306B\u884C\u304D\u307E\u3057\u305F\u3002",
+        "noteJa": null
+      },
+      {
+        "id": "it-passato-prossimo-agreement-ex2",
+        "text": "Le ragazze sono arrivate tardi.",
+        "translationJa": "\u5973\u306E\u5B50\u305F\u3061\u306F\u9045\u308C\u3066\u7740\u304D\u307E\u3057\u305F\u3002",
+        "noteJa": null
+      },
+      {
+        "id": "it-passato-prossimo-agreement-ex3",
+        "text": "Paolo e Luca sono partiti ieri.",
+        "translationJa": "\u30D1\u30AA\u30ED\u3068\u30EB\u30AB\u306F\u6628\u65E5\u51FA\u767A\u3057\u307E\u3057\u305F\u3002",
+        "noteJa": null
+      }
+    ],
+    "commonMistakes": [
+      {
+        "id": "it-passato-prossimo-agreement-m1",
+        "incorrect": "Maria \u00E8 andato.",
+        "correct": "Maria \u00E8 andata.",
+        "explanationJa": "\u4E3B\u8A9E\u304C\u5973\u6027\u5358\u6570\u306A\u306E\u3067\u904E\u53BB\u5206\u8A5E\u306F -a \u306B\u306A\u308A\u307E\u3059\u3002"
+      }
+    ],
+    "relatedTopics": [
+      "it-passato-prossimo-auxiliary",
+      "it-reflexive-passato"
+    ],
+    "keywords": [
+      "\u904E\u53BB\u5206\u8A5E",
+      "\u4E00\u81F4",
+      "\u6027\u6570\u4E00\u81F4",
+      "accordo",
+      "participio",
+      "andata",
+      "partiti"
+    ],
+    "sourceReferences": [
+      {
+        "id": "src-original-it-passato-prossimo-agreement",
+        "kind": "original-note",
+        "label": "\u672C\u30A2\u30D7\u30EA\u72EC\u81EA\u306E\u5B66\u7FD2\u30E1\u30E2\uFF08\u751F\u6210AI\u306E\u652F\u63F4\u3067\u4F5C\u6210\u30FB\u5C02\u9580\u5BB6\u306B\u3088\u308B\u76E3\u4FEE\u524D\uFF09",
+        "url": null
+      }
+    ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "\u30CD\u30A4\u30C6\u30A3\u30D6\u8B1B\u5E2B\u306B\u3088\u308B\u76E3\u4FEE\u524D\u306E\u30C9\u30E9\u30D5\u30C8\u6559\u6750\u3067\u3059\u3002",
+    "id": "it-passato-prossimo-agreement"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Verbi riflessivi",
+    "titleJa": "\u518D\u5E30\u52D5\u8A5E\u306E\u57FA\u672C\uFF08alzarsi / chiamarsi / divertirsi\uFF09",
+    "level": "A2",
+    "category": "pronoun",
+    "description": "Reflexive verbs use a reflexive pronoun (mi, ti, si, ci, vi, si) before the conjugated verb: mi alzo, ti chiami, si diverte.",
+    "usageJa": "\u518D\u5E30\u52D5\u8A5E\u306F\u300C\u81EA\u5206\u81EA\u8EAB\u3092\u301C\u3059\u308B\u300D\u3092\u8868\u3057\u3001\u6D3B\u7528\u3057\u305F\u52D5\u8A5E\u306E\u524D\u306B\u518D\u5E30\u4EE3\u540D\u8A5E mi / ti / si / ci / vi / si \u3092\u7F6E\u304D\u307E\u3059\u3002",
+    "rules": [
+      {
+        "id": "it-reflexive-verbs-r1",
+        "summaryJa": "\u518D\u5E30\u4EE3\u540D\u8A5E\u306F\u4E3B\u8A9E\u306B\u5408\u308F\u305B\u308B\uFF1Aio mi, tu ti, lui/lei si, noi ci, voi vi, loro si\u3002",
+        "pattern": "\u518D\u5E30\u4EE3\u540D\u8A5E \u002B \u6D3B\u7528\u3057\u305F\u52D5\u8A5E"
+      },
+      {
+        "id": "it-reflexive-verbs-r2",
+        "summaryJa": "\u8F9E\u66F8\u5F62\u306F -arsi / -ersi / -irsi\uFF08alzarsi\u3001mettersi\u3001divertirsi\uFF09\u3002",
+        "pattern": null
+      }
+    ],
+    "examples": [
+      {
+        "id": "it-reflexive-verbs-ex1",
+        "text": "La mattina mi alzo alle sette.",
+        "translationJa": "\u671D\u306F7\u6642\u306B\u8D77\u304D\u307E\u3059\u3002",
+        "noteJa": null
+      },
+      {
+        "id": "it-reflexive-verbs-ex2",
+        "text": "Come ti chiami?",
+        "translationJa": "\u304A\u540D\u524D\u306F\uFF1F",
+        "noteJa": null
+      },
+      {
+        "id": "it-reflexive-verbs-ex3",
+        "text": "I bambini si divertono al parco.",
+        "translationJa": "\u5B50\u3069\u3082\u305F\u3061\u306F\u516C\u5712\u3067\u697D\u3057\u3093\u3067\u3044\u307E\u3059\u3002",
+        "noteJa": null
+      }
+    ],
+    "commonMistakes": [
+      {
+        "id": "it-reflexive-verbs-m1",
+        "incorrect": "Io alzo alle sette.",
+        "correct": "Mi alzo alle sette.",
+        "explanationJa": "\u300C\u8D77\u304D\u308B\u300D\u306F\u518D\u5E30\u52D5\u8A5E alzarsi \u306A\u306E\u3067\u518D\u5E30\u4EE3\u540D\u8A5E mi \u304C\u5FC5\u8981\u3067\u3059\u3002"
+      }
+    ],
+    "relatedTopics": [
+      "it-reflexive-passato",
+      "it-present-regular"
+    ],
+    "keywords": [
+      "\u518D\u5E30\u52D5\u8A5E",
+      "\u518D\u5E30\u4EE3\u540D\u8A5E",
+      "riflessivi",
+      "mi alzo",
+      "ti chiami",
+      "si",
+      "ci",
+      "vi"
+    ],
+    "sourceReferences": [
+      {
+        "id": "src-original-it-reflexive-verbs",
+        "kind": "original-note",
+        "label": "\u672C\u30A2\u30D7\u30EA\u72EC\u81EA\u306E\u5B66\u7FD2\u30E1\u30E2\uFF08\u751F\u6210AI\u306E\u652F\u63F4\u3067\u4F5C\u6210\u30FB\u5C02\u9580\u5BB6\u306B\u3088\u308B\u76E3\u4FEE\u524D\uFF09",
+        "url": null
+      }
+    ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "\u30CD\u30A4\u30C6\u30A3\u30D6\u8B1B\u5E2B\u306B\u3088\u308B\u76E3\u4FEE\u524D\u306E\u30C9\u30E9\u30D5\u30C8\u6559\u6750\u3067\u3059\u3002",
+    "id": "it-reflexive-verbs"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Verbi riflessivi al passato prossimo",
+    "titleJa": "\u518D\u5E30\u52D5\u8A5E\u306E\u8FD1\u904E\u53BB\uFF08mi sono alzato/a\uFF09",
+    "level": "A2",
+    "category": "tense",
+    "description": "Reflexive verbs always take essere in the passato prossimo, and the participle agrees with the subject: mi sono alzata, ci siamo divertiti.",
+    "usageJa": "\u518D\u5E30\u52D5\u8A5E\u306E\u8FD1\u904E\u53BB\u306F\u5FC5\u305A essere \u3092\u4F7F\u3044\u3001\u904E\u53BB\u5206\u8A5E\u306F\u4E3B\u8A9E\u306E\u6027\u30FB\u6570\u306B\u4E00\u81F4\u3055\u305B\u307E\u3059\u3002",
+    "rules": [
+      {
+        "id": "it-reflexive-passato-r1",
+        "summaryJa": "\u518D\u5E30\u4EE3\u540D\u8A5E \u002B essere \u002B \u904E\u53BB\u5206\u8A5E\uFF08\u4E3B\u8A9E\u306B\u4E00\u81F4\uFF09\u3002",
+        "pattern": "mi sono alzato/a, ci siamo divertiti/e"
+      }
+    ],
+    "examples": [
+      {
+        "id": "it-reflexive-passato-ex1",
+        "text": "Stamattina mi sono alzata tardi.",
+        "translationJa": "\u4ECA\u671D\u306F\u9045\u304F\u8D77\u304D\u307E\u3057\u305F\u3002",
+        "noteJa": "\u8A71\u3057\u624B\u304C\u5973\u6027\u306E\u5834\u5408\u3002"
+      },
+      {
+        "id": "it-reflexive-passato-ex2",
+        "text": "Ieri sera ci siamo divertiti molto.",
+        "translationJa": "\u6628\u591C\u306F\u3068\u3066\u3082\u697D\u3057\u307F\u307E\u3057\u305F\u3002",
+        "noteJa": null
+      }
+    ],
+    "commonMistakes": [
+      {
+        "id": "it-reflexive-passato-m1",
+        "incorrect": "Mi ho alzato.",
+        "correct": "Mi sono alzato/a.",
+        "explanationJa": "\u518D\u5E30\u52D5\u8A5E\u306E\u8FD1\u904E\u53BB\u306F avere \u3067\u306F\u306A\u304F essere \u3092\u4F7F\u3044\u307E\u3059\u3002"
+      }
+    ],
+    "relatedTopics": [
+      "it-reflexive-verbs",
+      "it-passato-prossimo-auxiliary",
+      "it-passato-prossimo-agreement"
+    ],
+    "keywords": [
+      "\u518D\u5E30\u52D5\u8A5E",
+      "\u8FD1\u904E\u53BB",
+      "mi sono",
+      "ci siamo",
+      "riflessivi passato"
+    ],
+    "sourceReferences": [
+      {
+        "id": "src-original-it-reflexive-passato",
+        "kind": "original-note",
+        "label": "\u672C\u30A2\u30D7\u30EA\u72EC\u81EA\u306E\u5B66\u7FD2\u30E1\u30E2\uFF08\u751F\u6210AI\u306E\u652F\u63F4\u3067\u4F5C\u6210\u30FB\u5C02\u9580\u5BB6\u306B\u3088\u308B\u76E3\u4FEE\u524D\uFF09",
+        "url": null
+      }
+    ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "\u30CD\u30A4\u30C6\u30A3\u30D6\u8B1B\u5E2B\u306B\u3088\u308B\u76E3\u4FEE\u524D\u306E\u30C9\u30E9\u30D5\u30C8\u6559\u6750\u3067\u3059\u3002",
+    "id": "it-reflexive-passato"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Il verbo piacere",
+    "titleJa": "piacere\uFF08\u301C\u304C\u597D\u304D\u3060\uFF09\u306E\u69CB\u6587",
+    "level": "A2",
+    "category": "construction",
+    "description": "With piacere the thing liked is the grammatical subject and the person is an indirect object: mi piace la pizza, mi piacciono gli spaghetti, a Marco piace leggere.",
+    "usageJa": "piacere \u306F\u300C\u301C\u304C\uFF08\u4EBA\u306B\uFF09\u6C17\u306B\u5165\u308B\u300D\u3068\u3044\u3046\u69CB\u6587\u3067\u3001\u597D\u304D\u306A\u3082\u306E\u304C\u4E3B\u8A9E\u3001\u597D\u304D\u306A\u4EBA\u306F\u9593\u63A5\u76EE\u7684\u8A9E\uFF08mi / ti / gli / le / a \u002B \u4EBA\uFF09\u306B\u306A\u308A\u307E\u3059\u3002\u597D\u304D\u306A\u3082\u306E\u304C\u8907\u6570\u306A\u3089 piacciono \u3067\u3059\u3002",
+    "rules": [
+      {
+        "id": "it-piacere-r1",
+        "summaryJa": "\u597D\u304D\u306A\u3082\u306E\u304C\u5358\u6570\u540D\u8A5E\u30FB\u4E0D\u5B9A\u8A5E\u306A\u3089 piace\u3001\u8907\u6570\u540D\u8A5E\u306A\u3089 piacciono\u3002",
+        "pattern": "mi piace \u002B \u5358\u6570 / mi piacciono \u002B \u8907\u6570"
+      },
+      {
+        "id": "it-piacere-r2",
+        "summaryJa": "\u4EBA\u306F\u9593\u63A5\u76EE\u7684\u8A9E\uFF1Ami, ti, gli\uFF08\u5F7C\u306B\uFF09, le\uFF08\u5F7C\u5973\u306B\uFF09, ci, vi, gli\u3001\u307E\u305F\u306F a \u002B \u4EBA\u3002",
+        "pattern": "a Marco piace ..."
+      }
+    ],
+    "examples": [
+      {
+        "id": "it-piacere-ex1",
+        "text": "Mi piacciono molto gli spaghetti.",
+        "translationJa": "\u30B9\u30D1\u30B2\u30C3\u30C6\u30A3\u304C\u5927\u597D\u304D\u3067\u3059\u3002",
+        "noteJa": null
+      },
+      {
+        "id": "it-piacere-ex2",
+        "text": "A Marco piace leggere.",
+        "translationJa": "\u30DE\u30EB\u30B3\u306F\u8AAD\u66F8\u304C\u597D\u304D\u3067\u3059\u3002",
+        "noteJa": null
+      },
+      {
+        "id": "it-piacere-ex3",
+        "text": "Ti piace la musica italiana?",
+        "translationJa": "\u30A4\u30BF\u30EA\u30A2\u306E\u97F3\u697D\u306F\u597D\u304D\uFF1F",
+        "noteJa": null
+      }
+    ],
+    "commonMistakes": [
+      {
+        "id": "it-piacere-m1",
+        "incorrect": "Io piaccio la pizza.",
+        "correct": "Mi piace la pizza.",
+        "explanationJa": "\u597D\u304D\u306A\u3082\u306E\uFF08la pizza\uFF09\u304C\u4E3B\u8A9E\u306A\u306E\u3067 mi piace \u3068\u3057\u307E\u3059\u3002"
+      },
+      {
+        "id": "it-piacere-m2",
+        "incorrect": "Mi piace gli spaghetti.",
+        "correct": "Mi piacciono gli spaghetti.",
+        "explanationJa": "\u4E3B\u8A9E gli spaghetti \u304C\u8907\u6570\u306A\u306E\u3067 piacciono \u3067\u3059\u3002"
+      }
+    ],
+    "relatedTopics": [],
+    "keywords": [
+      "\u597D\u304D",
+      "piacere",
+      "mi piace",
+      "piacciono",
+      "gli piace"
+    ],
+    "sourceReferences": [
+      {
+        "id": "src-original-it-piacere",
+        "kind": "original-note",
+        "label": "\u672C\u30A2\u30D7\u30EA\u72EC\u81EA\u306E\u5B66\u7FD2\u30E1\u30E2\uFF08\u751F\u6210AI\u306E\u652F\u63F4\u3067\u4F5C\u6210\u30FB\u5C02\u9580\u5BB6\u306B\u3088\u308B\u76E3\u4FEE\u524D\uFF09",
+        "url": null
+      }
+    ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "\u30CD\u30A4\u30C6\u30A3\u30D6\u8B1B\u5E2B\u306B\u3088\u308B\u76E3\u4FEE\u524D\u306E\u30C9\u30E9\u30D5\u30C8\u6559\u6750\u3067\u3059\u3002",
+    "id": "it-piacere"
+  }
+]

@@ -1,0 +1,207 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "TutorProfile API",
+    "version": "1.0.0",
+    "description": "Generated from SwallowKit Zod model metadata."
+  },
+  "paths": {
+    "/api/tutorProfile": {
+      "get": {
+        "operationId": "tutorProfileGetAll",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TutorProfile"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "operationId": "tutorProfileCreate",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TutorProfile"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TutorProfile"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/tutorProfile/{id}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "get": {
+        "operationId": "tutorProfileGetById",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TutorProfile"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "operationId": "tutorProfileUpdate",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TutorProfile"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Updated response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TutorProfile"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "operationId": "tutorProfileDelete",
+        "responses": {
+          "204": {
+            "description": "Deleted response"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "TutorProfile": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "language": {
+            "type": "string",
+            "enum": [
+              "it",
+              "en"
+            ]
+          },
+          "schemaVersion": {
+            "type": "string",
+            "enum": [
+              "1"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "avatarEmoji": {
+            "type": "string"
+          },
+          "personaJa": {
+            "type": "string"
+          },
+          "speakingStyle": {
+            "type": "string"
+          },
+          "greeting": {
+            "type": "string",
+            "minLength": 1
+          },
+          "correctionPolicy": {
+            "$ref": "#/components/schemas/TutorProfileCorrectionPolicy"
+          },
+          "promptTemplateId": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "updatedAt": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "language",
+          "schemaVersion",
+          "name",
+          "avatarEmoji",
+          "personaJa",
+          "speakingStyle",
+          "greeting",
+          "correctionPolicy",
+          "promptTemplateId"
+        ]
+      },
+      "TutorProfileCorrectionPolicy": {
+        "type": "object",
+        "properties": {
+          "maxCorrectionsPerTurn": {
+            "type": "integer",
+            "format": "int64",
+            "minimum": 0,
+            "maximum": 3
+          },
+          "style": {
+            "type": "string",
+            "enum": [
+              "recast",
+              "explicit"
+            ]
+          },
+          "explainInJapanese": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "maxCorrectionsPerTurn",
+          "style",
+          "explainInJapanese"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+name: Deploy Azure Functions
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'functions/**'
+      - 'shared/**'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'functions/**'
+      - 'shared/**'
+  workflow_dispatch:
+
+concurrency:
+  group: swallowkit-functions-${{ github.repository }}
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    name: Build and Deploy Functions
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+
+
+      - name: Install dependencies
+        run: |
+          pnpm install --frozen-lockfile
+      
+      - name: Build shared package
+        run: |
+          pnpm --filter shared run build
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Publish Functions
+        run: |
+          dotnet publish ./functions -c Release -o ./functions/publish
+      
+      - name: Deploy to Azure Functions
+        if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main'
+        uses: Azure/functions-action@v1
+        with:
+          app-name: ${{ secrets.AZURE_FUNCTIONAPP_NAME }}
+          package: './functions/publish'
+          publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
+          sku: flexconsumption

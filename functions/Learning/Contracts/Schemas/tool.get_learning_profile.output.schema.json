@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "learnerName": {
+      "type": "string"
+    },
+    "currentLevel": {
+      "type": "string",
+      "enum": [
+        "A1",
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+      ]
+    },
+    "nativeLanguage": {
+      "type": "string"
+    },
+    "targetLanguage": {
+      "type": "string",
+      "enum": [
+        "it",
+        "en"
+      ]
+    },
+    "learningGoals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "weakTopics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "topicId": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "score": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "topicId",
+          "title",
+          "score"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "strongTopics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "topicId": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "score": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "topicId",
+          "title",
+          "score"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "learnerName",
+    "currentLevel",
+    "nativeLanguage",
+    "targetLanguage",
+    "learningGoals",
+    "weakTopics",
+    "strongTopics"
+  ],
+  "additionalProperties": false
+}

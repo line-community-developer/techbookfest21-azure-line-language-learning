@@ -1,0 +1,1479 @@
+[
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-definite-articles",
+    "type": "multiple-choice",
+    "difficulty": 1,
+    "prompt": "Ho comprato ___ zaino nuovo.",
+    "choices": [
+      "il",
+      "lo",
+      "la",
+      "l\u0027"
+    ],
+    "correctAnswer": "lo",
+    "acceptedAnswers": [
+      "lo"
+    ],
+    "explanationJa": "zaino \u306F z \u3067\u59CB\u307E\u308B\u7537\u6027\u5358\u6570\u540D\u8A5E\u306A\u306E\u3067\u5B9A\u51A0\u8A5E\u306F lo \u3067\u3059\uFF08lo zaino\uFF09\u3002",
+    "ruleIds": [
+      "it-definite-articles-r1"
+    ],
+    "id": "mq-def-1"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-definite-articles",
+    "type": "multiple-choice",
+    "difficulty": 1,
+    "prompt": "___ amiche di Giulia sono simpatiche.",
+    "choices": [
+      "Le",
+      "Gli",
+      "I",
+      "La"
+    ],
+    "correctAnswer": "Le",
+    "acceptedAnswers": [
+      "Le"
+    ],
+    "explanationJa": "amiche \u306F\u5973\u6027\u8907\u6570\u540D\u8A5E\u306A\u306E\u3067 Le \u3092\u4F7F\u3044\u307E\u3059\u3002",
+    "ruleIds": [
+      "it-definite-articles-r3"
+    ],
+    "id": "mq-def-2"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-definite-articles",
+    "type": "cloze",
+    "difficulty": 1,
+    "prompt": "Dov\u0027\u00E8 ___ stazione?",
+    "choices": [],
+    "correctAnswer": "la",
+    "acceptedAnswers": [
+      "la"
+    ],
+    "explanationJa": "stazione \u306F\u5B50\u97F3\u3067\u59CB\u307E\u308B\u5973\u6027\u5358\u6570\u540D\u8A5E\u306A\u306E\u3067 la \u3092\u4F7F\u3044\u307E\u3059\u3002",
+    "ruleIds": [
+      "it-definite-articles-r2"
+    ],
+    "id": "mq-def-3"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-definite-articles",
+    "type": "multiple-choice",
+    "difficulty": 1,
+    "prompt": "Sul tavolo ci sono ___ libri.",
+    "choices": [
+      "i",
+      "gli",
+      "le",
+      "il"
+    ],
+    "correctAnswer": "i",
+    "acceptedAnswers": [
+      "i"
+    ],
+    "explanationJa": "\u5358\u6570\u3067 il libro \u306A\u306E\u3067\u3001\u8907\u6570\u5F62\u306F i libri \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-definite-articles-r3"
+    ],
+    "id": "mq-def-4"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-definite-articles",
+    "type": "cloze",
+    "difficulty": 2,
+    "prompt": "___ studenti sono in classe.",
+    "choices": [],
+    "correctAnswer": "Gli",
+    "acceptedAnswers": [
+      "Gli"
+    ],
+    "explanationJa": "\u5358\u6570\u3067 lo studente \u306A\u306E\u3067\u3001\u8907\u6570\u5F62\u306F Gli studenti \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-definite-articles-r3"
+    ],
+    "id": "mq-def-5"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-indefinite-articles",
+    "type": "multiple-choice",
+    "difficulty": 1,
+    "prompt": "Vorrei ___ espresso, per favore.",
+    "choices": [
+      "un",
+      "uno",
+      "un\u0027",
+      "una"
+    ],
+    "correctAnswer": "un",
+    "acceptedAnswers": [
+      "un"
+    ],
+    "explanationJa": "espresso \u306F\u7537\u6027\u540D\u8A5E\u3067\u3059\u3002\u7537\u6027\u540D\u8A5E\u306F\u6BCD\u97F3\u306E\u524D\u3067\u3082\u30A2\u30DD\u30B9\u30C8\u30ED\u30D5\u30A3\u3092\u4ED8\u3051\u305A un \u3092\u4F7F\u3044\u307E\u3059\u3002",
+    "ruleIds": [
+      "it-indefinite-articles-r1"
+    ],
+    "id": "mq-ind-1"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-indefinite-articles",
+    "type": "multiple-choice",
+    "difficulty": 1,
+    "prompt": "C\u0027\u00E8 ___ studente nuovo in classe.",
+    "choices": [
+      "un",
+      "uno",
+      "una",
+      "un\u0027"
+    ],
+    "correctAnswer": "uno",
+    "acceptedAnswers": [
+      "uno"
+    ],
+    "explanationJa": "studente \u306F s\u002B\u5B50\u97F3\u3067\u59CB\u307E\u308B\u7537\u6027\u540D\u8A5E\u306A\u306E\u3067 uno \u3092\u4F7F\u3044\u307E\u3059\u3002",
+    "ruleIds": [
+      "it-indefinite-articles-r1"
+    ],
+    "id": "mq-ind-2"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-indefinite-articles",
+    "type": "cloze",
+    "difficulty": 1,
+    "prompt": "Abito in ___ casa piccola.",
+    "choices": [],
+    "correctAnswer": "una",
+    "acceptedAnswers": [
+      "una"
+    ],
+    "explanationJa": "casa \u306F\u5B50\u97F3\u3067\u59CB\u307E\u308B\u5973\u6027\u540D\u8A5E\u306A\u306E\u3067 una \u3092\u4F7F\u3044\u307E\u3059\u3002",
+    "ruleIds": [
+      "it-indefinite-articles-r2"
+    ],
+    "id": "mq-ind-3"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-indefinite-articles",
+    "type": "cloze",
+    "difficulty": 1,
+    "prompt": "A pranzo mangio ___ panino.",
+    "choices": [],
+    "correctAnswer": "un",
+    "acceptedAnswers": [
+      "un"
+    ],
+    "explanationJa": "panino \u306F\u5B50\u97F3\u3067\u59CB\u307E\u308B\u7537\u6027\u540D\u8A5E\u306A\u306E\u3067 un \u3092\u4F7F\u3044\u307E\u3059\u3002",
+    "ruleIds": [
+      "it-indefinite-articles-r1"
+    ],
+    "id": "mq-ind-4"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-articulated-prepositions",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Il libro \u00E8 ___ tavolo.",
+    "choices": [
+      "sul",
+      "sullo",
+      "sulla",
+      "su il"
+    ],
+    "correctAnswer": "sul",
+    "acceptedAnswers": [
+      "sul"
+    ],
+    "explanationJa": "su \u002B il \u306F\u7D50\u5408\u3057\u3066 sul \u306B\u306A\u308A\u307E\u3059\uFF08il tavolo\uFF09\u3002",
+    "ruleIds": [
+      "it-articulated-prepositions-r1"
+    ],
+    "id": "mq-art-1"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-articulated-prepositions",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Vado ___ stazione a piedi.",
+    "choices": [
+      "alla",
+      "al",
+      "a la",
+      "allo"
+    ],
+    "correctAnswer": "alla",
+    "acceptedAnswers": [
+      "alla"
+    ],
+    "explanationJa": "a \u002B la \u306F\u7D50\u5408\u3057\u3066 alla \u306B\u306A\u308A\u307E\u3059\uFF08la stazione\uFF09\u3002",
+    "ruleIds": [
+      "it-articulated-prepositions-r1"
+    ],
+    "id": "mq-art-2"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-articulated-prepositions",
+    "type": "cloze",
+    "difficulty": 2,
+    "prompt": "Le chiavi sono ___ borsa. (in \u002B la)",
+    "choices": [],
+    "correctAnswer": "nella",
+    "acceptedAnswers": [
+      "nella"
+    ],
+    "explanationJa": "in \u002B la \u306F nella \u306B\u306A\u308A\u307E\u3059\u3002in \u306F\u7D50\u5408\u3059\u308B\u3068 ne- \u306B\u5909\u308F\u308A\u307E\u3059\u3002",
+    "ruleIds": [
+      "it-articulated-prepositions-r1"
+    ],
+    "id": "mq-art-3"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-articulated-prepositions",
+    "type": "multiple-choice",
+    "difficulty": 3,
+    "prompt": "Torno ___ ufficio alle sei. (da \u002B l\u0027)",
+    "choices": [
+      "dall\u0027",
+      "dal",
+      "dallo",
+      "da l\u0027"
+    ],
+    "correctAnswer": "dall\u0027",
+    "acceptedAnswers": [
+      "dall\u0027"
+    ],
+    "explanationJa": "ufficio \u306F\u6BCD\u97F3\u3067\u59CB\u307E\u308B\u7537\u6027\u540D\u8A5E\u306A\u306E\u3067 l\u0027ufficio\u3001da \u3068\u7D50\u5408\u3057\u3066 dall\u0027ufficio \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-articulated-prepositions-r2"
+    ],
+    "id": "mq-art-4"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-articulated-prepositions",
+    "type": "cloze",
+    "difficulty": 2,
+    "prompt": "Il treno parte ___ binario 3. (da \u002B il)",
+    "choices": [],
+    "correctAnswer": "dal",
+    "acceptedAnswers": [
+      "dal"
+    ],
+    "explanationJa": "da \u002B il \u306F dal \u306B\u306A\u308A\u307E\u3059\uFF08il binario\uFF09\u3002",
+    "ruleIds": [
+      "it-articulated-prepositions-r1"
+    ],
+    "id": "mq-art-5"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-present-regular",
+    "type": "multiple-choice",
+    "difficulty": 1,
+    "prompt": "Noi ___ italiano ogni giorno.",
+    "choices": [
+      "parliamo",
+      "parlamo",
+      "parlano",
+      "parlate"
+    ],
+    "correctAnswer": "parliamo",
+    "acceptedAnswers": [
+      "parliamo"
+    ],
+    "explanationJa": "\u4E3B\u8A9E\u304C noi \u306A\u306E\u3067 parlare \u306E1\u4EBA\u79F0\u8907\u6570 parliamo \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-present-regular-r1"
+    ],
+    "id": "mq-pre-1"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-present-regular",
+    "type": "cloze",
+    "difficulty": 1,
+    "prompt": "Tu ___ il caff\u00E8? (prendere)",
+    "choices": [],
+    "correctAnswer": "prendi",
+    "acceptedAnswers": [
+      "prendi"
+    ],
+    "explanationJa": "prendere \u306E2\u4EBA\u79F0\u5358\u6570\u306F prendi \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-present-regular-r2"
+    ],
+    "id": "mq-pre-2"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-present-regular",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Loro ___ fino alle nove. (dormire)",
+    "choices": [
+      "dormono",
+      "dormano",
+      "dormiamo",
+      "dorme"
+    ],
+    "correctAnswer": "dormono",
+    "acceptedAnswers": [
+      "dormono"
+    ],
+    "explanationJa": "dormire \u306E3\u4EBA\u79F0\u8907\u6570\uFF08\u76F4\u8AAC\u6CD5\u73FE\u5728\uFF09\u306F dormono \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-present-regular-r3"
+    ],
+    "id": "mq-pre-3"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-present-regular",
+    "type": "cloze",
+    "difficulty": 1,
+    "prompt": "Io ___ a Osaka. (abitare)",
+    "choices": [],
+    "correctAnswer": "abito",
+    "acceptedAnswers": [
+      "abito"
+    ],
+    "explanationJa": "abitare \u306E1\u4EBA\u79F0\u5358\u6570\u306F abito \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-present-regular-r1"
+    ],
+    "id": "mq-pre-4"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-verb-a-infinitive",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Domani comincio ___ studiare il tedesco.",
+    "choices": [
+      "a",
+      "di",
+      "da",
+      "per"
+    ],
+    "correctAnswer": "a",
+    "acceptedAnswers": [
+      "a"
+    ],
+    "explanationJa": "cominciare\uFF08\u59CB\u3081\u308B\uFF09\u306F a \u002B \u4E0D\u5B9A\u8A5E\u3092\u3068\u308A\u307E\u3059\u3002\u6B63\u89E3\u306F a \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-verb-a-infinitive-r1"
+    ],
+    "id": "mq-va-1"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-verb-a-infinitive",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Finalmente sono riuscito ___ trovare casa.",
+    "choices": [
+      "a",
+      "di",
+      "per",
+      "da"
+    ],
+    "correctAnswer": "a",
+    "acceptedAnswers": [
+      "a"
+    ],
+    "explanationJa": "riuscire\uFF08\u301C\u3067\u304D\u308B\uFF09\u306F a \u002B \u4E0D\u5B9A\u8A5E\u3092\u3068\u308A\u307E\u3059\u3002\u6B63\u89E3\u306F a \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-verb-a-infinitive-r2"
+    ],
+    "id": "mq-va-2"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-verb-a-infinitive",
+    "type": "cloze",
+    "difficulty": 2,
+    "prompt": "Mia figlia impara ___ nuotare.",
+    "choices": [],
+    "correctAnswer": "a",
+    "acceptedAnswers": [
+      "a"
+    ],
+    "explanationJa": "imparare\uFF08\u7FD2\u3046\uFF09\u306F a \u002B \u4E0D\u5B9A\u8A5E\u3067\u3059\u3002\u6B63\u89E3\u306F a \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-verb-a-infinitive-r2"
+    ],
+    "id": "mq-va-3"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-verb-a-infinitive",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Mi aiuti ___ portare le valigie?",
+    "choices": [
+      "a",
+      "di",
+      "per",
+      "da"
+    ],
+    "correctAnswer": "a",
+    "acceptedAnswers": [
+      "a"
+    ],
+    "explanationJa": "aiutare qualcuno\uFF08\u4EBA\u304C\u301C\u3059\u308B\u306E\u3092\u624B\u4F1D\u3046\uFF09\u306F a \u002B \u4E0D\u5B9A\u8A5E\u3067\u3059\u3002\u6B63\u89E3\u306F a \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-verb-a-infinitive-r2"
+    ],
+    "id": "mq-va-4"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-verb-a-infinitive",
+    "type": "cloze",
+    "difficulty": 3,
+    "prompt": "Continuo ___ pensare a quel film.",
+    "choices": [],
+    "correctAnswer": "a",
+    "acceptedAnswers": [
+      "a"
+    ],
+    "explanationJa": "continuare\uFF08\u7D9A\u3051\u308B\uFF09\u306F a \u002B \u4E0D\u5B9A\u8A5E\u3067\u3059\u3002\u6B63\u89E3\u306F a \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-verb-a-infinitive-r1"
+    ],
+    "id": "mq-va-5"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-verb-a-infinitive",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Ho iniziato ___ lavorare qui l\u0027anno scorso.",
+    "choices": [
+      "a",
+      "di",
+      "da",
+      "in"
+    ],
+    "correctAnswer": "a",
+    "acceptedAnswers": [
+      "a"
+    ],
+    "explanationJa": "iniziare\uFF08\u59CB\u3081\u308B\uFF09\u306F cominciare \u3068\u540C\u3058\u304F a \u002B \u4E0D\u5B9A\u8A5E\u3067\u3059\u3002\u6B63\u89E3\u306F a \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-verb-a-infinitive-r1"
+    ],
+    "id": "mq-va-6"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-verb-di-infinitive",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Ho finito ___ lavorare alle sette.",
+    "choices": [
+      "di",
+      "a",
+      "da",
+      "per"
+    ],
+    "correctAnswer": "di",
+    "acceptedAnswers": [
+      "di"
+    ],
+    "explanationJa": "finire\uFF08\u7D42\u3048\u308B\uFF09\u306F di \u002B \u4E0D\u5B9A\u8A5E\u3092\u3068\u308A\u307E\u3059\u3002\u6B63\u89E3\u306F di \u3067\u3059\uFF08cominciare a \u3068\u5BFE\u3067\u899A\u3048\u307E\u3057\u3087\u3046\uFF09\u3002",
+    "ruleIds": [
+      "it-verb-di-infinitive-r1"
+    ],
+    "id": "mq-vd-1"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-verb-di-infinitive",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Abbiamo deciso ___ partire domani.",
+    "choices": [
+      "di",
+      "a",
+      "per",
+      "da"
+    ],
+    "correctAnswer": "di",
+    "acceptedAnswers": [
+      "di"
+    ],
+    "explanationJa": "decidere\uFF08\u6C7A\u3081\u308B\uFF09\u306F di \u002B \u4E0D\u5B9A\u8A5E\u3067\u3059\u3002\u6B63\u89E3\u306F di \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-verb-di-infinitive-r2"
+    ],
+    "id": "mq-vd-2"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-verb-di-infinitive",
+    "type": "cloze",
+    "difficulty": 2,
+    "prompt": "Cerco ___ parlare solo in italiano.",
+    "choices": [],
+    "correctAnswer": "di",
+    "acceptedAnswers": [
+      "di"
+    ],
+    "explanationJa": "cercare\uFF08\u301C\u3057\u3088\u3046\u3068\u52AA\u3081\u308B\uFF09\u306F di \u002B \u4E0D\u5B9A\u8A5E\u3067\u3059\u3002\u6B63\u89E3\u306F di \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-verb-di-infinitive-r2"
+    ],
+    "id": "mq-vd-3"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-verb-di-infinitive",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Devi smettere ___ fumare!",
+    "choices": [
+      "di",
+      "a",
+      "da",
+      "con"
+    ],
+    "correctAnswer": "di",
+    "acceptedAnswers": [
+      "di"
+    ],
+    "explanationJa": "smettere\uFF08\u3084\u3081\u308B\uFF09\u306F di \u002B \u4E0D\u5B9A\u8A5E\u3067\u3059\u3002\u6B63\u89E3\u306F di \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-verb-di-infinitive-r1"
+    ],
+    "id": "mq-vd-4"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-verb-di-infinitive",
+    "type": "cloze",
+    "difficulty": 3,
+    "prompt": "Non dimenticarti ___ chiamare la mamma.",
+    "choices": [],
+    "correctAnswer": "di",
+    "acceptedAnswers": [
+      "di"
+    ],
+    "explanationJa": "dimenticarsi\uFF08\u5FD8\u308C\u308B\uFF09\u306F di \u002B \u4E0D\u5B9A\u8A5E\u3067\u3059\u3002\u6B63\u89E3\u306F di \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-verb-di-infinitive-r2"
+    ],
+    "id": "mq-vd-5"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-verb-di-infinitive",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Spero ___ vederti presto.",
+    "choices": [
+      "di",
+      "a",
+      "per",
+      "da"
+    ],
+    "correctAnswer": "di",
+    "acceptedAnswers": [
+      "di"
+    ],
+    "explanationJa": "sperare\uFF08\u671B\u3080\uFF09\u306F di \u002B \u4E0D\u5B9A\u8A5E\u3067\u3059\u3002\u6B63\u89E3\u306F di \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-verb-di-infinitive-r2"
+    ],
+    "id": "mq-vd-6"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-avere-voglia-di",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Ho voglia ___ un gelato.",
+    "choices": [
+      "di",
+      "a",
+      "per",
+      "da"
+    ],
+    "correctAnswer": "di",
+    "acceptedAnswers": [
+      "di"
+    ],
+    "explanationJa": "avere voglia \u306E\u5F8C\u306F\u5E38\u306B di \u3067\u3059\u3002\u6B63\u89E3\u306F di \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-avere-voglia-di-r1"
+    ],
+    "id": "mq-av-1"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-avere-voglia-di",
+    "type": "cloze",
+    "difficulty": 2,
+    "prompt": "Stasera non ho voglia ___ uscire.",
+    "choices": [],
+    "correctAnswer": "di",
+    "acceptedAnswers": [
+      "di"
+    ],
+    "explanationJa": "avere voglia di \u002B \u4E0D\u5B9A\u8A5E\u3067\u300C\u301C\u3057\u305F\u3044\u6C17\u5206\u3060\u300D\u3002\u6B63\u89E3\u306F di \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-avere-voglia-di-r1"
+    ],
+    "id": "mq-av-2"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-avere-voglia-di",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Hai voglia di ___ al cinema?",
+    "choices": [
+      "andare",
+      "vai",
+      "andato",
+      "a andare"
+    ],
+    "correctAnswer": "andare",
+    "acceptedAnswers": [
+      "andare"
+    ],
+    "explanationJa": "di \u306E\u5F8C\u306B\u306F\u4E0D\u5B9A\u8A5E\u304C\u6765\u308B\u306E\u3067 andare \u304C\u6B63\u89E3\u3067\u3059\u3002",
+    "ruleIds": [
+      "it-avere-voglia-di-r1"
+    ],
+    "id": "mq-av-3"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-avere-voglia-di",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "___ voglia di mangiare la pizza.",
+    "choices": [
+      "Ho",
+      "Sono",
+      "Faccio",
+      "Sto"
+    ],
+    "correctAnswer": "Ho",
+    "acceptedAnswers": [
+      "Ho"
+    ],
+    "explanationJa": "voglia \u306F avere \u3068\u7D44\u307F\u5408\u308F\u305B\u307E\u3059\u3002\u6B63\u89E3\u306F Ho \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-avere-voglia-di-r2"
+    ],
+    "id": "mq-av-4"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-andare-a",
+    "type": "multiple-choice",
+    "difficulty": 1,
+    "prompt": "Quest\u0027estate vado ___ Roma.",
+    "choices": [
+      "a",
+      "in",
+      "da",
+      "di"
+    ],
+    "correctAnswer": "a",
+    "acceptedAnswers": [
+      "a"
+    ],
+    "explanationJa": "\u90FD\u5E02\u540D\u306B\u306F a \u3092\u4F7F\u3044\u307E\u3059\u3002\u6B63\u89E3\u306F a \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-andare-a-r1"
+    ],
+    "id": "mq-aa-1"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-andare-a",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Stasera andiamo ___ mangiare fuori.",
+    "choices": [
+      "a",
+      "di",
+      "da",
+      "per"
+    ],
+    "correctAnswer": "a",
+    "acceptedAnswers": [
+      "a"
+    ],
+    "explanationJa": "\u300C\u301C\u3057\u306B\u884C\u304F\u300D\u306F andare a \u002B \u4E0D\u5B9A\u8A5E\u3067\u3059\u3002\u6B63\u89E3\u306F a \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-andare-a-r3"
+    ],
+    "id": "mq-aa-2"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-andare-a",
+    "type": "cloze",
+    "difficulty": 1,
+    "prompt": "Alle undici vado ___ letto.",
+    "choices": [],
+    "correctAnswer": "a",
+    "acceptedAnswers": [
+      "a"
+    ],
+    "explanationJa": "\u300C\u5BDD\u308B\u300D\u306F andare a letto\uFF08\u51A0\u8A5E\u306A\u3057\uFF09\u3067\u3059\u3002\u6B63\u89E3\u306F a \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-andare-a-r2"
+    ],
+    "id": "mq-aa-3"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-andare-a",
+    "type": "multiple-choice",
+    "difficulty": 1,
+    "prompt": "I bambini vanno ___ scuola in autobus.",
+    "choices": [
+      "a",
+      "in",
+      "da",
+      "di"
+    ],
+    "correctAnswer": "a",
+    "acceptedAnswers": [
+      "a"
+    ],
+    "explanationJa": "scuola \u306F a scuola\uFF08\u51A0\u8A5E\u306A\u3057\uFF09\u3068\u8A00\u3044\u307E\u3059\u3002\u6B63\u89E3\u306F a \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-andare-a-r2"
+    ],
+    "id": "mq-aa-4"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-andare-da",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Domani vado ___ Marco per studiare insieme.",
+    "choices": [
+      "da",
+      "a",
+      "in",
+      "di"
+    ],
+    "correctAnswer": "da",
+    "acceptedAnswers": [
+      "da"
+    ],
+    "explanationJa": "\u4EBA\u306E\u3068\u3053\u308D\u3078\u884C\u304F\u3068\u304D\u306F da \u3092\u4F7F\u3044\u307E\u3059\u3002\u6B63\u89E3\u306F da \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-andare-da-r1"
+    ],
+    "id": "mq-ad-1"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-andare-da",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Stasera vado ___ mia nonna.",
+    "choices": [
+      "da",
+      "a",
+      "in",
+      "di"
+    ],
+    "correctAnswer": "da",
+    "acceptedAnswers": [
+      "da"
+    ],
+    "explanationJa": "\u5BB6\u65CF\u306A\u3069\u4EBA\u306E\u3068\u3053\u308D\u3078\u884C\u304F\u3068\u304D\u306F da \u3067\u3059\u3002\u6B63\u89E3\u306F da \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-andare-da-r1"
+    ],
+    "id": "mq-ad-2"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-andare-da",
+    "type": "cloze",
+    "difficulty": 2,
+    "prompt": "Sabato vado ___ parrucchiere. (da \u002B il)",
+    "choices": [],
+    "correctAnswer": "dal",
+    "acceptedAnswers": [
+      "dal"
+    ],
+    "explanationJa": "\u8077\u696D\u306E\u4EBA\u306E\u3068\u3053\u308D\u3078\u306F da \u002B \u5B9A\u51A0\u8A5E\uFF1Ada \u002B il = dal \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-andare-da-r2"
+    ],
+    "id": "mq-ad-3"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-andare-da",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Andiamo ___ Luca stasera?",
+    "choices": [
+      "da",
+      "a",
+      "in",
+      "di"
+    ],
+    "correctAnswer": "da",
+    "acceptedAnswers": [
+      "da"
+    ],
+    "explanationJa": "\u30EB\u30AB\u306E\u5BB6\u306B\u884C\u304F\u3001\u3068\u3044\u3046\u610F\u5473\u306A\u306E\u3067 da \u3092\u4F7F\u3044\u307E\u3059\u3002\u6B63\u89E3\u306F da \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-andare-da-r1"
+    ],
+    "id": "mq-ad-4"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-andare-in",
+    "type": "multiple-choice",
+    "difficulty": 1,
+    "prompt": "L\u0027anno prossimo vado ___ Giappone.",
+    "choices": [
+      "in",
+      "a",
+      "da",
+      "al"
+    ],
+    "correctAnswer": "in",
+    "acceptedAnswers": [
+      "in"
+    ],
+    "explanationJa": "\u56FD\u540D\u306B\u306F in \u3092\u4F7F\u3044\u307E\u3059\u3002\u6B63\u89E3\u306F in \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-andare-in-r1"
+    ],
+    "id": "mq-ai-1"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-andare-in",
+    "type": "multiple-choice",
+    "difficulty": 1,
+    "prompt": "Vado al lavoro ___ treno.",
+    "choices": [
+      "in",
+      "con",
+      "a",
+      "da"
+    ],
+    "correctAnswer": "in",
+    "acceptedAnswers": [
+      "in"
+    ],
+    "explanationJa": "\u4EA4\u901A\u624B\u6BB5\u306F in \u002B \u4E57\u308A\u7269\uFF08\u51A0\u8A5E\u306A\u3057\uFF09\u3067\u3059\u3002\u6B63\u89E3\u306F in \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-andare-in-r2"
+    ],
+    "id": "mq-ai-2"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-andare-in",
+    "type": "cloze",
+    "difficulty": 1,
+    "prompt": "Oggi pomeriggio vado ___ banca.",
+    "choices": [],
+    "correctAnswer": "in",
+    "acceptedAnswers": [
+      "in"
+    ],
+    "explanationJa": "banca \u306F in banca\uFF08\u51A0\u8A5E\u306A\u3057\uFF09\u3068\u8A00\u3044\u307E\u3059\u3002\u6B63\u89E3\u306F in \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-andare-in-r3"
+    ],
+    "id": "mq-ai-3"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-andare-in",
+    "type": "multiple-choice",
+    "difficulty": 1,
+    "prompt": "Ad agosto andiamo ___ montagna.",
+    "choices": [
+      "in",
+      "a",
+      "da",
+      "sul"
+    ],
+    "correctAnswer": "in",
+    "acceptedAnswers": [
+      "in"
+    ],
+    "explanationJa": "\u300C\u5C71\u306B\u884C\u304F\u300D\u306F andare in montagna \u3067\u3059\u3002\u6B63\u89E3\u306F in \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-andare-in-r3"
+    ],
+    "id": "mq-ai-4"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-passato-prossimo-auxiliary",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Ieri ___ andato al mare con gli amici.",
+    "choices": [
+      "sono",
+      "ho",
+      "hai",
+      "abbiamo"
+    ],
+    "correctAnswer": "sono",
+    "acceptedAnswers": [
+      "sono"
+    ],
+    "explanationJa": "andare \u306F\u79FB\u52D5\u3092\u8868\u3059\u81EA\u52D5\u8A5E\u306A\u306E\u3067\u52A9\u52D5\u8A5E\u306F essere\u3002\u4E3B\u8A9E\u306F io \u306A\u306E\u3067 sono \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-passato-prossimo-auxiliary-r2"
+    ],
+    "id": "mq-pp-1"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-passato-prossimo-auxiliary",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Sabato ___ mangiato una pizza buonissima.",
+    "choices": [
+      "ho",
+      "sono",
+      "\u00E8",
+      "siamo"
+    ],
+    "correctAnswer": "ho",
+    "acceptedAnswers": [
+      "ho"
+    ],
+    "explanationJa": "mangiare \u306F\u76EE\u7684\u8A9E\u3092\u3068\u308B\u4ED6\u52D5\u8A5E\u306A\u306E\u3067 avere \u3092\u4F7F\u3044\u307E\u3059\u3002\u6B63\u89E3\u306F ho \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-passato-prossimo-auxiliary-r1"
+    ],
+    "id": "mq-pp-2"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-passato-prossimo-auxiliary",
+    "type": "cloze",
+    "difficulty": 2,
+    "prompt": "Stamattina Anna ___ uscita presto.",
+    "choices": [],
+    "correctAnswer": "\u00E8",
+    "acceptedAnswers": [
+      "\u00E8"
+    ],
+    "explanationJa": "uscire \u306F essere \u3092\u3068\u308A\u307E\u3059\u3002\u4E3B\u8A9E Anna \u306F3\u4EBA\u79F0\u5358\u6570\u306A\u306E\u3067 \u00E8 \u3067\u3059\uFF08\u30A2\u30AF\u30BB\u30F3\u30C8\u8A18\u53F7\u306B\u6CE8\u610F\uFF09\u3002",
+    "ruleIds": [
+      "it-passato-prossimo-auxiliary-r2"
+    ],
+    "id": "mq-pp-3"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-passato-prossimo-auxiliary",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Noi ___ tornati a casa tardi.",
+    "choices": [
+      "siamo",
+      "abbiamo",
+      "avete",
+      "sono"
+    ],
+    "correctAnswer": "siamo",
+    "acceptedAnswers": [
+      "siamo"
+    ],
+    "explanationJa": "tornare \u306F essere \u3092\u3068\u308A\u3001\u4E3B\u8A9E noi \u306A\u306E\u3067 siamo \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-passato-prossimo-auxiliary-r2"
+    ],
+    "id": "mq-pp-4"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-passato-prossimo-auxiliary",
+    "type": "cloze",
+    "difficulty": 2,
+    "prompt": "Ieri sera (io) ___ dormito male.",
+    "choices": [],
+    "correctAnswer": "ho",
+    "acceptedAnswers": [
+      "ho"
+    ],
+    "explanationJa": "dormire \u306F avere \u3092\u3068\u308B\u81EA\u52D5\u8A5E\u3067\u3059\u3002\u4E3B\u8A9E io \u306A\u306E\u3067 ho \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-passato-prossimo-auxiliary-r1"
+    ],
+    "id": "mq-pp-5"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-passato-prossimo-auxiliary",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "I miei genitori ___ arrivati ieri.",
+    "choices": [
+      "sono",
+      "hanno",
+      "\u00E8",
+      "ha"
+    ],
+    "correctAnswer": "sono",
+    "acceptedAnswers": [
+      "sono"
+    ],
+    "explanationJa": "arrivare \u306F essere \u3092\u3068\u308A\u3001\u4E3B\u8A9E\u304C3\u4EBA\u79F0\u8907\u6570\u306A\u306E\u3067 sono \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-passato-prossimo-auxiliary-r2"
+    ],
+    "id": "mq-pp-6"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-passato-prossimo-auxiliary",
+    "type": "multiple-choice",
+    "difficulty": 3,
+    "prompt": "Marco, che cosa ___ fatto tu ieri?",
+    "choices": [
+      "hai",
+      "sei",
+      "ha",
+      "\u00E8"
+    ],
+    "correctAnswer": "hai",
+    "acceptedAnswers": [
+      "hai"
+    ],
+    "explanationJa": "fare \u306F\u4ED6\u52D5\u8A5E\u306A\u306E\u3067 avere\u3002\u4E3B\u8A9E tu \u306A\u306E\u3067 hai \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-passato-prossimo-auxiliary-r1"
+    ],
+    "id": "mq-pp-7"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-passato-prossimo-agreement",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Maria \u00E8 ___ a Milano.",
+    "choices": [
+      "andata",
+      "andato",
+      "andati",
+      "andate"
+    ],
+    "correctAnswer": "andata",
+    "acceptedAnswers": [
+      "andata"
+    ],
+    "explanationJa": "\u52A9\u52D5\u8A5E\u304C essere \u306A\u306E\u3067\u904E\u53BB\u5206\u8A5E\u3092\u4E3B\u8A9E Maria\uFF08\u5973\u6027\u5358\u6570\uFF09\u306B\u4E00\u81F4\u3055\u305B andata \u306B\u3057\u307E\u3059\u3002",
+    "ruleIds": [
+      "it-passato-prossimo-agreement-r1"
+    ],
+    "id": "mq-pa-1"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-passato-prossimo-agreement",
+    "type": "cloze",
+    "difficulty": 3,
+    "prompt": "Le ragazze sono ___ tardi. (arrivare)",
+    "choices": [],
+    "correctAnswer": "arrivate",
+    "acceptedAnswers": [
+      "arrivate"
+    ],
+    "explanationJa": "\u4E3B\u8A9E\u304C\u5973\u6027\u8907\u6570\u306A\u306E\u3067\u904E\u53BB\u5206\u8A5E\u306F arrivate \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-passato-prossimo-agreement-r1"
+    ],
+    "id": "mq-pa-2"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-passato-prossimo-agreement",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Paolo e Luca sono ___ ieri.",
+    "choices": [
+      "partiti",
+      "partito",
+      "partite",
+      "partita"
+    ],
+    "correctAnswer": "partiti",
+    "acceptedAnswers": [
+      "partiti"
+    ],
+    "explanationJa": "\u4E3B\u8A9E\u304C\u7537\u6027\u8907\u6570\u306A\u306E\u3067\u904E\u53BB\u5206\u8A5E\u306F partiti \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-passato-prossimo-agreement-r1"
+    ],
+    "id": "mq-pa-3"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-passato-prossimo-agreement",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Mia madre \u00E8 ___ in Giappone nel 1970.",
+    "choices": [
+      "nata",
+      "nato",
+      "nati",
+      "nate"
+    ],
+    "correctAnswer": "nata",
+    "acceptedAnswers": [
+      "nata"
+    ],
+    "explanationJa": "nascere \u306F essere \u3092\u3068\u308A\u3001\u4E3B\u8A9E mia madre\uFF08\u5973\u6027\u5358\u6570\uFF09\u306B\u4E00\u81F4\u3057\u3066 nata \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-passato-prossimo-agreement-r1"
+    ],
+    "id": "mq-pa-4"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-reflexive-verbs",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "La mattina (io) ___ alzo alle sette.",
+    "choices": [
+      "mi",
+      "ti",
+      "si",
+      "ci"
+    ],
+    "correctAnswer": "mi",
+    "acceptedAnswers": [
+      "mi"
+    ],
+    "explanationJa": "alzarsi \u306E\u4E3B\u8A9E\u304C io \u306A\u306E\u3067\u518D\u5E30\u4EE3\u540D\u8A5E\u306F mi \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-reflexive-verbs-r1"
+    ],
+    "id": "mq-rf-1"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-reflexive-verbs",
+    "type": "cloze",
+    "difficulty": 1,
+    "prompt": "Come ___ chiami?",
+    "choices": [],
+    "correctAnswer": "ti",
+    "acceptedAnswers": [
+      "ti"
+    ],
+    "explanationJa": "chiami \u306F tu \u306E\u6D3B\u7528\u306A\u306E\u3067\u518D\u5E30\u4EE3\u540D\u8A5E\u306F ti \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-reflexive-verbs-r1"
+    ],
+    "id": "mq-rf-2"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-reflexive-verbs",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "I bambini ___ divertono al parco.",
+    "choices": [
+      "si",
+      "ci",
+      "vi",
+      "li"
+    ],
+    "correctAnswer": "si",
+    "acceptedAnswers": [
+      "si"
+    ],
+    "explanationJa": "\u4E3B\u8A9E\u304C3\u4EBA\u79F0\u8907\u6570\u306A\u306E\u3067\u518D\u5E30\u4EE3\u540D\u8A5E\u306F si \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-reflexive-verbs-r1"
+    ],
+    "id": "mq-rf-3"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-reflexive-verbs",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Noi ___ vestiamo in fretta.",
+    "choices": [
+      "ci",
+      "vi",
+      "si",
+      "ne"
+    ],
+    "correctAnswer": "ci",
+    "acceptedAnswers": [
+      "ci"
+    ],
+    "explanationJa": "\u4E3B\u8A9E noi \u306E\u518D\u5E30\u4EE3\u540D\u8A5E\u306F ci \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-reflexive-verbs-r1"
+    ],
+    "id": "mq-rf-4"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-reflexive-passato",
+    "type": "multiple-choice",
+    "difficulty": 3,
+    "prompt": "Stamattina mi ___ alzata tardi.",
+    "choices": [
+      "sono",
+      "ho",
+      "\u00E8",
+      "hanno"
+    ],
+    "correctAnswer": "sono",
+    "acceptedAnswers": [
+      "sono"
+    ],
+    "explanationJa": "\u518D\u5E30\u52D5\u8A5E\u306E\u8FD1\u904E\u53BB\u306F essere \u3092\u4F7F\u3044\u307E\u3059\u3002\u4E3B\u8A9E io\uFF08mi\uFF09\u306A\u306E\u3067 sono \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-reflexive-passato-r1"
+    ],
+    "id": "mq-rp-1"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-reflexive-passato",
+    "type": "cloze",
+    "difficulty": 3,
+    "prompt": "Ieri sera ci ___ divertiti molto.",
+    "choices": [],
+    "correctAnswer": "siamo",
+    "acceptedAnswers": [
+      "siamo"
+    ],
+    "explanationJa": "\u518D\u5E30\u52D5\u8A5E\u306F essere\u3002ci\uFF08noi\uFF09\u306B\u5408\u308F\u305B\u3066 siamo \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-reflexive-passato-r1"
+    ],
+    "id": "mq-rp-2"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-reflexive-passato",
+    "type": "multiple-choice",
+    "difficulty": 3,
+    "prompt": "Giulia si \u00E8 ___ alle sei.",
+    "choices": [
+      "svegliata",
+      "svegliato",
+      "svegliati",
+      "sveglia"
+    ],
+    "correctAnswer": "svegliata",
+    "acceptedAnswers": [
+      "svegliata"
+    ],
+    "explanationJa": "essere \u3092\u4F7F\u3046\u306E\u3067\u904E\u53BB\u5206\u8A5E\u3092 Giulia\uFF08\u5973\u6027\u5358\u6570\uFF09\u306B\u4E00\u81F4\u3055\u305B svegliata \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-reflexive-passato-r1"
+    ],
+    "id": "mq-rp-3"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-reflexive-passato",
+    "type": "multiple-choice",
+    "difficulty": 3,
+    "prompt": "Ragazzi, a che ora vi ___ addormentati?",
+    "choices": [
+      "siete",
+      "avete",
+      "sono",
+      "hanno"
+    ],
+    "correctAnswer": "siete",
+    "acceptedAnswers": [
+      "siete"
+    ],
+    "explanationJa": "vi\uFF08voi\uFF09\u306E\u518D\u5E30\u52D5\u8A5E\u306E\u8FD1\u904E\u53BB\u306F siete \u002B \u904E\u53BB\u5206\u8A5E\u3067\u3059\u3002",
+    "ruleIds": [
+      "it-reflexive-passato-r1"
+    ],
+    "id": "mq-rp-4"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-piacere",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "Mi ___ molto gli spaghetti.",
+    "choices": [
+      "piacciono",
+      "piace",
+      "piaccio",
+      "piacete"
+    ],
+    "correctAnswer": "piacciono",
+    "acceptedAnswers": [
+      "piacciono"
+    ],
+    "explanationJa": "\u4E3B\u8A9E gli spaghetti \u304C\u8907\u6570\u306A\u306E\u3067 piacciono \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-piacere-r1"
+    ],
+    "id": "mq-pi-1"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-piacere",
+    "type": "multiple-choice",
+    "difficulty": 2,
+    "prompt": "A Marco ___ leggere.",
+    "choices": [
+      "piace",
+      "piacciono",
+      "piaccio",
+      "piacete"
+    ],
+    "correctAnswer": "piace",
+    "acceptedAnswers": [
+      "piace"
+    ],
+    "explanationJa": "\u597D\u304D\u306A\u3082\u306E\u304C\u4E0D\u5B9A\u8A5E\uFF08leggere\uFF09\u306A\u306E\u3067\u5358\u6570\u6271\u3044\u306E piace \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-piacere-r1"
+    ],
+    "id": "mq-pi-2"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-piacere",
+    "type": "cloze",
+    "difficulty": 2,
+    "prompt": "Ti ___ la musica italiana?",
+    "choices": [],
+    "correctAnswer": "piace",
+    "acceptedAnswers": [
+      "piace"
+    ],
+    "explanationJa": "\u4E3B\u8A9E la musica italiana \u304C\u5358\u6570\u306A\u306E\u3067 piace \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-piacere-r1"
+    ],
+    "id": "mq-pi-3"
+  },
+  {
+    "language": "it",
+    "schemaVersion": 1,
+    "grammarTopicId": "it-piacere",
+    "type": "multiple-choice",
+    "difficulty": 3,
+    "prompt": "___ piace il caff\u00E8? (a lui)",
+    "choices": [
+      "Gli",
+      "Le",
+      "Lo",
+      "Si"
+    ],
+    "correctAnswer": "Gli",
+    "acceptedAnswers": [
+      "Gli"
+    ],
+    "explanationJa": "a lui\uFF08\u5F7C\u306B\uFF09\u3092\u8868\u3059\u9593\u63A5\u76EE\u7684\u8A9E\u4EE3\u540D\u8A5E\u306F Gli \u3067\u3059\u3002",
+    "ruleIds": [
+      "it-piacere-r2"
+    ],
+    "id": "mq-pi-4"
+  }
+]

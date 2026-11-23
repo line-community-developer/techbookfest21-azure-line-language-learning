@@ -1,0 +1,139 @@
+{
+  "platform": {
+    "apiRuntime": "node:20"
+  },
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": [
+      "/api/*",
+      "/admin",
+      "/admin/*",
+      "/tutor-profile",
+      "/tutor-profile/*",
+      "/grammar-topic",
+      "/grammar-topic/*",
+      "/sample-question",
+      "/sample-question/*",
+      "/.auth/*",
+      "/assets/*",
+      "/*.{css,js,json,ico,png,svg,txt}"
+    ]
+  },
+  "routes": [
+    {
+      "route": "/.auth/login/aad",
+      "statusCode": 404
+    },
+    {
+      "route": "/admin/login",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/admin",
+      "allowedRoles": ["administrator"],
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/admin/*",
+      "allowedRoles": ["administrator"],
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/grammar-topic",
+      "allowedRoles": ["administrator"],
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/grammar-topic/*",
+      "allowedRoles": ["administrator"],
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/sample-question",
+      "allowedRoles": ["administrator"],
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/sample-question/*",
+      "allowedRoles": ["administrator"],
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/api/grammar-topic",
+      "allowedRoles": ["administrator"],
+      "rewrite": "/api/grammarTopic"
+    },
+    {
+      "route": "/api/grammarTopic",
+      "allowedRoles": ["administrator"]
+    },
+    {
+      "route": "/api/grammarTopic/*",
+      "allowedRoles": ["administrator"]
+    },
+    {
+      "route": "/api/sampleQuestion",
+      "allowedRoles": ["administrator"]
+    },
+    {
+      "route": "/api/sampleQuestion/*",
+      "allowedRoles": ["administrator"]
+    },
+    {
+      "route": "/tutor-profile",
+      "allowedRoles": ["administrator"],
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/tutor-profile/*",
+      "allowedRoles": ["administrator"],
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/api/tutorProfile",
+      "allowedRoles": ["administrator"]
+    },
+    {
+      "route": "/api/tutorProfile/*",
+      "allowedRoles": ["administrator"]
+    },
+    {
+      "route": "/api/admin/grammar",
+      "allowedRoles": ["administrator"],
+      "rewrite": "/api/management/grammar"
+    },
+    {
+      "route": "/api/admin/questions/generate",
+      "allowedRoles": ["administrator"],
+      "rewrite": "/api/management/questions/generate"
+    },
+    {
+      "route": "/api/admin/questions/validate",
+      "allowedRoles": ["administrator"],
+      "rewrite": "/api/management/questions/validate"
+    },
+    {
+      "route": "/api/admin/questions/publish",
+      "allowedRoles": ["administrator"],
+      "rewrite": "/api/management/questions/publish"
+    },
+    {
+      "route": "/api/admin/*",
+      "allowedRoles": ["administrator"]
+    },
+    {
+      "route": "/api/management/*",
+      "allowedRoles": ["administrator"]
+    },
+    {
+      "route": "/*",
+      "allowedRoles": [
+        "anonymous"
+      ]
+    }
+  ],
+  "globalHeaders": {
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "DENY"
+  }
+}

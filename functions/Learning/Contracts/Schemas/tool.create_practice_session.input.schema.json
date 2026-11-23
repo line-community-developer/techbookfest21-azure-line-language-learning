@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "topicIds": {
+      "minItems": 1,
+      "maxItems": 3,
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "questionCount": {
+      "type": "integer",
+      "minimum": 3,
+      "maximum": 8
+    }
+  },
+  "required": [
+    "topicIds",
+    "questionCount"
+  ],
+  "additionalProperties": false
+}

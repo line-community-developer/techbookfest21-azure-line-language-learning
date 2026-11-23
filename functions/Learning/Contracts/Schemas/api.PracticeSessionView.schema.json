@@ -1,0 +1,444 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "recommended",
+        "topic",
+        "review"
+      ]
+    },
+    "level": {
+      "type": "string",
+      "enum": [
+        "A1",
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "in-progress",
+        "completed"
+      ]
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "topicId": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "titleJa": {
+            "type": "string"
+          },
+          "level": {
+            "type": "string",
+            "enum": [
+              "A1",
+              "A2",
+              "B1",
+              "B2",
+              "C1",
+              "C2"
+            ]
+          }
+        },
+        "required": [
+          "topicId",
+          "title",
+          "titleJa",
+          "level"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "reviewPlanId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "order": {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "multiple-choice",
+              "cloze"
+            ]
+          },
+          "topic": {
+            "type": "object",
+            "properties": {
+              "topicId": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "titleJa": {
+                "type": "string"
+              },
+              "level": {
+                "type": "string",
+                "enum": [
+                  "A1",
+                  "A2",
+                  "B1",
+                  "B2",
+                  "C1",
+                  "C2"
+                ]
+              }
+            },
+            "required": [
+              "topicId",
+              "title",
+              "titleJa",
+              "level"
+            ],
+            "additionalProperties": false
+          },
+          "difficulty": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "instructionJa": {
+            "type": "string"
+          },
+          "prompt": {
+            "type": "string"
+          },
+          "choices": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "result": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "questionId": {
+                    "type": "string"
+                  },
+                  "isCorrect": {
+                    "type": "boolean"
+                  },
+                  "feedbackCode": {
+                    "type": "string",
+                    "enum": [
+                      "correct",
+                      "incorrect",
+                      "accent-mismatch"
+                    ]
+                  },
+                  "submittedAnswer": {
+                    "type": "string"
+                  },
+                  "correctAnswer": {
+                    "type": "string"
+                  },
+                  "acceptedAnswers": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "explanationJa": {
+                    "type": "string"
+                  },
+                  "grammarReferences": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "topicId": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "titleJa": {
+                          "type": "string"
+                        },
+                        "level": {
+                          "type": "string",
+                          "enum": [
+                            "A1",
+                            "A2",
+                            "B1",
+                            "B2",
+                            "C1",
+                            "C2"
+                          ]
+                        },
+                        "rules": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "summaryJa": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "summaryJa"
+                            ],
+                            "additionalProperties": false
+                          }
+                        },
+                        "example": {
+                          "anyOf": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "text": {
+                                  "type": "string"
+                                },
+                                "translationJa": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "text",
+                                "translationJa"
+                              ],
+                              "additionalProperties": false
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "topicId",
+                        "title",
+                        "titleJa",
+                        "level",
+                        "rules",
+                        "example"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "mastery": {
+                    "type": "object",
+                    "properties": {
+                      "topicId": {
+                        "type": "string"
+                      },
+                      "before": {
+                        "type": "number"
+                      },
+                      "after": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "topicId",
+                      "before",
+                      "after"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "alreadyAnswered": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "questionId",
+                  "isCorrect",
+                  "feedbackCode",
+                  "submittedAnswer",
+                  "correctAnswer",
+                  "acceptedAnswers",
+                  "explanationJa",
+                  "grammarReferences",
+                  "mastery",
+                  "alreadyAnswered"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "order",
+          "type",
+          "topic",
+          "difficulty",
+          "instructionJa",
+          "prompt",
+          "choices",
+          "result"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "summary": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "total": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "answered": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "correct": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "accuracy": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "byTopic": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "topicId": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "titleJa": {
+                    "type": "string"
+                  },
+                  "level": {
+                    "type": "string",
+                    "enum": [
+                      "A1",
+                      "A2",
+                      "B1",
+                      "B2",
+                      "C1",
+                      "C2"
+                    ]
+                  },
+                  "total": {
+                    "type": "integer",
+                    "minimum": -9007199254740991,
+                    "maximum": 9007199254740991
+                  },
+                  "correct": {
+                    "type": "integer",
+                    "minimum": -9007199254740991,
+                    "maximum": 9007199254740991
+                  },
+                  "masteryAfter": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "topicId",
+                  "title",
+                  "titleJa",
+                  "level",
+                  "total",
+                  "correct",
+                  "masteryAfter"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "total",
+            "answered",
+            "correct",
+            "accuracy",
+            "byTopic"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "generatedBy": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "mock",
+            "foundry",
+            "unavailable"
+          ]
+        },
+        "model": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind",
+        "model"
+      ],
+      "additionalProperties": false
+    },
+    "createdAt": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "mode",
+    "level",
+    "status",
+    "topics",
+    "reviewPlanId",
+    "questions",
+    "summary",
+    "generatedBy",
+    "createdAt"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": [
+        "passed",
+        "failed"
+      ]
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "deterministic",
+              "semantic"
+            ]
+          },
+          "passed": {
+            "type": "boolean"
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "error",
+              "warning"
+            ]
+          },
+          "messageJa": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "passed",
+          "severity",
+          "messageJa"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "semantic": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "verdict": {
+              "type": "string",
+              "enum": [
+                "pass",
+                "fail",
+                "uncertain"
+              ]
+            },
+            "score": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "rationaleJa": {
+              "type": "string"
+            },
+            "evaluator": {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "enum": [
+                    "mock",
+                    "foundry",
+                    "unavailable"
+                  ]
+                },
+                "model": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "kind",
+                "model"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "verdict",
+            "score",
+            "rationaleJa",
+            "evaluator"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "evaluatedAt": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "status",
+    "checks",
+    "semantic",
+    "evaluatedAt"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,22 @@
+{
+  "name": "bff",
+  "private": true,
+  "version": "1.0.0",
+  "description": "SWA managed HTTP-only Functions BFF (not the standalone backend)",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc --noEmit && node build.cjs",
+    "start": "func start --port 7073",
+    "prestart": "pnpm run build"
+  },
+  "devDependencies": {
+    "@azure/functions": "^3.5.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.9.0",
+    "esbuild": "^0.25.0",
+    "@line-language-learn/shared": "workspace:*",
+    "zod": "^4.0.0"
+  }
+}

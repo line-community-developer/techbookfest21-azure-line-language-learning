@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "@line-language-learn/shared",
+  "version": "1.0.0",
+  "description": "Shared Zod models — Single Source of Truth for validation schemas",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "zod": ">=3.25.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

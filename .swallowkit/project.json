@@ -1,0 +1,1644 @@
+{
+  "version": 1,
+  "generatedAt": "2026-11-08T08:08:59.075Z",
+  "configPath": "swallowkit.config.js",
+  "backendLanguage": "csharp",
+  "frontendFramework": "react",
+  "configValidation": {
+    "valid": true,
+    "errors": []
+  },
+  "connectors": [],
+  "auth": {
+    "schemes": {
+      "line": {
+        "provider": "external-token"
+      },
+      "admin": {
+        "provider": "swa",
+        "swa": {
+          "allowedProviders": [
+            "github"
+          ]
+        }
+      }
+    },
+    "authorization": {
+      "defaultPolicy": "anonymous",
+      "policies": {
+        "learner": {
+          "schemes": [
+            "line"
+          ]
+        },
+        "adminOnly": {
+          "schemes": [
+            "admin"
+          ],
+          "roles": [
+            "administrator"
+          ]
+        }
+      }
+    }
+  },
+  "entities": [
+    {
+      "name": "GrammarTopic",
+      "displayName": "Grammar Topic",
+      "schemaName": "GrammarTopic",
+      "filePath": "shared/models/grammar-topic.ts",
+      "partitionKey": "/language",
+      "hasId": true,
+      "hasCreatedAt": true,
+      "hasUpdatedAt": true,
+      "authPolicy": {
+        "policy": "adminOnly"
+      },
+      "nestedModels": [],
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "language",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "schemaVersion",
+          "type": "number",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "titleJa",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "level",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "usageJa",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "rules",
+          "type": "object",
+          "isOptional": false,
+          "isArray": true
+        },
+        {
+          "name": "examples",
+          "type": "object",
+          "isOptional": false,
+          "isArray": true
+        },
+        {
+          "name": "commonMistakes",
+          "type": "object",
+          "isOptional": false,
+          "isArray": true
+        },
+        {
+          "name": "relatedTopics",
+          "type": "string",
+          "isOptional": false,
+          "isArray": true
+        },
+        {
+          "name": "keywords",
+          "type": "string",
+          "isOptional": false,
+          "isArray": true
+        },
+        {
+          "name": "sourceReferences",
+          "type": "object",
+          "isOptional": false,
+          "isArray": true
+        },
+        {
+          "name": "reviewStatus",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "reviewNoteJa",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "createdAt",
+          "type": "string",
+          "isOptional": true,
+          "isArray": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "string",
+          "isOptional": true,
+          "isArray": false
+        }
+      ]
+    },
+    {
+      "name": "LearningObservation",
+      "displayName": "Learning Observation",
+      "schemaName": "LearningObservation",
+      "filePath": "shared/models/learning-observation.ts",
+      "partitionKey": "/userId",
+      "hasId": true,
+      "hasCreatedAt": true,
+      "hasUpdatedAt": true,
+      "nestedModels": [],
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "userId",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "schemaVersion",
+          "type": "number",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "grammarTopicId",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "sourceType",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "sourceId",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "sourceItemId",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "observationType",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "certainty",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "confidence",
+          "type": "number",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "evidence",
+          "type": "object",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "detectedBy",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "occurredAt",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "createdAt",
+          "type": "string",
+          "isOptional": true,
+          "isArray": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "string",
+          "isOptional": true,
+          "isArray": false
+        }
+      ]
+    },
+    {
+      "name": "LearningProfile",
+      "displayName": "Learning Profile",
+      "schemaName": "LearningProfile",
+      "filePath": "shared/models/learning-profile.ts",
+      "partitionKey": "/userId",
+      "hasId": true,
+      "hasCreatedAt": true,
+      "hasUpdatedAt": true,
+      "nestedModels": [],
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "userId",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "schemaVersion",
+          "type": "number",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "learnerName",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "nativeLanguage",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "targetLanguage",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "currentLevel",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "learningGoals",
+          "type": "string",
+          "isOptional": false,
+          "isArray": true
+        },
+        {
+          "name": "masteryByTopic",
+          "type": "object",
+          "isOptional": false,
+          "isArray": true
+        },
+        {
+          "name": "weakTopics",
+          "type": "string",
+          "isOptional": false,
+          "isArray": true
+        },
+        {
+          "name": "strongTopics",
+          "type": "string",
+          "isOptional": false,
+          "isArray": true
+        },
+        {
+          "name": "observationCount",
+          "type": "number",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "createdAt",
+          "type": "string",
+          "isOptional": true,
+          "isArray": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "string",
+          "isOptional": true,
+          "isArray": false
+        }
+      ]
+    },
+    {
+      "name": "PracticeSession",
+      "displayName": "Practice Session",
+      "schemaName": "PracticeSession",
+      "filePath": "shared/models/practice-session.ts",
+      "partitionKey": "/userId",
+      "hasId": true,
+      "hasCreatedAt": true,
+      "hasUpdatedAt": true,
+      "nestedModels": [
+        "PracticeQuestion"
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "userId",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "schemaVersion",
+          "type": "number",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "mode",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "level",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "targetTopicIds",
+          "type": "string",
+          "isOptional": false,
+          "isArray": true
+        },
+        {
+          "name": "reviewPlanId",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "origin",
+          "type": "object",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "questions",
+          "type": "object",
+          "isOptional": false,
+          "isArray": true
+        },
+        {
+          "name": "answers",
+          "type": "object",
+          "isOptional": false,
+          "isArray": true
+        },
+        {
+          "name": "summary",
+          "type": "object",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "completedAt",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "createdAt",
+          "type": "string",
+          "isOptional": true,
+          "isArray": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "string",
+          "isOptional": true,
+          "isArray": false
+        }
+      ]
+    },
+    {
+      "name": "ProcessedEvent",
+      "displayName": "Processed Event",
+      "schemaName": "ProcessedEvent",
+      "filePath": "shared/models/processed-event.ts",
+      "partitionKey": "/userId",
+      "hasId": true,
+      "hasCreatedAt": true,
+      "hasUpdatedAt": true,
+      "nestedModels": [],
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "userId",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "schemaVersion",
+          "type": "number",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "channel",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "externalEventId",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "resultRef",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "createdAt",
+          "type": "string",
+          "isOptional": true,
+          "isArray": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "string",
+          "isOptional": true,
+          "isArray": false
+        }
+      ]
+    },
+    {
+      "name": "ReviewPlan",
+      "displayName": "Review Plan",
+      "schemaName": "ReviewPlan",
+      "filePath": "shared/models/review-plan.ts",
+      "partitionKey": "/userId",
+      "hasId": true,
+      "hasCreatedAt": true,
+      "hasUpdatedAt": true,
+      "nestedModels": [],
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "userId",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "schemaVersion",
+          "type": "number",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "sourceType",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "sourceId",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "items",
+          "type": "object",
+          "isOptional": false,
+          "isArray": true
+        },
+        {
+          "name": "practiceSessionIds",
+          "type": "string",
+          "isOptional": false,
+          "isArray": true
+        },
+        {
+          "name": "createdAt",
+          "type": "string",
+          "isOptional": true,
+          "isArray": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "string",
+          "isOptional": true,
+          "isArray": false
+        }
+      ]
+    },
+    {
+      "name": "SampleQuestion",
+      "displayName": "Sample Question",
+      "schemaName": "SampleQuestion",
+      "filePath": "shared/models/sample-question.ts",
+      "partitionKey": "/language",
+      "hasId": true,
+      "hasCreatedAt": true,
+      "hasUpdatedAt": true,
+      "authPolicy": {
+        "policy": "adminOnly"
+      },
+      "nestedModels": [],
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "language",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "schemaVersion",
+          "type": "number",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "grammarTopicId",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "difficulty",
+          "type": "number",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "prompt",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "choices",
+          "type": "string",
+          "isOptional": false,
+          "isArray": true
+        },
+        {
+          "name": "correctAnswer",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "acceptedAnswers",
+          "type": "string",
+          "isOptional": false,
+          "isArray": true
+        },
+        {
+          "name": "explanationJa",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "ruleIds",
+          "type": "string",
+          "isOptional": false,
+          "isArray": true
+        },
+        {
+          "name": "publication",
+          "type": "object",
+          "isOptional": true,
+          "isArray": false
+        },
+        {
+          "name": "createdAt",
+          "type": "string",
+          "isOptional": true,
+          "isArray": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "string",
+          "isOptional": true,
+          "isArray": false
+        }
+      ]
+    },
+    {
+      "name": "TutorProfile",
+      "displayName": "Tutor Profile",
+      "schemaName": "TutorProfile",
+      "filePath": "shared/models/tutor-profile.ts",
+      "partitionKey": "/language",
+      "hasId": true,
+      "hasCreatedAt": true,
+      "hasUpdatedAt": true,
+      "authPolicy": {
+        "policy": "adminOnly"
+      },
+      "nestedModels": [],
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "language",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "schemaVersion",
+          "type": "number",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "avatarEmoji",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "personaJa",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "speakingStyle",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "greeting",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "correctionPolicy",
+          "type": "object",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "promptTemplateId",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "createdAt",
+          "type": "string",
+          "isOptional": true,
+          "isArray": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "string",
+          "isOptional": true,
+          "isArray": false
+        }
+      ]
+    },
+    {
+      "name": "TutorSession",
+      "displayName": "Tutor Session",
+      "schemaName": "TutorSession",
+      "filePath": "shared/models/tutor-session.ts",
+      "partitionKey": "/userId",
+      "hasId": true,
+      "hasCreatedAt": true,
+      "hasUpdatedAt": true,
+      "nestedModels": [
+        "ProviderInfo",
+        "TutorMessage"
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "userId",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "schemaVersion",
+          "type": "number",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "tutorProfileId",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "channel",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "theme",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "focusTopicIds",
+          "type": "string",
+          "isOptional": false,
+          "isArray": true
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "messages",
+          "type": "object",
+          "isOptional": false,
+          "isArray": true
+        },
+        {
+          "name": "agent",
+          "type": "object",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "endedAt",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "analysisWorkflowRunId",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "createdAt",
+          "type": "string",
+          "isOptional": true,
+          "isArray": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "string",
+          "isOptional": true,
+          "isArray": false
+        }
+      ]
+    },
+    {
+      "name": "TutorToolTurn",
+      "displayName": "Tutor Tool Turn",
+      "schemaName": "TutorToolTurn",
+      "filePath": "shared/models/tutor-tool-turn.ts",
+      "partitionKey": "/userId",
+      "hasId": true,
+      "hasCreatedAt": true,
+      "hasUpdatedAt": true,
+      "nestedModels": [
+        "ToolCallRecord"
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "userId",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "schemaVersion",
+          "type": "number",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "sessionId",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "learnerMessageId",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "expiresAt",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "closed",
+          "type": "boolean",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "maxCalls",
+          "type": "number",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "calls",
+          "type": "object",
+          "isOptional": false,
+          "isArray": true
+        },
+        {
+          "name": "createdAt",
+          "type": "string",
+          "isOptional": true,
+          "isArray": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "string",
+          "isOptional": true,
+          "isArray": false
+        },
+        {
+          "name": "record",
+          "type": "object",
+          "isOptional": false,
+          "isArray": false
+        }
+      ]
+    },
+    {
+      "name": "WorkflowRun",
+      "displayName": "Workflow Run",
+      "schemaName": "WorkflowRun",
+      "filePath": "shared/models/workflow-run.ts",
+      "partitionKey": "/userId",
+      "hasId": true,
+      "hasCreatedAt": true,
+      "hasUpdatedAt": true,
+      "nestedModels": [],
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "userId",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "schemaVersion",
+          "type": "number",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "workflowName",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "subjectId",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "runCount",
+          "type": "number",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "steps",
+          "type": "object",
+          "isOptional": false,
+          "isArray": true
+        },
+        {
+          "name": "error",
+          "type": "object",
+          "isOptional": false,
+          "isArray": false
+        },
+        {
+          "name": "createdAt",
+          "type": "string",
+          "isOptional": true,
+          "isArray": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "string",
+          "isOptional": true,
+          "isArray": false
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "name": "auth-login",
+      "kind": "system",
+      "surface": "bff",
+      "methods": [
+        "POST"
+      ],
+      "publicPath": "/api/auth/login",
+      "filePath": "bff/src/auth/index.ts",
+      "exists": false
+    },
+    {
+      "name": "auth-logout",
+      "kind": "system",
+      "surface": "bff",
+      "methods": [
+        "POST"
+      ],
+      "publicPath": "/api/auth/logout",
+      "filePath": "bff/src/auth/index.ts",
+      "exists": false
+    },
+    {
+      "name": "auth-me",
+      "kind": "system",
+      "surface": "bff",
+      "methods": [
+        "GET"
+      ],
+      "publicPath": "/api/auth/me",
+      "filePath": "bff/src/auth/index.ts",
+      "exists": false
+    },
+    {
+      "name": "GrammarTopic-bff-detail",
+      "kind": "entity",
+      "surface": "bff",
+      "entityName": "GrammarTopic",
+      "methods": [
+        "GET",
+        "PUT",
+        "DELETE"
+      ],
+      "publicPath": "/api/grammarTopic/{id}",
+      "filePath": "bff/src/grammarTopic/index.ts",
+      "exists": true
+    },
+    {
+      "name": "GrammarTopic-bff-list",
+      "kind": "entity",
+      "surface": "bff",
+      "entityName": "GrammarTopic",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "publicPath": "/api/grammarTopic",
+      "filePath": "bff/src/grammarTopic/index.ts",
+      "exists": true
+    },
+    {
+      "name": "GrammarTopic-functions",
+      "kind": "entity",
+      "surface": "functions",
+      "entityName": "GrammarTopic",
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "publicPath": "/api/grammarTopic",
+      "filePath": "functions/Crud/GrammarTopicCrudFunctions.cs",
+      "exists": true
+    },
+    {
+      "name": "LearningObservation-bff-detail",
+      "kind": "entity",
+      "surface": "bff",
+      "entityName": "LearningObservation",
+      "methods": [
+        "GET",
+        "PUT",
+        "DELETE"
+      ],
+      "publicPath": "/api/learningObservation/{id}",
+      "filePath": "bff/src/learningObservation/index.ts",
+      "exists": false
+    },
+    {
+      "name": "LearningObservation-bff-list",
+      "kind": "entity",
+      "surface": "bff",
+      "entityName": "LearningObservation",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "publicPath": "/api/learningObservation",
+      "filePath": "bff/src/learningObservation/index.ts",
+      "exists": false
+    },
+    {
+      "name": "LearningObservation-functions",
+      "kind": "entity",
+      "surface": "functions",
+      "entityName": "LearningObservation",
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "publicPath": "/api/learningObservation",
+      "filePath": "functions/Crud/LearningObservationCrudFunctions.cs",
+      "exists": false
+    },
+    {
+      "name": "LearningProfile-bff-detail",
+      "kind": "entity",
+      "surface": "bff",
+      "entityName": "LearningProfile",
+      "methods": [
+        "GET",
+        "PUT",
+        "DELETE"
+      ],
+      "publicPath": "/api/learningProfile/{id}",
+      "filePath": "bff/src/learningProfile/index.ts",
+      "exists": false
+    },
+    {
+      "name": "LearningProfile-bff-list",
+      "kind": "entity",
+      "surface": "bff",
+      "entityName": "LearningProfile",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "publicPath": "/api/learningProfile",
+      "filePath": "bff/src/learningProfile/index.ts",
+      "exists": false
+    },
+    {
+      "name": "LearningProfile-functions",
+      "kind": "entity",
+      "surface": "functions",
+      "entityName": "LearningProfile",
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "publicPath": "/api/learningProfile",
+      "filePath": "functions/Crud/LearningProfileCrudFunctions.cs",
+      "exists": false
+    },
+    {
+      "name": "PracticeSession-bff-detail",
+      "kind": "entity",
+      "surface": "bff",
+      "entityName": "PracticeSession",
+      "methods": [
+        "GET",
+        "PUT",
+        "DELETE"
+      ],
+      "publicPath": "/api/practiceSession/{id}",
+      "filePath": "bff/src/practiceSession/index.ts",
+      "exists": false
+    },
+    {
+      "name": "PracticeSession-bff-list",
+      "kind": "entity",
+      "surface": "bff",
+      "entityName": "PracticeSession",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "publicPath": "/api/practiceSession",
+      "filePath": "bff/src/practiceSession/index.ts",
+      "exists": false
+    },
+    {
+      "name": "PracticeSession-functions",
+      "kind": "entity",
+      "surface": "functions",
+      "entityName": "PracticeSession",
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "publicPath": "/api/practiceSession",
+      "filePath": "functions/Crud/PracticeSessionCrudFunctions.cs",
+      "exists": false
+    },
+    {
+      "name": "ProcessedEvent-bff-detail",
+      "kind": "entity",
+      "surface": "bff",
+      "entityName": "ProcessedEvent",
+      "methods": [
+        "GET",
+        "PUT",
+        "DELETE"
+      ],
+      "publicPath": "/api/processedEvent/{id}",
+      "filePath": "bff/src/processedEvent/index.ts",
+      "exists": false
+    },
+    {
+      "name": "ProcessedEvent-bff-list",
+      "kind": "entity",
+      "surface": "bff",
+      "entityName": "ProcessedEvent",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "publicPath": "/api/processedEvent",
+      "filePath": "bff/src/processedEvent/index.ts",
+      "exists": false
+    },
+    {
+      "name": "ProcessedEvent-functions",
+      "kind": "entity",
+      "surface": "functions",
+      "entityName": "ProcessedEvent",
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "publicPath": "/api/processedEvent",
+      "filePath": "functions/Crud/ProcessedEventCrudFunctions.cs",
+      "exists": false
+    },
+    {
+      "name": "ReviewPlan-bff-detail",
+      "kind": "entity",
+      "surface": "bff",
+      "entityName": "ReviewPlan",
+      "methods": [
+        "GET",
+        "PUT",
+        "DELETE"
+      ],
+      "publicPath": "/api/reviewPlan/{id}",
+      "filePath": "bff/src/reviewPlan/index.ts",
+      "exists": false
+    },
+    {
+      "name": "ReviewPlan-bff-list",
+      "kind": "entity",
+      "surface": "bff",
+      "entityName": "ReviewPlan",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "publicPath": "/api/reviewPlan",
+      "filePath": "bff/src/reviewPlan/index.ts",
+      "exists": false
+    },
+    {
+      "name": "ReviewPlan-functions",
+      "kind": "entity",
+      "surface": "functions",
+      "entityName": "ReviewPlan",
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "publicPath": "/api/reviewPlan",
+      "filePath": "functions/Crud/ReviewPlanCrudFunctions.cs",
+      "exists": false
+    },
+    {
+      "name": "SampleQuestion-bff-detail",
+      "kind": "entity",
+      "surface": "bff",
+      "entityName": "SampleQuestion",
+      "methods": [
+        "GET",
+        "PUT",
+        "DELETE"
+      ],
+      "publicPath": "/api/sampleQuestion/{id}",
+      "filePath": "bff/src/sampleQuestion/index.ts",
+      "exists": true
+    },
+    {
+      "name": "SampleQuestion-bff-list",
+      "kind": "entity",
+      "surface": "bff",
+      "entityName": "SampleQuestion",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "publicPath": "/api/sampleQuestion",
+      "filePath": "bff/src/sampleQuestion/index.ts",
+      "exists": true
+    },
+    {
+      "name": "SampleQuestion-functions",
+      "kind": "entity",
+      "surface": "functions",
+      "entityName": "SampleQuestion",
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "publicPath": "/api/sampleQuestion",
+      "filePath": "functions/Crud/SampleQuestionCrudFunctions.cs",
+      "exists": true
+    },
+    {
+      "name": "TutorProfile-bff-detail",
+      "kind": "entity",
+      "surface": "bff",
+      "entityName": "TutorProfile",
+      "methods": [
+        "GET",
+        "PUT",
+        "DELETE"
+      ],
+      "publicPath": "/api/tutorProfile/{id}",
+      "filePath": "bff/src/tutorProfile/index.ts",
+      "exists": true
+    },
+    {
+      "name": "TutorProfile-bff-list",
+      "kind": "entity",
+      "surface": "bff",
+      "entityName": "TutorProfile",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "publicPath": "/api/tutorProfile",
+      "filePath": "bff/src/tutorProfile/index.ts",
+      "exists": true
+    },
+    {
+      "name": "TutorProfile-functions",
+      "kind": "entity",
+      "surface": "functions",
+      "entityName": "TutorProfile",
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "publicPath": "/api/tutorProfile",
+      "filePath": "functions/Crud/TutorProfileCrudFunctions.cs",
+      "exists": true
+    },
+    {
+      "name": "TutorSession-bff-detail",
+      "kind": "entity",
+      "surface": "bff",
+      "entityName": "TutorSession",
+      "methods": [
+        "GET",
+        "PUT",
+        "DELETE"
+      ],
+      "publicPath": "/api/tutorSession/{id}",
+      "filePath": "bff/src/tutorSession/index.ts",
+      "exists": false
+    },
+    {
+      "name": "TutorSession-bff-list",
+      "kind": "entity",
+      "surface": "bff",
+      "entityName": "TutorSession",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "publicPath": "/api/tutorSession",
+      "filePath": "bff/src/tutorSession/index.ts",
+      "exists": false
+    },
+    {
+      "name": "TutorSession-functions",
+      "kind": "entity",
+      "surface": "functions",
+      "entityName": "TutorSession",
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "publicPath": "/api/tutorSession",
+      "filePath": "functions/Crud/TutorSessionCrudFunctions.cs",
+      "exists": false
+    },
+    {
+      "name": "TutorToolTurn-bff-detail",
+      "kind": "entity",
+      "surface": "bff",
+      "entityName": "TutorToolTurn",
+      "methods": [
+        "GET",
+        "PUT",
+        "DELETE"
+      ],
+      "publicPath": "/api/tutorToolTurn/{id}",
+      "filePath": "bff/src/tutorToolTurn/index.ts",
+      "exists": false
+    },
+    {
+      "name": "TutorToolTurn-bff-list",
+      "kind": "entity",
+      "surface": "bff",
+      "entityName": "TutorToolTurn",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "publicPath": "/api/tutorToolTurn",
+      "filePath": "bff/src/tutorToolTurn/index.ts",
+      "exists": false
+    },
+    {
+      "name": "TutorToolTurn-functions",
+      "kind": "entity",
+      "surface": "functions",
+      "entityName": "TutorToolTurn",
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "publicPath": "/api/tutorToolTurn",
+      "filePath": "functions/Crud/TutorToolTurnCrudFunctions.cs",
+      "exists": false
+    },
+    {
+      "name": "WorkflowRun-bff-detail",
+      "kind": "entity",
+      "surface": "bff",
+      "entityName": "WorkflowRun",
+      "methods": [
+        "GET",
+        "PUT",
+        "DELETE"
+      ],
+      "publicPath": "/api/workflowRun/{id}",
+      "filePath": "bff/src/workflowRun/index.ts",
+      "exists": false
+    },
+    {
+      "name": "WorkflowRun-bff-list",
+      "kind": "entity",
+      "surface": "bff",
+      "entityName": "WorkflowRun",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "publicPath": "/api/workflowRun",
+      "filePath": "bff/src/workflowRun/index.ts",
+      "exists": false
+    },
+    {
+      "name": "WorkflowRun-functions",
+      "kind": "entity",
+      "surface": "functions",
+      "entityName": "WorkflowRun",
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "publicPath": "/api/workflowRun",
+      "filePath": "functions/Crud/WorkflowRunCrudFunctions.cs",
+      "exists": false
+    }
+  ],
+  "modules": [
+    {
+      "name": "shared-models",
+      "kind": "shared-models",
+      "rootPath": "shared/models",
+      "exists": true
+    },
+    {
+      "name": "bff",
+      "kind": "bff",
+      "rootPath": "bff",
+      "exists": true
+    },
+    {
+      "name": "functions",
+      "kind": "functions",
+      "rootPath": "functions",
+      "exists": true
+    },
+    {
+      "name": "ui",
+      "kind": "ui",
+      "rootPath": "src",
+      "exists": true
+    },
+    {
+      "name": "infrastructure",
+      "kind": "infrastructure",
+      "rootPath": "infra",
+      "exists": true
+    },
+    {
+      "name": "auth",
+      "kind": "auth",
+      "rootPath": "bff/src/auth",
+      "exists": false
+    }
+  ],
+  "artifacts": {
+    "callFunctionHelperPath": "bff/src/lib/call-function.ts",
+    "callFunctionHelperExists": true,
+    "openApiSpecs": [
+      "functions/openapi/grammar-topic.openapi.json",
+      "functions/openapi/sample-question.openapi.json",
+      "functions/openapi/tutor-profile.openapi.json"
+    ],
+    "generatedSchemaDirectories": [
+      "functions/generated/csharp-models"
+    ],
+    "proxyPath": "proxy.ts",
+    "proxyExists": false,
+    "loginPagePath": "src/pages/login.tsx",
+    "loginPageExists": false,
+    "authContextPath": "lib/auth/auth-context.tsx",
+    "authContextExists": false
+  },
+  "architecture": {
+    "pattern": "React SPA + SWA managed Functions BFF + standalone Azure Functions + shared Zod models",
+    "frontendFramework": "react",
+    "backendLanguage": "csharp",
+    "layerBoundaries": [
+      "shared/models -> schema source of truth",
+      "bff -> BFF layer only",
+      "functions -> backend logic and data access",
+      "src -> UI and pages",
+      "SWA and standalone Functions are not linked; backend credentials stay in the BFF"
+    ],
+    "hasSharedWorkspace": true,
+    "hasConnectors": false,
+    "hasAuth": true
+  }
+}

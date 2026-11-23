@@ -1,0 +1,10 @@
+packages:
+  - shared
+  - bff
+allowBuilds:
+  keytar: false
+  protobufjs: false
+  unrs-resolver: false
+  esbuild: true
+minimumReleaseAgeExclude:
+  - swallowkit@2.0.0-alpha.5 || 2.0.0-alpha.11 || 2.0.0-alpha.12 || 2.0.0-alpha.13 || 2.0.0-alpha.15 || 2.0.0

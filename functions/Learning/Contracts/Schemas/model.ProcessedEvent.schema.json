@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "string"
+    },
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "channel": {
+      "type": "string"
+    },
+    "externalEventId": {
+      "type": "string"
+    },
+    "resultRef": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "userId",
+    "schemaVersion",
+    "channel",
+    "externalEventId",
+    "resultRef"
+  ],
+  "additionalProperties": false
+}

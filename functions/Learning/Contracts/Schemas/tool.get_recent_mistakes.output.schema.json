@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "mistakes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "observationId": {
+            "type": "string"
+          },
+          "topicId": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "sourceType": {
+            "type": "string",
+            "enum": [
+              "practice",
+              "conversation"
+            ]
+          },
+          "certainty": {
+            "type": "string",
+            "enum": [
+              "deterministic",
+              "ai-inferred"
+            ]
+          },
+          "evidenceText": {
+            "type": "string"
+          },
+          "occurredAt": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "observationId",
+          "topicId",
+          "title",
+          "sourceType",
+          "certainty",
+          "evidenceText",
+          "occurredAt"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "mistakes"
+  ],
+  "additionalProperties": false
+}

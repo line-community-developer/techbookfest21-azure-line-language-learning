@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "environment": {
+      "type": "string",
+      "enum": [
+        "local",
+        "cloud"
+      ]
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "component": {
+            "type": "string",
+            "enum": [
+              "ai-model",
+              "tutor-agent",
+              "retrieval",
+              "storage",
+              "identity",
+              "messaging",
+              "workflow"
+            ]
+          },
+          "mode": {
+            "type": "string"
+          },
+          "isMock": {
+            "type": "boolean"
+          },
+          "detail": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "component",
+          "mode",
+          "isMock",
+          "detail"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "learner": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string"
+        },
+        "learnerName": {
+          "type": "string"
+        },
+        "identityMode": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "userId",
+        "learnerName",
+        "identityMode"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "environment",
+    "components",
+    "learner"
+  ],
+  "additionalProperties": false
+}

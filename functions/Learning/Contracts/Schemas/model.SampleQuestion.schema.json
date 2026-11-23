@@ -1,0 +1,249 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string",
+      "enum": [
+        "it",
+        "en"
+      ]
+    },
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "grammarTopicId": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "multiple-choice",
+        "cloze"
+      ]
+    },
+    "difficulty": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "prompt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "choices": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "correctAnswer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "acceptedAnswers": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "explanationJa": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ruleIds": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "publication": {
+      "type": "object",
+      "properties": {
+        "instructionJa": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceIds": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "provider": {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "type": "string",
+              "enum": [
+                "mock",
+                "foundry",
+                "unavailable"
+              ]
+            },
+            "model": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "kind",
+            "model"
+          ],
+          "additionalProperties": false
+        },
+        "validation": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "passed",
+                "failed"
+              ]
+            },
+            "checks": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "deterministic",
+                      "semantic"
+                    ]
+                  },
+                  "passed": {
+                    "type": "boolean"
+                  },
+                  "severity": {
+                    "type": "string",
+                    "enum": [
+                      "error",
+                      "warning"
+                    ]
+                  },
+                  "messageJa": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "kind",
+                  "passed",
+                  "severity",
+                  "messageJa"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "semantic": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "verdict": {
+                      "type": "string",
+                      "enum": [
+                        "pass",
+                        "fail",
+                        "uncertain"
+                      ]
+                    },
+                    "score": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "rationaleJa": {
+                      "type": "string"
+                    },
+                    "evaluator": {
+                      "type": "object",
+                      "properties": {
+                        "kind": {
+                          "type": "string",
+                          "enum": [
+                            "mock",
+                            "foundry",
+                            "unavailable"
+                          ]
+                        },
+                        "model": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "kind",
+                        "model"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "verdict",
+                    "score",
+                    "rationaleJa",
+                    "evaluator"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "evaluatedAt": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "status",
+            "checks",
+            "semantic",
+            "evaluatedAt"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "instructionJa",
+        "sourceIds",
+        "provider",
+        "validation"
+      ],
+      "additionalProperties": false
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "language",
+    "schemaVersion",
+    "grammarTopicId",
+    "type",
+    "difficulty",
+    "prompt",
+    "choices",
+    "correctAnswer",
+    "acceptedAnswers",
+    "explanationJa",
+    "ruleIds"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "mode": {
+      "type": "string",
+      "enum": [
+        "recommended",
+        "topic",
+        "review"
+      ]
+    },
+    "topicIds": {
+      "maxItems": 3,
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "level": {
+      "type": "string",
+      "enum": [
+        "A1",
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+      ]
+    },
+    "reviewPlanId": {
+      "type": "string"
+    },
+    "questionCount": {
+      "type": "integer",
+      "minimum": 3,
+      "maximum": 10
+    }
+  },
+  "required": [
+    "mode"
+  ],
+  "additionalProperties": false
+}

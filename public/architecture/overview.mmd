@@ -1,0 +1,44 @@
+flowchart TB
+  Mini["LINE MINI App / LIFF<br/>演習・履歴・文法"]
+  Chat["LINE Messaging API<br/>イタリア語講師との会話"]
+
+  SWA@{ img: "./icons/static-web-apps.svg", label: "Static Web Apps · React SPA", h: 52, constraint: "on" }
+  BFF@{ img: "./icons/functions.svg", label: "SWA managed BFF · HTTP proxy", h: 52, constraint: "on" }
+  Webhook["LINE Webhook<br/>raw body 署名検証 → Durable で会話 → Reply"]
+  API@{ img: "./icons/functions.svg", label: "Standalone Functions · C# isolated", h: 60, constraint: "on" }
+  Services["学習 API・演習・採点・習熟度<br/>講師ツール・会話分析・復習生成"]
+
+  subgraph adapters["保存・AI・RAG"]
+    Local["ローカル開発<br/>Cosmos Emulator / Local RAG<br/>AI は明示設定まで未接続"]
+    Cosmos@{ img: "./icons/cosmos-db.svg", label: "Cosmos DB · /userId", h: 52, constraint: "on" }
+    Foundry@{ img: "./icons/foundry.svg", label: "Microsoft Foundry · Models / Agents", h: 52, constraint: "on" }
+    Search@{ img: "./icons/search.svg", label: "Azure AI Search · Foundry IQ（任意・別途設定）", h: 52, constraint: "on" }
+  end
+
+  MCP["Functions MCP · 六つの学習用ツール<br/>System key 認証 + 短命のターン参照"]
+  Workflow["Durable Functions<br/>会話オーケストレーション・7 段階の分析"]
+  subgraph operations["永続実行・運用"]
+    Storage@{ img: "./icons/storage.svg", label: "Azure Storage · Durable state", h: 48, constraint: "on" }
+    Insights@{ img: "./icons/insights.svg", label: "Application Insights · logs / traces", h: 48, constraint: "on" }
+    Vault@{ img: "./icons/key-vault.svg", label: "Key Vault · LINE secret / token（任意・別途設定）", h: 48, constraint: "on" }
+  end
+
+  Mini --> SWA -->|"/api/learning/* · LIFF ID トークン"| BFF -->|"server-only URL + Function key"| API
+  Chat -->|"HTTPS · raw body 署名検証"| Webhook --> API
+  API -->|"LINE verify API で ID トークン検証 · line-{userId}"| Services
+  Services --> Local
+  Services -->|"managed identity"| Cosmos
+  Services -. "問題生成・分析: モデル直接 / 講師: 保存済み agent・固定版" .-> Foundry
+  Foundry -. "接続のサービスキー + ターン参照ヘッダー" .-> MCP --> Services
+  Services -. "retrieve / 文法の根拠" .-> Search
+  Services --> Workflow
+  Workflow -->|"実行状態"| Storage
+  Workflow -. "観測・監視" .-> Insights
+  Workflow -. "サーバー専用設定" .-> Vault
+
+  classDef line fill:#ecfdf5,stroke:#06a66b,color:#064e3b
+  classDef pending fill:#fff8ed,stroke:#d97706,color:#713f12
+  classDef implemented fill:#ecfdf5,stroke:#059669,color:#064e3b
+  class Mini,Chat line
+  class Webhook,Workflow implemented
+  class Services,Local implemented

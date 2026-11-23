@@ -1,0 +1,48 @@
+{
+  "datasetId": "tutor-conversation-v1",
+  "description": "Learner utterances with the grammar findings and tool calls the tutor pipeline is expected to produce. Labels are human-written; the mock agent must satisfy them, and a Foundry agent can be scored against the same file.",
+  "cases": [
+    {
+      "id": "tc-aux-error",
+      "utterance": "Sabato ho andato al mare con i miei amici.",
+      "expectedFindings": [ { "kind": "grammar-error", "topicId": "it-passato-prossimo-auxiliary", "evidence": "ho andato" } ],
+      "expectedToolCalls": ["get_learning_profile", "get_recent_mistakes", "record_learning_observation", "search_grammar_rules"]
+    },
+    {
+      "id": "tc-di-error",
+      "utterance": "Domenica ho finito a studiare alle cinque.",
+      "expectedFindings": [ { "kind": "grammar-error", "topicId": "it-verb-di-infinitive", "evidence": "finito a studiare" } ],
+      "expectedToolCalls": ["get_learning_profile", "get_recent_mistakes", "record_learning_observation", "search_grammar_rules"]
+    },
+    {
+      "id": "tc-a-error",
+      "utterance": "Adesso comincio di studiare il tedesco.",
+      "expectedFindings": [ { "kind": "grammar-error", "topicId": "it-verb-a-infinitive", "evidence": "comincio di studiare" } ],
+      "expectedToolCalls": ["get_learning_profile", "get_recent_mistakes", "record_learning_observation", "search_grammar_rules"]
+    },
+    {
+      "id": "tc-correct-use",
+      "utterance": "Stasera ho voglia di mangiare il sushi.",
+      "expectedFindings": [ { "kind": "correct-use", "topicId": "it-avere-voglia-di", "evidence": "ho voglia di" } ],
+      "expectedToolCalls": ["get_learning_profile", "get_recent_mistakes"]
+    },
+    {
+      "id": "tc-no-grammar-claimed",
+      "utterance": "Mi piace molto il mare.",
+      "expectedFindings": [],
+      "expectedToolCalls": ["get_learning_profile", "get_recent_mistakes"]
+    },
+    {
+      "id": "tc-country",
+      "utterance": "L'anno prossimo vado a Giappone.",
+      "expectedFindings": [ { "kind": "grammar-error", "topicId": "it-andare-in", "evidence": "vado a Giappone" } ],
+      "expectedToolCalls": ["get_learning_profile", "get_recent_mistakes", "record_learning_observation", "search_grammar_rules"]
+    },
+    {
+      "id": "tc-practice-request",
+      "utterance": "Vorrei fare esercizi, per favore.",
+      "expectedFindings": [],
+      "expectedToolCalls": ["get_learning_profile", "get_recent_mistakes", "create_practice_session"]
+    }
+  ]
+}

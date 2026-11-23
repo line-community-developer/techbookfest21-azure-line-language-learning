@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "projectId": "d0c071cc-c448-4617-b133-d7d83f0c9f9d",
+  "baseline": {
+    "version": 0,
+    "legacy": true,
+    "files": [
+      {
+        "path": "infra/containers/grammar-topic-container.bicep",
+        "checksum": "7fa808dfd57e7876388f5ba907a887d57f4caaa5f386064f4275708a6694c83e"
+      },
+      {
+        "path": "infra/containers/learning-observation-container.bicep",
+        "checksum": "d29c60fd9fed918a768ec6a22d7e0b492829e2dc9a2a4b640c45dac811fbc704"
+      },
+      {
+        "path": "infra/containers/learning-profile-container.bicep",
+        "checksum": "02a7b821de2c80f55090a0e39934e76b3b9bfbd6a6d3f533b88c0c7144613b27"
+      },
+      {
+        "path": "infra/containers/practice-session-container.bicep",
+        "checksum": "a98481a9e253c19166fae903eddcfd9d6bfbd7ac25c320e6b21ba1f228b5a764"
+      },
+      {
+        "path": "infra/containers/processed-event-container.bicep",
+        "checksum": "15ad51c831e30dd7787de1e50524aa7e3007d0c6e361a1801e0f9e77f9ff563a"
+      },
+      {
+        "path": "infra/containers/review-plan-container.bicep",
+        "checksum": "aafd5ea0b73205b398dcde6d93aea7dcf31db8c6fcd3de69c487421261c9346b"
+      },
+      {
+        "path": "infra/containers/sample-question-container.bicep",
+        "checksum": "c7ef644c5832c3a78e2149e00266c7b24d9625029ae5838465e52f1ebe5252ec"
+      },
+      {
+        "path": "infra/containers/tutor-profile-container.bicep",
+        "checksum": "6769b1526589d41b0f92d5c7bb080f0024e2261e758fa1860ca58c87885d4e32"
+      },
+      {
+        "path": "infra/containers/tutor-session-container.bicep",
+        "checksum": "b1e4716afcfa1d756deaef4aa0c73ac11e16beee288d087c8b476c311d98400e"
+      },
+      {
+        "path": "infra/containers/tutor-tool-turn-container.bicep",
+        "checksum": "4c9fbd42c312f9080459d37c58ed5f71a5a17f426a059a99e6cc8690f23dbd08"
+      },
+      {
+        "path": "infra/containers/workflow-run-container.bicep",
+        "checksum": "17e0f82571b4e63904f80912b8e64e9310d6767d4a5d2045804c762abbb2c5ce"
+      },
+      {
+        "path": "infra/main.bicep",
+        "checksum": "e59dc3b98dfb1ac7806ed85df17003c0513a9e105462237f0d18ff007d4f80b5"
+      },
+      {
+        "path": "infra/main.parameters.json",
+        "checksum": "ed6d34d9ba6fee4dd1ad92d3d3da2fd0d95f6936ff44ad5f4a69c154e1dbc7dc"
+      },
+      {
+        "path": "infra/modules/appinsights.bicep",
+        "checksum": "3dd102325d23aee630b8fa3087f893192ef7ab03045757b8a9ba16ba909dba47"
+      },
+      {
+        "path": "infra/modules/cosmosdb-freetier.bicep",
+        "checksum": "0da8ca6520701798958a027612edfd51684a0f16aa54dbca3f1b567fa6002680"
+      },
+      {
+        "path": "infra/modules/cosmosdb-role-assignment.bicep",
+        "checksum": "54ef1c4e15beb80dc92899859feaed1f48d91e8fc133dcd657588ce51cbbcf47"
+      },
+      {
+        "path": "infra/modules/cosmosdb-serverless.bicep",
+        "checksum": "19aad830652f974e89ee4412e418bd795642d5e14991236378db85494c3e3901"
+      },
+      {
+        "path": "infra/modules/foundry.bicep",
+        "checksum": "f70d11a89864f5eedaa72e082812be2cdcaedc2f2626fda29138da8d589a5e50"
+      },
+      {
+        "path": "infra/modules/functions-flex.bicep",
+        "checksum": "42f9de198939162747a3dbbfe9cd8b97bb01056ed12eefa1852d402e45a17dad"
+      },
+      {
+        "path": "infra/modules/loganalytics.bicep",
+        "checksum": "155c34272b51f546fe629b3c6c8062b1b00734236d3b53ff72da92d852d6e4a2"
+      },
+      {
+        "path": "infra/modules/private-endpoint-cosmos.bicep",
+        "checksum": "bd1787ff5b61967c82b0db6440b2abf288e61a75c5bca4c9f98f1aca29b8878f"
+      },
+      {
+        "path": "infra/modules/staticwebapp-config.bicep",
+        "checksum": "c979ee861f73eb23a1dd0cbc1ca4d8f58be0b979266b585ed72e3e989ee1880a"
+      },
+      {
+        "path": "infra/modules/staticwebapp.bicep",
+        "checksum": "af0405d24092c2685721f965f21640e41937dcbe528f60a0b0cd74b39670adb3"
+      },
+      {
+        "path": "infra/modules/vnet.bicep",
+        "checksum": "34d216549ad9e5e30137ac27659faa2e31732781402aac532745bdfc4675c975"
+      }
+    ],
+    "checksum": "ecc90763f82ffcdd36655c28f97d27f4babe9b6c88982dc17de7e8b20629c1fe"
+  },
+  "migrations": []
+}

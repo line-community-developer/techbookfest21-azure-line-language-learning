@@ -1,0 +1,375 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "SampleQuestion API",
+    "version": "1.0.0",
+    "description": "Generated from SwallowKit Zod model metadata."
+  },
+  "paths": {
+    "/api/sampleQuestion": {
+      "get": {
+        "operationId": "sampleQuestionGetAll",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SampleQuestion"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "operationId": "sampleQuestionCreate",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SampleQuestion"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SampleQuestion"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sampleQuestion/{id}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "get": {
+        "operationId": "sampleQuestionGetById",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SampleQuestion"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "operationId": "sampleQuestionUpdate",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SampleQuestion"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Updated response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SampleQuestion"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "operationId": "sampleQuestionDelete",
+        "responses": {
+          "204": {
+            "description": "Deleted response"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "SampleQuestion": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "language": {
+            "type": "string",
+            "enum": [
+              "it",
+              "en"
+            ]
+          },
+          "schemaVersion": {
+            "type": "string",
+            "enum": [
+              "1"
+            ]
+          },
+          "grammarTopicId": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "multiple-choice",
+              "cloze"
+            ]
+          },
+          "difficulty": {
+            "type": "integer",
+            "format": "int64",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "prompt": {
+            "type": "string",
+            "minLength": 1
+          },
+          "choices": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "correctAnswer": {
+            "type": "string",
+            "minLength": 1
+          },
+          "acceptedAnswers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "explanationJa": {
+            "type": "string",
+            "minLength": 1
+          },
+          "ruleIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "publication": {
+            "$ref": "#/components/schemas/SampleQuestionPublication"
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "updatedAt": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "language",
+          "schemaVersion",
+          "grammarTopicId",
+          "type",
+          "difficulty",
+          "prompt",
+          "choices",
+          "correctAnswer",
+          "acceptedAnswers",
+          "explanationJa",
+          "ruleIds"
+        ]
+      },
+      "SampleQuestionPublicationProvider": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "mock",
+              "foundry",
+              "unavailable"
+            ]
+          },
+          "model": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "kind",
+          "model"
+        ]
+      },
+      "SampleQuestionPublicationValidationChecks": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "deterministic",
+              "semantic"
+            ]
+          },
+          "passed": {
+            "type": "boolean"
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "error",
+              "warning"
+            ]
+          },
+          "messageJa": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "passed",
+          "severity",
+          "messageJa"
+        ]
+      },
+      "SampleQuestionPublicationValidationSemanticEvaluator": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "mock",
+              "foundry",
+              "unavailable"
+            ]
+          },
+          "model": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "kind",
+          "model"
+        ]
+      },
+      "SampleQuestionPublicationValidationSemantic": {
+        "type": "object",
+        "properties": {
+          "verdict": {
+            "type": "string",
+            "enum": [
+              "pass",
+              "fail",
+              "uncertain"
+            ]
+          },
+          "score": {
+            "type": "number",
+            "format": "double",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "rationaleJa": {
+            "type": "string"
+          },
+          "evaluator": {
+            "$ref": "#/components/schemas/SampleQuestionPublicationValidationSemanticEvaluator"
+          }
+        },
+        "required": [
+          "verdict",
+          "score",
+          "rationaleJa",
+          "evaluator"
+        ]
+      },
+      "SampleQuestionPublicationValidation": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "passed",
+              "failed"
+            ]
+          },
+          "checks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SampleQuestionPublicationValidationChecks"
+            }
+          },
+          "semantic": {
+            "$ref": "#/components/schemas/SampleQuestionPublicationValidationSemantic"
+          },
+          "evaluatedAt": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "status",
+          "checks",
+          "semantic",
+          "evaluatedAt"
+        ]
+      },
+      "SampleQuestionPublication": {
+        "type": "object",
+        "properties": {
+          "instructionJa": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "provider": {
+            "$ref": "#/components/schemas/SampleQuestionPublicationProvider"
+          },
+          "validation": {
+            "$ref": "#/components/schemas/SampleQuestionPublicationValidation"
+          }
+        },
+        "required": [
+          "instructionJa",
+          "sourceIds",
+          "provider",
+          "validation"
+        ]
+      }
+    }
+  }
+}

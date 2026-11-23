@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "verdict": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail",
+        "uncertain"
+      ]
+    },
+    "score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "messageJa": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "code",
+          "messageJa"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "rationaleJa": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "verdict",
+    "score",
+    "issues",
+    "rationaleJa"
+  ],
+  "additionalProperties": false
+}

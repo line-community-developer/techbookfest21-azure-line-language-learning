@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "string"
+    },
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "sourceType": {
+      "type": "string",
+      "enum": [
+        "conversation",
+        "practice"
+      ]
+    },
+    "sourceId": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "completed"
+      ]
+    },
+    "items": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "topicId": {
+            "type": "string"
+          },
+          "priority": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "priorityScore": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "reasonJa": {
+            "type": "string"
+          },
+          "evidenceObservationIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "topicId",
+          "priority",
+          "priorityScore",
+          "reasonJa",
+          "evidenceObservationIds"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "practiceSessionIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "userId",
+    "schemaVersion",
+    "sourceType",
+    "sourceId",
+    "status",
+    "items",
+    "practiceSessionIds"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,218 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "string"
+    },
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "tutorProfileId": {
+      "type": "string"
+    },
+    "channel": {
+      "type": "string",
+      "enum": [
+        "local-simulator",
+        "line",
+        "demo-seed"
+      ]
+    },
+    "theme": {
+      "type": "string"
+    },
+    "focusTopicIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "ended"
+      ]
+    },
+    "messages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "sessionId": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "learner",
+              "tutor"
+            ]
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "externalEventId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "corrections": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "grammarTopicId": {
+                  "type": "string"
+                },
+                "incorrect": {
+                  "type": "string"
+                },
+                "suggestion": {
+                  "type": "string"
+                },
+                "explanationJa": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "grammarTopicId",
+                "incorrect",
+                "suggestion",
+                "explanationJa"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "retrievedSourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "toolCalls": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "callId": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "succeeded",
+                    "failed",
+                    "rejected"
+                  ]
+                },
+                "durationMs": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "errorCode": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "callId",
+                "name",
+                "status",
+                "durationMs",
+                "errorCode"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "updatedAt": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "sessionId",
+          "role",
+          "text",
+          "externalEventId",
+          "corrections",
+          "retrievedSourceIds",
+          "toolCalls"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "agent": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "mock",
+            "foundry",
+            "unavailable"
+          ]
+        },
+        "model": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind",
+        "model"
+      ],
+      "additionalProperties": false
+    },
+    "endedAt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "analysisWorkflowRunId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "userId",
+    "schemaVersion",
+    "tutorProfileId",
+    "channel",
+    "theme",
+    "focusTopicIds",
+    "status",
+    "messages",
+    "agent",
+    "endedAt",
+    "analysisWorkflowRunId"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,14 @@
+{
+  "datasetId": "grammar-retrieval-v1",
+  "description": "Queries (Japanese / Italian / learner errors) and the grammar topics that must appear in the top results.",
+  "cases": [
+    { "id": "rt-ja-a-di", "query": "a と di の使い分け", "limit": 3, "expectedTopicIds": ["it-verb-a-infinitive", "it-verb-di-infinitive"] },
+    { "id": "rt-it-finire", "query": "finire di", "limit": 3, "expectedTopicIds": ["it-verb-di-infinitive"] },
+    { "id": "rt-error-aux", "query": "ho andato o sono andato? avere essere", "limit": 3, "expectedTopicIds": ["it-passato-prossimo-auxiliary"] },
+    { "id": "rt-ja-articles", "query": "定冠詞", "limit": 3, "expectedTopicIds": ["it-definite-articles"] },
+    { "id": "rt-it-voglia", "query": "avere voglia di", "limit": 2, "expectedTopicIds": ["it-avere-voglia-di"] },
+    { "id": "rt-ja-reflexive", "query": "再帰動詞", "limit": 3, "expectedTopicIds": ["it-reflexive-verbs"] },
+    { "id": "rt-it-andare-da", "query": "vado dal medico", "limit": 3, "expectedTopicIds": ["it-andare-da"] },
+    { "id": "rt-none", "query": "subjunctive of quantum physics", "limit": 3, "expectedTopicIds": [] }
+  ]
+}

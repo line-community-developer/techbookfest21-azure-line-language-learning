@@ -1,0 +1,353 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "session": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "tutor": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "avatarEmoji": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "avatarEmoji"
+          ],
+          "additionalProperties": false
+        },
+        "channel": {
+          "type": "string",
+          "enum": [
+            "local-simulator",
+            "line",
+            "demo-seed"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "active",
+            "ended"
+          ]
+        },
+        "theme": {
+          "type": "string"
+        },
+        "focusTopics": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "topicId": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "titleJa": {
+                "type": "string"
+              },
+              "level": {
+                "type": "string",
+                "enum": [
+                  "A1",
+                  "A2",
+                  "B1",
+                  "B2",
+                  "C1",
+                  "C2"
+                ]
+              }
+            },
+            "required": [
+              "topicId",
+              "title",
+              "titleJa",
+              "level"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "messages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "role": {
+                "type": "string",
+                "enum": [
+                  "learner",
+                  "tutor"
+                ]
+              },
+              "text": {
+                "type": "string"
+              },
+              "createdAt": {
+                "type": "string"
+              },
+              "corrections": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "grammarTopicId": {
+                      "type": "string"
+                    },
+                    "incorrect": {
+                      "type": "string"
+                    },
+                    "suggestion": {
+                      "type": "string"
+                    },
+                    "explanationJa": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "grammarTopicId",
+                    "incorrect",
+                    "suggestion",
+                    "explanationJa"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "retrievedSourceIds": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "toolCalls": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "callId": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "succeeded",
+                        "failed",
+                        "rejected"
+                      ]
+                    },
+                    "durationMs": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "errorCode": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "callId",
+                    "name",
+                    "status",
+                    "durationMs",
+                    "errorCode"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": [
+              "id",
+              "role",
+              "text",
+              "createdAt",
+              "corrections",
+              "retrievedSourceIds",
+              "toolCalls"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "agent": {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "type": "string",
+              "enum": [
+                "mock",
+                "foundry",
+                "unavailable"
+              ]
+            },
+            "model": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "kind",
+            "model"
+          ],
+          "additionalProperties": false
+        },
+        "analysisWorkflowRunId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "createdAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "tutor",
+        "channel",
+        "status",
+        "theme",
+        "focusTopics",
+        "messages",
+        "agent",
+        "analysisWorkflowRunId",
+        "createdAt"
+      ],
+      "additionalProperties": false
+    },
+    "replies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "learner",
+              "tutor"
+            ]
+          },
+          "text": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "corrections": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "grammarTopicId": {
+                  "type": "string"
+                },
+                "incorrect": {
+                  "type": "string"
+                },
+                "suggestion": {
+                  "type": "string"
+                },
+                "explanationJa": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "grammarTopicId",
+                "incorrect",
+                "suggestion",
+                "explanationJa"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "retrievedSourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "toolCalls": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "callId": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "succeeded",
+                    "failed",
+                    "rejected"
+                  ]
+                },
+                "durationMs": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "errorCode": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "callId",
+                "name",
+                "status",
+                "durationMs",
+                "errorCode"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "id",
+          "role",
+          "text",
+          "createdAt",
+          "corrections",
+          "retrievedSourceIds",
+          "toolCalls"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "duplicate": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "session",
+    "replies",
+    "duplicate"
+  ],
+  "additionalProperties": false
+}

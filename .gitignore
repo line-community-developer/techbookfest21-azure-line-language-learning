@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.env*.local
+local.settings.json
+**/bin/
+**/obj/
+functions/.local-scenarios/
+/.swallowkit/vite-dev-*/
+
+# Machine-local credentials, deployment checkpoints and generated output
+.env
+.env.*
+!.env.example
+*.publishsettings
+*.publishSettings
+functions/publish/
+.swallowkit/state/
+.swallowkit/plans/
+.swallowkit/azure-validation/

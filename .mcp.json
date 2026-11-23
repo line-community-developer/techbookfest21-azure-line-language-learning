@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "swallowkit": {
+      "command": "pnpm",
+      "args": [
+        "dlx",
+        "--package",
+        "swallowkit@${SWALLOWKIT_MCP_VERSION}",
+        "swallowkit-mcp"
+      ],
+      "cwd": ".",
+      "env": {
+        "SWALLOWKIT_MCP_VERSION": "2.0.0"
+      }
+    }
+  }
+}

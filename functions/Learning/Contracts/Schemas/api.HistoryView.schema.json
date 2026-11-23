@@ -1,0 +1,377 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "mastery": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "topicId": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "titleJa": {
+            "type": "string"
+          },
+          "level": {
+            "type": "string",
+            "enum": [
+              "A1",
+              "A2",
+              "B1",
+              "B2",
+              "C1",
+              "C2"
+            ]
+          },
+          "score": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "unknown",
+              "weak",
+              "developing",
+              "strong"
+            ]
+          },
+          "attempts": {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          "correct": {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          "conversationErrors": {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          "lastObservedAt": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "topicId",
+          "title",
+          "titleJa",
+          "level",
+          "score",
+          "status",
+          "attempts",
+          "correct",
+          "conversationErrors",
+          "lastObservedAt"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "attempts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sessionId": {
+            "type": "string"
+          },
+          "questionId": {
+            "type": "string"
+          },
+          "topicId": {
+            "type": "string"
+          },
+          "topicTitle": {
+            "type": "string"
+          },
+          "prompt": {
+            "type": "string"
+          },
+          "answer": {
+            "type": "string"
+          },
+          "correctAnswer": {
+            "type": "string"
+          },
+          "isCorrect": {
+            "type": "boolean"
+          },
+          "answeredAt": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "sessionId",
+          "questionId",
+          "topicId",
+          "topicTitle",
+          "prompt",
+          "answer",
+          "correctAnswer",
+          "isCorrect",
+          "answeredAt"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "topicId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "topicTitle": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sourceType": {
+            "type": "string",
+            "enum": [
+              "practice",
+              "conversation"
+            ]
+          },
+          "observationType": {
+            "type": "string",
+            "enum": [
+              "correct-answer",
+              "incorrect-answer",
+              "grammar-error",
+              "possible-misunderstanding",
+              "correct-use",
+              "new-expression"
+            ]
+          },
+          "certainty": {
+            "type": "string",
+            "enum": [
+              "deterministic",
+              "ai-inferred"
+            ]
+          },
+          "confidence": {
+            "type": "number"
+          },
+          "evidenceText": {
+            "type": "string"
+          },
+          "occurredAt": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "topicId",
+          "topicTitle",
+          "sourceType",
+          "observationType",
+          "certainty",
+          "confidence",
+          "evidenceText",
+          "occurredAt"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "sessions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "mode": {
+            "type": "string",
+            "enum": [
+              "recommended",
+              "topic",
+              "review"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "in-progress",
+              "completed"
+            ]
+          },
+          "topics": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "topicId": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "titleJa": {
+                  "type": "string"
+                },
+                "level": {
+                  "type": "string",
+                  "enum": [
+                    "A1",
+                    "A2",
+                    "B1",
+                    "B2",
+                    "C1",
+                    "C2"
+                  ]
+                }
+              },
+              "required": [
+                "topicId",
+                "title",
+                "titleJa",
+                "level"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "completedAt": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "summary": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "total": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "answered": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "correct": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "accuracy": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  }
+                },
+                "required": [
+                  "total",
+                  "answered",
+                  "correct",
+                  "accuracy"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "mode",
+          "status",
+          "topics",
+          "createdAt",
+          "completedAt",
+          "summary"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "reviewPriorities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "topicId": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "titleJa": {
+            "type": "string"
+          },
+          "level": {
+            "type": "string",
+            "enum": [
+              "A1",
+              "A2",
+              "B1",
+              "B2",
+              "C1",
+              "C2"
+            ]
+          },
+          "priority": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "priorityScore": {
+            "type": "number"
+          },
+          "reasonJa": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "topicId",
+          "title",
+          "titleJa",
+          "level",
+          "priority",
+          "priorityScore",
+          "reasonJa"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "mastery",
+    "attempts",
+    "observations",
+    "sessions",
+    "reviewPriorities"
+  ],
+  "additionalProperties": false
+}

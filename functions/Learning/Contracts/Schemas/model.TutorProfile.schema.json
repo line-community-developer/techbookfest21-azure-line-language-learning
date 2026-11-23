@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string",
+      "enum": [
+        "it",
+        "en"
+      ]
+    },
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "avatarEmoji": {
+      "type": "string"
+    },
+    "personaJa": {
+      "type": "string"
+    },
+    "speakingStyle": {
+      "type": "string"
+    },
+    "greeting": {
+      "type": "string",
+      "minLength": 1
+    },
+    "correctionPolicy": {
+      "type": "object",
+      "properties": {
+        "maxCorrectionsPerTurn": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "style": {
+          "type": "string",
+          "enum": [
+            "recast",
+            "explicit"
+          ]
+        },
+        "explainInJapanese": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "maxCorrectionsPerTurn",
+        "style",
+        "explainInJapanese"
+      ],
+      "additionalProperties": false
+    },
+    "promptTemplateId": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "language",
+    "schemaVersion",
+    "name",
+    "avatarEmoji",
+    "personaJa",
+    "speakingStyle",
+    "greeting",
+    "correctionPolicy",
+    "promptTemplateId"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "string"
+    },
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "learnerName": {
+      "type": "string",
+      "minLength": 1
+    },
+    "nativeLanguage": {
+      "type": "string",
+      "enum": [
+        "ja",
+        "it",
+        "en"
+      ]
+    },
+    "targetLanguage": {
+      "type": "string",
+      "enum": [
+        "it",
+        "en"
+      ]
+    },
+    "currentLevel": {
+      "type": "string",
+      "enum": [
+        "A1",
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+      ]
+    },
+    "learningGoals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "masteryByTopic": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string"
+          },
+          "value": {
+            "type": "object",
+            "properties": {
+              "topicId": {
+                "type": "string"
+              },
+              "score": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "unknown",
+                  "weak",
+                  "developing",
+                  "strong"
+                ]
+              },
+              "attempts": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "correct": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "conversationErrors": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "conversationCorrectUses": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "lastObservedAt": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "topicId",
+              "score",
+              "status",
+              "attempts",
+              "correct",
+              "conversationErrors",
+              "conversationCorrectUses",
+              "lastObservedAt"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "key",
+          "value"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "weakTopics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "strongTopics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "observationCount": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "userId",
+    "schemaVersion",
+    "learnerName",
+    "nativeLanguage",
+    "targetLanguage",
+    "currentLevel",
+    "learningGoals",
+    "masteryByTopic",
+    "weakTopics",
+    "strongTopics",
+    "observationCount"
+  ],
+  "additionalProperties": false
+}

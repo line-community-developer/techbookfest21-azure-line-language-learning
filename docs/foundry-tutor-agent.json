@@ -1,0 +1,37 @@
+{
+  "name": "learning-tutor",
+  "definition": {
+    "kind": "prompt",
+    "model": "learning",
+    "tools": [
+      {
+        "type": "mcp",
+        "server_label": "learning",
+        "server_url": "https://<functions-host>/runtime/webhooks/mcp",
+        "project_connection_id": "<mcp-project-connection-id>",
+        "allowed_tools": [
+          "get_learning_profile",
+          "get_recent_mistakes",
+          "search_grammar_rules",
+          "record_learning_observation",
+          "create_practice_session",
+          "get_review_plan"
+        ],
+        "require_approval": "never",
+        "headers": {
+          "X-Learning-Context": "{{turnReference}}"
+        }
+      }
+    ],
+    "structured_inputs": {
+      "turnReference": { "description": "Server-issued turn routing reference; not an authentication credential", "required": true, "schema": { "type": "string" } },
+      "tutorName": { "required": true, "schema": { "type": "string" } },
+      "persona": { "required": true, "schema": { "type": "string" } },
+      "speakingStyle": { "required": true, "schema": { "type": "string" } },
+      "level": { "required": true, "schema": { "type": "string" } },
+      "focusTopics": { "required": true, "schema": { "type": "string" } },
+      "maxCorrections": { "required": true, "schema": { "type": "string" } },
+      "correctionStyle": { "required": true, "schema": { "type": "string" } }
+    }
+  }
+}

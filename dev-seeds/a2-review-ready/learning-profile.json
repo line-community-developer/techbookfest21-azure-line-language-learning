@@ -1,0 +1,107 @@
+[
+  {
+    "learnerName": "Demo Learner",
+    "nativeLanguage": "ja",
+    "targetLanguage": "it",
+    "currentLevel": "A2",
+    "learningGoals": [
+      "\u30A4\u30BF\u30EA\u30A2\u65C5\u884C\u3067\u65E5\u5E38\u4F1A\u8A71\u304C\u3067\u304D\u308B\u3088\u3046\u306B\u306A\u308B",
+      "\u9031\u672B\u306E\u51FA\u6765\u4E8B\u3092\u8FD1\u904E\u53BB\u3067\u8A71\u305B\u308B\u3088\u3046\u306B\u306A\u308B"
+    ],
+    "masteryByTopic": [
+      {
+        "key": "it-avere-voglia-di",
+        "value": {
+          "topicId": "it-avere-voglia-di",
+          "score": 0.542,
+          "status": "developing",
+          "attempts": 0,
+          "correct": 0,
+          "conversationErrors": 0,
+          "conversationCorrectUses": 1,
+          "lastObservedAt": "2026-10-01T09:02:04.0000000\u002B00:00"
+        }
+      },
+      {
+        "key": "it-definite-articles",
+        "value": {
+          "topicId": "it-definite-articles",
+          "score": 0.7952,
+          "status": "strong",
+          "attempts": 4,
+          "correct": 4,
+          "conversationErrors": 0,
+          "conversationCorrectUses": 0,
+          "lastObservedAt": "2026-10-01T09:00:36.0000000\u002B00:00"
+        }
+      },
+      {
+        "key": "it-passato-prossimo-auxiliary",
+        "value": {
+          "topicId": "it-passato-prossimo-auxiliary",
+          "score": 0.3409,
+          "status": "weak",
+          "attempts": 4,
+          "correct": 1,
+          "conversationErrors": 1,
+          "conversationCorrectUses": 1,
+          "lastObservedAt": "2026-10-01T09:01:50.0000000\u002B00:00"
+        }
+      },
+      {
+        "key": "it-present-regular",
+        "value": {
+          "topicId": "it-present-regular",
+          "score": 0.7952,
+          "status": "strong",
+          "attempts": 4,
+          "correct": 4,
+          "conversationErrors": 0,
+          "conversationCorrectUses": 0,
+          "lastObservedAt": "2026-10-01T09:00:40.0000000\u002B00:00"
+        }
+      },
+      {
+        "key": "it-verb-a-infinitive",
+        "value": {
+          "topicId": "it-verb-a-infinitive",
+          "score": 0.1856,
+          "status": "weak",
+          "attempts": 3,
+          "correct": 0,
+          "conversationErrors": 1,
+          "conversationCorrectUses": 0,
+          "lastObservedAt": "2026-10-01T09:01:58.0000000\u002B00:00"
+        }
+      },
+      {
+        "key": "it-verb-di-infinitive",
+        "value": {
+          "topicId": "it-verb-di-infinitive",
+          "score": 0.33,
+          "status": "weak",
+          "attempts": 3,
+          "correct": 1,
+          "conversationErrors": 1,
+          "conversationCorrectUses": 0,
+          "lastObservedAt": "2026-10-01T09:01:50.0000000\u002B00:00"
+        }
+      }
+    ],
+    "weakTopics": [
+      "it-verb-a-infinitive",
+      "it-verb-di-infinitive",
+      "it-passato-prossimo-auxiliary"
+    ],
+    "strongTopics": [
+      "it-definite-articles",
+      "it-present-regular"
+    ],
+    "observationCount": 23,
+    "userId": "local-demo-learner",
+    "schemaVersion": 1,
+    "id": "profile",
+    "createdAt": "2026-10-01T09:00:01.0000000\u002B00:00",
+    "updatedAt": "2026-10-01T09:02:27.0000000\u002B00:00"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "learnerName": "Demo Learner",
+    "nativeLanguage": "ja",
+    "targetLanguage": "it",
+    "currentLevel": "A1",
+    "learningGoals": [],
+    "masteryByTopic": [],
+    "weakTopics": [],
+    "strongTopics": [],
+    "observationCount": 0,
+    "userId": "local-demo-learner",
+    "schemaVersion": 1,
+    "id": "profile",
+    "createdAt": "2026-10-01T09:00:01.0000000\u002B00:00",
+    "updatedAt": "2026-10-01T09:00:01.0000000\u002B00:00"
+  }
+]

@@ -1,0 +1,352 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "GrammarTopic API",
+    "version": "1.0.0",
+    "description": "Generated from SwallowKit Zod model metadata."
+  },
+  "paths": {
+    "/api/grammarTopic": {
+      "get": {
+        "operationId": "grammarTopicGetAll",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GrammarTopic"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "operationId": "grammarTopicCreate",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GrammarTopic"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GrammarTopic"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/grammarTopic/{id}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "get": {
+        "operationId": "grammarTopicGetById",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GrammarTopic"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "operationId": "grammarTopicUpdate",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GrammarTopic"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Updated response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GrammarTopic"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "operationId": "grammarTopicDelete",
+        "responses": {
+          "204": {
+            "description": "Deleted response"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "GrammarTopic": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "language": {
+            "type": "string",
+            "enum": [
+              "it",
+              "en"
+            ]
+          },
+          "schemaVersion": {
+            "type": "string",
+            "enum": [
+              "1"
+            ]
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "titleJa": {
+            "type": "string",
+            "minLength": 1
+          },
+          "level": {
+            "type": "string",
+            "enum": [
+              "A1",
+              "A2",
+              "B1",
+              "B2",
+              "C1",
+              "C2"
+            ]
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "article",
+              "preposition",
+              "verb-pattern",
+              "tense",
+              "pronoun",
+              "construction"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "usageJa": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rules": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GrammarTopicRules"
+            },
+            "minItems": 1
+          },
+          "examples": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GrammarTopicExamples"
+            },
+            "minItems": 1
+          },
+          "commonMistakes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GrammarTopicCommonMistakes"
+            }
+          },
+          "relatedTopics": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "sourceReferences": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GrammarTopicSourceReferences"
+            },
+            "minItems": 1
+          },
+          "reviewStatus": {
+            "type": "string",
+            "enum": [
+              "unreviewed",
+              "reviewed"
+            ]
+          },
+          "reviewNoteJa": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "updatedAt": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "language",
+          "schemaVersion",
+          "title",
+          "titleJa",
+          "level",
+          "category",
+          "description",
+          "usageJa",
+          "rules",
+          "examples",
+          "commonMistakes",
+          "relatedTopics",
+          "keywords",
+          "sourceReferences",
+          "reviewStatus",
+          "reviewNoteJa"
+        ]
+      },
+      "GrammarTopicRules": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "summaryJa": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pattern": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "summaryJa",
+          "pattern"
+        ]
+      },
+      "GrammarTopicExamples": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "translationJa": {
+            "type": "string",
+            "minLength": 1
+          },
+          "noteJa": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "text",
+          "translationJa",
+          "noteJa"
+        ]
+      },
+      "GrammarTopicCommonMistakes": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "incorrect": {
+            "type": "string",
+            "minLength": 1
+          },
+          "correct": {
+            "type": "string",
+            "minLength": 1
+          },
+          "explanationJa": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "incorrect",
+          "correct",
+          "explanationJa"
+        ]
+      },
+      "GrammarTopicSourceReferences": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "original-note",
+              "textbook",
+              "web",
+              "native-review"
+            ]
+          },
+          "label": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "label",
+          "url"
+        ]
+      }
+    }
+  }
+}

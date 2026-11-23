@@ -1,0 +1,284 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "query": {
+      "type": "string"
+    },
+    "retriever": {
+      "type": "string"
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "topic": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "language": {
+                "type": "string",
+                "enum": [
+                  "it",
+                  "en"
+                ]
+              },
+              "schemaVersion": {
+                "type": "number",
+                "const": 1
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "titleJa": {
+                "type": "string",
+                "minLength": 1
+              },
+              "level": {
+                "type": "string",
+                "enum": [
+                  "A1",
+                  "A2",
+                  "B1",
+                  "B2",
+                  "C1",
+                  "C2"
+                ]
+              },
+              "category": {
+                "type": "string",
+                "enum": [
+                  "article",
+                  "preposition",
+                  "verb-pattern",
+                  "tense",
+                  "pronoun",
+                  "construction"
+                ]
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1
+              },
+              "usageJa": {
+                "type": "string",
+                "minLength": 1
+              },
+              "rules": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "summaryJa": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "pattern": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "summaryJa",
+                    "pattern"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "examples": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "translationJa": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "noteJa": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "text",
+                    "translationJa",
+                    "noteJa"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "commonMistakes": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "incorrect": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "correct": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "explanationJa": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "incorrect",
+                    "correct",
+                    "explanationJa"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "relatedTopics": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "keywords": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "sourceReferences": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "kind": {
+                      "type": "string",
+                      "enum": [
+                        "original-note",
+                        "textbook",
+                        "web",
+                        "native-review"
+                      ]
+                    },
+                    "label": {
+                      "type": "string"
+                    },
+                    "url": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "kind",
+                    "label",
+                    "url"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "reviewStatus": {
+                "type": "string",
+                "enum": [
+                  "unreviewed",
+                  "reviewed"
+                ]
+              },
+              "reviewNoteJa": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "createdAt": {
+                "type": "string"
+              },
+              "updatedAt": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "language",
+              "schemaVersion",
+              "title",
+              "titleJa",
+              "level",
+              "category",
+              "description",
+              "usageJa",
+              "rules",
+              "examples",
+              "commonMistakes",
+              "relatedTopics",
+              "keywords",
+              "sourceReferences",
+              "reviewStatus",
+              "reviewNoteJa"
+            ],
+            "additionalProperties": false
+          },
+          "score": {
+            "type": "number"
+          },
+          "matchedTerms": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "sourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "topic",
+          "score",
+          "matchedTerms",
+          "sourceIds"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "query",
+    "retriever",
+    "results"
+  ],
+  "additionalProperties": false
+}

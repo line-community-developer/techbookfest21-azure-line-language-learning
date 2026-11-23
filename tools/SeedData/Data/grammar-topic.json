@@ -1,0 +1,436 @@
+[
+  {
+    "id": "it-definite-articles",
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Articoli determinativi",
+    "titleJa": "定冠詞 il / lo / la / l' / i / gli / le",
+    "level": "A1",
+    "category": "article",
+    "description": "Italian definite articles agree in gender and number and change form depending on the first sound of the next word.",
+    "usageJa": "定冠詞は名詞の性・数に合わせ、さらに次の語の最初の音で形が変わります。特定のもの・話し手と聞き手が分かっているものに付けます。",
+    "rules": [
+      { "id": "it-definite-articles-r1", "summaryJa": "男性単数：子音の前は il、s+子音・z・gn・ps・x・y の前は lo、母音の前は l'。", "pattern": "il / lo / l' + 男性単数名詞" },
+      { "id": "it-definite-articles-r2", "summaryJa": "女性単数：子音の前は la、母音の前は l'。", "pattern": "la / l' + 女性単数名詞" },
+      { "id": "it-definite-articles-r3", "summaryJa": "男性複数：il → i、lo / l' → gli。女性複数は常に le。", "pattern": "i / gli / le + 複数名詞" }
+    ],
+    "examples": [
+      { "id": "it-definite-articles-ex1", "text": "Il libro è sul tavolo.", "translationJa": "その本はテーブルの上にあります。", "noteJa": null },
+      { "id": "it-definite-articles-ex2", "text": "Lo studente legge l'articolo.", "translationJa": "その学生は記事を読んでいます。", "noteJa": "studente は s+子音で始まるので lo。" },
+      { "id": "it-definite-articles-ex3", "text": "Gli amici di Marta sono simpatici.", "translationJa": "マルタの友人たちは感じがいいです。", "noteJa": "amici は母音で始まる男性複数なので gli。" }
+    ],
+    "commonMistakes": [
+      { "id": "it-definite-articles-m1", "incorrect": "il studente", "correct": "lo studente", "explanationJa": "s+子音で始まる男性名詞には il ではなく lo を使います。" },
+      { "id": "it-definite-articles-m2", "incorrect": "i amici", "correct": "gli amici", "explanationJa": "母音で始まる男性複数名詞には gli を使います。" }
+    ],
+    "relatedTopics": ["it-indefinite-articles", "it-articulated-prepositions"],
+    "keywords": ["定冠詞", "冠詞", "articolo determinativo", "il", "lo", "la", "gli", "le"],
+    "sourceReferences": [ { "id": "src-original-it-definite-articles", "kind": "original-note", "label": "本アプリ独自の学習メモ（生成AIの支援で作成・専門家による監修前）", "url": null } ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "ネイティブ講師による監修前のドラフト教材です。"
+  },
+  {
+    "id": "it-indefinite-articles",
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Articoli indeterminativi",
+    "titleJa": "不定冠詞 un / uno / una / un'",
+    "level": "A1",
+    "category": "article",
+    "description": "Indefinite articles introduce a non-specific singular noun; the masculine form depends on the next sound, and only the feminine form takes an apostrophe.",
+    "usageJa": "不定冠詞は「ある〜、ひとつの〜」を表し、単数名詞にだけ付きます。男性形は un / uno、女性形は una / un' です。",
+    "rules": [
+      { "id": "it-indefinite-articles-r1", "summaryJa": "男性：通常は un、s+子音・z・gn・ps などの前は uno。母音の前でも un（アポストロフィなし）。", "pattern": "un / uno + 男性単数名詞" },
+      { "id": "it-indefinite-articles-r2", "summaryJa": "女性：子音の前は una、母音の前は un'（アポストロフィあり）。", "pattern": "una / un' + 女性単数名詞" }
+    ],
+    "examples": [
+      { "id": "it-indefinite-articles-ex1", "text": "Vorrei un espresso, per favore.", "translationJa": "エスプレッソをひとつお願いします。", "noteJa": "espresso は男性名詞なので母音の前でも un。" },
+      { "id": "it-indefinite-articles-ex2", "text": "C'è uno studente nuovo.", "translationJa": "新しい学生がひとりいます。", "noteJa": null },
+      { "id": "it-indefinite-articles-ex3", "text": "Ho un'amica a Firenze.", "translationJa": "フィレンツェに女友達がいます。", "noteJa": null }
+    ],
+    "commonMistakes": [
+      { "id": "it-indefinite-articles-m1", "incorrect": "un'amico", "correct": "un amico", "explanationJa": "男性名詞にはアポストロフィを付けません。un' は女性形 una の省略です。" },
+      { "id": "it-indefinite-articles-m2", "incorrect": "un studente", "correct": "uno studente", "explanationJa": "s+子音で始まる男性名詞には uno を使います。" }
+    ],
+    "relatedTopics": ["it-definite-articles"],
+    "keywords": ["不定冠詞", "冠詞", "articolo indeterminativo", "un", "uno", "una", "un'"],
+    "sourceReferences": [ { "id": "src-original-it-indefinite-articles", "kind": "original-note", "label": "本アプリ独自の学習メモ（生成AIの支援で作成・専門家による監修前）", "url": null } ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "ネイティブ講師による監修前のドラフト教材です。"
+  },
+  {
+    "id": "it-articulated-prepositions",
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Preposizioni articolate",
+    "titleJa": "前置詞と定冠詞の結合形（del / al / nel / dal / sul）",
+    "level": "A2",
+    "category": "preposition",
+    "description": "The prepositions di, a, da, in, su merge with the following definite article (di + il = del, a + la = alla, in + lo = nello, ...).",
+    "usageJa": "前置詞 di / a / da / in / su の後に定冠詞が続くと、ひとつの語に結合します。in は ne-、di は de- に形が変わる点に注意します。",
+    "rules": [
+      { "id": "it-articulated-prepositions-r1", "summaryJa": "di / a / da / in / su + 定冠詞は必ず結合する（di il → del、a la → alla、in il → nel、su il → sul、da il → dal）。", "pattern": "前置詞 + 定冠詞 → 結合形" },
+      { "id": "it-articulated-prepositions-r2", "summaryJa": "結合後も冠詞部分は名詞の性・数・語頭の音に従う（dello studente、dall'ufficio、negli Stati Uniti）。", "pattern": null }
+    ],
+    "examples": [
+      { "id": "it-articulated-prepositions-ex1", "text": "Il libro è sul tavolo.", "translationJa": "本はテーブルの上にあります。", "noteJa": "su + il = sul" },
+      { "id": "it-articulated-prepositions-ex2", "text": "Vado alla stazione.", "translationJa": "駅に行きます。", "noteJa": "a + la = alla" },
+      { "id": "it-articulated-prepositions-ex3", "text": "Le chiavi sono nella borsa.", "translationJa": "鍵はかばんの中にあります。", "noteJa": "in + la = nella" }
+    ],
+    "commonMistakes": [
+      { "id": "it-articulated-prepositions-m1", "incorrect": "in il cassetto", "correct": "nel cassetto", "explanationJa": "in + il は nel に結合します。" },
+      { "id": "it-articulated-prepositions-m2", "incorrect": "a la stazione", "correct": "alla stazione", "explanationJa": "a + la は分けずに alla と書きます。" }
+    ],
+    "relatedTopics": ["it-definite-articles", "it-andare-a", "it-andare-da"],
+    "keywords": ["結合形", "前置詞", "冠詞前置詞", "preposizioni articolate", "del", "al", "nel", "dal", "sul", "alla", "nella"],
+    "sourceReferences": [ { "id": "src-original-it-articulated-prepositions", "kind": "original-note", "label": "本アプリ独自の学習メモ（生成AIの支援で作成・専門家による監修前）", "url": null } ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "ネイティブ講師による監修前のドラフト教材です。"
+  },
+  {
+    "id": "it-present-regular",
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Presente indicativo dei verbi regolari",
+    "titleJa": "直説法現在（規則動詞 -are / -ere / -ire）",
+    "level": "A1",
+    "category": "tense",
+    "description": "Regular verbs in -are, -ere and -ire conjugate in the present by replacing the infinitive ending with person endings; some -ire verbs insert -isc-.",
+    "usageJa": "不定詞の語尾 -are / -ere / -ire を取り、人称ごとの語尾を付けます。-ire 動詞の一部（capire など）は -isc- が入ります。",
+    "rules": [
+      { "id": "it-present-regular-r1", "summaryJa": "-are 動詞：-o, -i, -a, -iamo, -ate, -ano（parlo, parli, parla, parliamo, parlate, parlano）。", "pattern": "parl- + o / i / a / iamo / ate / ano" },
+      { "id": "it-present-regular-r2", "summaryJa": "-ere 動詞：-o, -i, -e, -iamo, -ete, -ono（prendo, prendi, prende, prendiamo, prendete, prendono）。", "pattern": "prend- + o / i / e / iamo / ete / ono" },
+      { "id": "it-present-regular-r3", "summaryJa": "-ire 動詞：-o, -i, -e, -iamo, -ite, -ono（dormo ... dormono）。capire 型は capisco, capisci, capisce, capiamo, capite, capiscono。", "pattern": null }
+    ],
+    "examples": [
+      { "id": "it-present-regular-ex1", "text": "Noi parliamo italiano ogni giorno.", "translationJa": "私たちは毎日イタリア語を話します。", "noteJa": null },
+      { "id": "it-present-regular-ex2", "text": "Tu prendi un caffè?", "translationJa": "コーヒー飲む？", "noteJa": null },
+      { "id": "it-present-regular-ex3", "text": "I bambini dormono fino alle otto.", "translationJa": "子どもたちは8時まで寝ています。", "noteJa": null }
+    ],
+    "commonMistakes": [
+      { "id": "it-present-regular-m1", "incorrect": "io parla", "correct": "io parlo", "explanationJa": "1人称単数の語尾は -o です。" },
+      { "id": "it-present-regular-m2", "incorrect": "noi parlamo", "correct": "noi parliamo", "explanationJa": "1人称複数は語幹 + -iamo です。" }
+    ],
+    "relatedTopics": ["it-reflexive-verbs"],
+    "keywords": ["現在形", "活用", "規則動詞", "presente", "coniugazione", "-are", "-ere", "-ire"],
+    "sourceReferences": [ { "id": "src-original-it-present-regular", "kind": "original-note", "label": "本アプリ独自の学習メモ（生成AIの支援で作成・専門家による監修前）", "url": null } ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "ネイティブ講師による監修前のドラフト教材です。"
+  },
+  {
+    "id": "it-verb-a-infinitive",
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Verbi + a + infinito",
+    "titleJa": "動詞 + a + 不定詞（cominciare a / imparare a / riuscire a）",
+    "level": "A2",
+    "category": "verb-pattern",
+    "description": "Some verbs introduce a following infinitive with the preposition a: cominciare a, iniziare a, imparare a, riuscire a, continuare a, aiutare qualcuno a.",
+    "usageJa": "「〜し始める」「〜できるようになる」「〜し続ける」など、開始・習得・継続・到達を表す動詞の多くは a + 不定詞をとります。どの前置詞をとるかは動詞ごとに決まっているので、セットで覚えるのが基本です。",
+    "rules": [
+      { "id": "it-verb-a-infinitive-r1", "summaryJa": "cominciare / iniziare（始める）、continuare（続ける）は a + 不定詞。", "pattern": "cominciare a + 不定詞" },
+      { "id": "it-verb-a-infinitive-r2", "summaryJa": "imparare（習う）、riuscire（〜できる・うまくいく）、aiutare qualcuno（人が〜するのを手伝う）も a + 不定詞。", "pattern": "imparare a / riuscire a / aiutare qualcuno a + 不定詞" }
+    ],
+    "examples": [
+      { "id": "it-verb-a-infinitive-ex1", "text": "Ho cominciato a studiare l'italiano due anni fa.", "translationJa": "2年前にイタリア語を勉強し始めました。", "noteJa": null },
+      { "id": "it-verb-a-infinitive-ex2", "text": "Finalmente sono riuscita a trovare casa.", "translationJa": "やっと家を見つけることができました。", "noteJa": null },
+      { "id": "it-verb-a-infinitive-ex3", "text": "Mi aiuti a portare le valigie?", "translationJa": "スーツケースを運ぶのを手伝ってくれる？", "noteJa": null }
+    ],
+    "commonMistakes": [
+      { "id": "it-verb-a-infinitive-m1", "incorrect": "Comincio di studiare.", "correct": "Comincio a studiare.", "explanationJa": "cominciare は di ではなく a + 不定詞をとります。" },
+      { "id": "it-verb-a-infinitive-m2", "incorrect": "Ho imparato di nuotare.", "correct": "Ho imparato a nuotare.", "explanationJa": "imparare も a + 不定詞です。" }
+    ],
+    "relatedTopics": ["it-verb-di-infinitive", "it-avere-voglia-di", "it-andare-a"],
+    "keywords": ["a と di", "a/di", "前置詞 a", "不定詞", "始める", "cominciare a", "iniziare a", "imparare a", "riuscire a", "continuare a", "aiutare a"],
+    "sourceReferences": [ { "id": "src-original-it-verb-a-infinitive", "kind": "original-note", "label": "本アプリ独自の学習メモ（生成AIの支援で作成・専門家による監修前）", "url": null } ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "ネイティブ講師による監修前のドラフト教材です。動詞ごとの前置詞は辞書でも確認してください。"
+  },
+  {
+    "id": "it-verb-di-infinitive",
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Verbi + di + infinito",
+    "titleJa": "動詞 + di + 不定詞（finire di / decidere di / cercare di）",
+    "level": "A2",
+    "category": "verb-pattern",
+    "description": "Many verbs introduce a following infinitive with di: finire di, smettere di, decidere di, cercare di, sperare di, dimenticare / dimenticarsi di.",
+    "usageJa": "「〜し終える」「〜するのをやめる」「〜することに決める」「〜しようとする」「〜することを望む」などは di + 不定詞をとります。特に finire（終える）は di、cominciare（始める）は a と対で覚えると混同しにくくなります。",
+    "rules": [
+      { "id": "it-verb-di-infinitive-r1", "summaryJa": "finire（終える）、smettere（やめる）は di + 不定詞。", "pattern": "finire di / smettere di + 不定詞" },
+      { "id": "it-verb-di-infinitive-r2", "summaryJa": "decidere（決める）、cercare（〜しようと努める）、sperare（望む）、dimenticare（忘れる）も di + 不定詞。", "pattern": "decidere di / cercare di / sperare di + 不定詞" }
+    ],
+    "examples": [
+      { "id": "it-verb-di-infinitive-ex1", "text": "Ho finito di lavorare alle sette.", "translationJa": "7時に仕事を終えました。", "noteJa": null },
+      { "id": "it-verb-di-infinitive-ex2", "text": "Abbiamo deciso di partire domani.", "translationJa": "明日出発することにしました。", "noteJa": null },
+      { "id": "it-verb-di-infinitive-ex3", "text": "Cerco di parlare solo in italiano.", "translationJa": "イタリア語だけで話すようにしています。", "noteJa": "cercare di は「〜しようと努める」。" }
+    ],
+    "commonMistakes": [
+      { "id": "it-verb-di-infinitive-m1", "incorrect": "Ho finito a lavorare.", "correct": "Ho finito di lavorare.", "explanationJa": "finire は a ではなく di + 不定詞をとります（cominciare a と混同しやすい）。" },
+      { "id": "it-verb-di-infinitive-m2", "incorrect": "Ho deciso a partire.", "correct": "Ho deciso di partire.", "explanationJa": "decidere は di + 不定詞です。" }
+    ],
+    "relatedTopics": ["it-verb-a-infinitive", "it-avere-voglia-di"],
+    "keywords": ["a と di", "a/di", "前置詞 di", "不定詞", "終える", "finire di", "smettere di", "decidere di", "cercare di", "sperare di", "dimenticare di"],
+    "sourceReferences": [ { "id": "src-original-it-verb-di-infinitive", "kind": "original-note", "label": "本アプリ独自の学習メモ（生成AIの支援で作成・専門家による監修前）", "url": null } ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "ネイティブ講師による監修前のドラフト教材です。動詞ごとの前置詞は辞書でも確認してください。"
+  },
+  {
+    "id": "it-avere-voglia-di",
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Avere voglia di",
+    "titleJa": "avere voglia di（〜したい気分だ）",
+    "level": "A2",
+    "category": "construction",
+    "description": "Avere voglia di + infinitive or noun expresses a wish or mood: Ho voglia di un gelato. Non ho voglia di uscire.",
+    "usageJa": "「〜したい気分だ」「〜が欲しい」を表す決まった表現です。動詞は avere を使い、後ろは必ず di（+ 不定詞 / 名詞）です。",
+    "rules": [
+      { "id": "it-avere-voglia-di-r1", "summaryJa": "avere voglia di + 不定詞 / 名詞。前置詞は常に di。", "pattern": "avere voglia di + 不定詞 / 名詞" },
+      { "id": "it-avere-voglia-di-r2", "summaryJa": "動詞は essere ではなく avere を活用させる（ho voglia, hai voglia ...）。", "pattern": null }
+    ],
+    "examples": [
+      { "id": "it-avere-voglia-di-ex1", "text": "Ho voglia di un gelato.", "translationJa": "アイスが食べたい気分です。", "noteJa": null },
+      { "id": "it-avere-voglia-di-ex2", "text": "Stasera non ho voglia di uscire.", "translationJa": "今夜は出かける気分じゃない。", "noteJa": null },
+      { "id": "it-avere-voglia-di-ex3", "text": "Hai voglia di andare al cinema?", "translationJa": "映画に行きたい？", "noteJa": null }
+    ],
+    "commonMistakes": [
+      { "id": "it-avere-voglia-di-m1", "incorrect": "Ho voglia a mangiare.", "correct": "Ho voglia di mangiare.", "explanationJa": "voglia の後は a ではなく di です。" },
+      { "id": "it-avere-voglia-di-m2", "incorrect": "Sono voglia di dormire.", "correct": "Ho voglia di dormire.", "explanationJa": "essere ではなく avere を使います。" }
+    ],
+    "relatedTopics": ["it-verb-di-infinitive"],
+    "keywords": ["したい", "気分", "voglia", "avere voglia di", "ho voglia"],
+    "sourceReferences": [ { "id": "src-original-it-avere-voglia-di", "kind": "original-note", "label": "本アプリ独自の学習メモ（生成AIの支援で作成・専門家による監修前）", "url": null } ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "ネイティブ講師による監修前のドラフト教材です。"
+  },
+  {
+    "id": "it-andare-a",
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Andare a",
+    "titleJa": "andare a（都市・一部の場所・不定詞）",
+    "level": "A1",
+    "category": "preposition",
+    "description": "Andare a is used with cities and small islands (a Roma), some fixed places (a casa, a scuola, a letto) and with an infinitive of purpose (vado a mangiare).",
+    "usageJa": "andare a は「都市名」「casa / scuola / letto など決まった場所」「目的の不定詞（〜しに行く）」と組み合わせます。国名は in を使う点に注意します。",
+    "rules": [
+      { "id": "it-andare-a-r1", "summaryJa": "都市・小さな島：andare a Roma / a Capri。", "pattern": "andare a + 都市名" },
+      { "id": "it-andare-a-r2", "summaryJa": "決まった場所：a casa、a scuola、a letto、a teatro など（冠詞なし）。", "pattern": null },
+      { "id": "it-andare-a-r3", "summaryJa": "目的：andare a + 不定詞（〜しに行く）。", "pattern": "andare a + 不定詞" }
+    ],
+    "examples": [
+      { "id": "it-andare-a-ex1", "text": "Quest'estate vado a Roma.", "translationJa": "この夏ローマに行きます。", "noteJa": null },
+      { "id": "it-andare-a-ex2", "text": "Stasera andiamo a mangiare fuori.", "translationJa": "今夜は外食しに行きます。", "noteJa": null },
+      { "id": "it-andare-a-ex3", "text": "I bambini vanno a scuola in autobus.", "translationJa": "子どもたちはバスで学校に行きます。", "noteJa": null }
+    ],
+    "commonMistakes": [
+      { "id": "it-andare-a-m1", "incorrect": "Vado in Roma.", "correct": "Vado a Roma.", "explanationJa": "都市名には in ではなく a を使います。" },
+      { "id": "it-andare-a-m2", "incorrect": "Vado di mangiare.", "correct": "Vado a mangiare.", "explanationJa": "「〜しに行く」は andare a + 不定詞です。" }
+    ],
+    "relatedTopics": ["it-andare-in", "it-andare-da", "it-verb-a-infinitive"],
+    "keywords": ["行く", "場所", "都市", "andare a", "vado a", "a Roma", "a casa", "a scuola"],
+    "sourceReferences": [ { "id": "src-original-it-andare-a", "kind": "original-note", "label": "本アプリ独自の学習メモ（生成AIの支援で作成・専門家による監修前）", "url": null } ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "ネイティブ講師による監修前のドラフト教材です。"
+  },
+  {
+    "id": "it-andare-da",
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Andare da",
+    "titleJa": "andare da（人のところへ行く）",
+    "level": "A2",
+    "category": "preposition",
+    "description": "Andare da + person means going to someone's home or workplace: vado da Marco, vado dal medico, vado da mia nonna.",
+    "usageJa": "行き先が「人（の家・店・診療所）」のときは da を使います。職業名には定冠詞を結合させて dal medico、dalla parrucchiera のようになります。",
+    "rules": [
+      { "id": "it-andare-da-r1", "summaryJa": "人名・家族：andare da Marco / da mia nonna。", "pattern": "andare da + 人" },
+      { "id": "it-andare-da-r2", "summaryJa": "職業の人（の店・診療所）：da + 定冠詞の結合形（dal medico、dal parrucchiere）。", "pattern": "andare dal / dalla + 職業名" }
+    ],
+    "examples": [
+      { "id": "it-andare-da-ex1", "text": "Domani vado da Marco per studiare insieme.", "translationJa": "明日、一緒に勉強するためにマルコの家に行きます。", "noteJa": null },
+      { "id": "it-andare-da-ex2", "text": "Stasera vado da mia nonna.", "translationJa": "今夜は祖母のところに行きます。", "noteJa": null },
+      { "id": "it-andare-da-ex3", "text": "Ho mal di denti: devo andare dal dentista.", "translationJa": "歯が痛いので歯医者に行かなければ。", "noteJa": "口語では al dentista も聞かれますが、学習では dal を基本とします。" }
+    ],
+    "commonMistakes": [
+      { "id": "it-andare-da-m1", "incorrect": "Vado a Marco.", "correct": "Vado da Marco.", "explanationJa": "人のところへ行くときは a ではなく da です。" }
+    ],
+    "relatedTopics": ["it-andare-a", "it-articulated-prepositions"],
+    "keywords": ["人のところ", "家に行く", "andare da", "vado da", "dal medico", "dal dentista"],
+    "sourceReferences": [ { "id": "src-original-it-andare-da", "kind": "original-note", "label": "本アプリ独自の学習メモ（生成AIの支援で作成・専門家による監修前）", "url": null } ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "監修前のドラフト教材です。地域や口語で al medico なども使われるため、正誤判定は dal を基本形として扱っています。"
+  },
+  {
+    "id": "it-andare-in",
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Andare in",
+    "titleJa": "andare in（国・地方・乗り物・一部の場所）",
+    "level": "A1",
+    "category": "preposition",
+    "description": "Andare in is used with countries and regions (in Italia, in Toscana), means of transport (in treno) and some places (in banca, in ufficio, in montagna).",
+    "usageJa": "国・地方・大きな島、乗り物、banca / ufficio / biblioteca / montagna などの場所には in を使います（冠詞なし）。",
+    "rules": [
+      { "id": "it-andare-in-r1", "summaryJa": "国・地方：in Italia、in Giappone、in Sicilia。", "pattern": "andare in + 国名" },
+      { "id": "it-andare-in-r2", "summaryJa": "乗り物：in treno、in macchina、in bici。", "pattern": "in + 乗り物" },
+      { "id": "it-andare-in-r3", "summaryJa": "一部の場所：in banca、in ufficio、in biblioteca、in centro、in montagna。", "pattern": null }
+    ],
+    "examples": [
+      { "id": "it-andare-in-ex1", "text": "L'anno prossimo vado in Giappone.", "translationJa": "来年日本に行きます。", "noteJa": null },
+      { "id": "it-andare-in-ex2", "text": "Vado al lavoro in treno.", "translationJa": "電車で仕事に行きます。", "noteJa": null },
+      { "id": "it-andare-in-ex3", "text": "Ad agosto andiamo in montagna.", "translationJa": "8月は山に行きます。", "noteJa": null }
+    ],
+    "commonMistakes": [
+      { "id": "it-andare-in-m1", "incorrect": "Vado a Giappone.", "correct": "Vado in Giappone.", "explanationJa": "国名には a ではなく in を使います。" },
+      { "id": "it-andare-in-m2", "incorrect": "Vado con treno.", "correct": "Vado in treno.", "explanationJa": "交通手段は in + 乗り物（冠詞なし）で表します。" }
+    ],
+    "relatedTopics": ["it-andare-a"],
+    "keywords": ["国", "乗り物", "andare in", "vado in", "in Italia", "in treno", "in banca"],
+    "sourceReferences": [ { "id": "src-original-it-andare-in", "kind": "original-note", "label": "本アプリ独自の学習メモ（生成AIの支援で作成・専門家による監修前）", "url": null } ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "ネイティブ講師による監修前のドラフト教材です。"
+  },
+  {
+    "id": "it-passato-prossimo-auxiliary",
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Passato prossimo: avere o essere?",
+    "titleJa": "近過去の助動詞 avere / essere の選び方",
+    "level": "A2",
+    "category": "tense",
+    "description": "The passato prossimo uses avere with transitive verbs and many intransitive verbs, and essere with most verbs of motion or change of state (andare, venire, partire, arrivare, uscire, tornare, nascere) and with reflexive verbs.",
+    "usageJa": "近過去は「助動詞 avere / essere の現在形 + 過去分詞」です。目的語をとる動詞や dormire・lavorare などは avere、andare・venire・partire・tornare など移動や状態の変化を表す自動詞と再帰動詞は essere を使います。",
+    "rules": [
+      { "id": "it-passato-prossimo-auxiliary-r1", "summaryJa": "他動詞（mangiare、fare、vedere など）と多くの自動詞（dormire、lavorare など）は avere。", "pattern": "avere + 過去分詞" },
+      { "id": "it-passato-prossimo-auxiliary-r2", "summaryJa": "移動・状態変化の自動詞（andare、venire、partire、arrivare、uscire、tornare、nascere、restare など）は essere。", "pattern": "essere + 過去分詞" },
+      { "id": "it-passato-prossimo-auxiliary-r3", "summaryJa": "essere を使うときは過去分詞を主語の性・数に一致させる（詳しくは過去分詞の一致）。", "pattern": null }
+    ],
+    "examples": [
+      { "id": "it-passato-prossimo-auxiliary-ex1", "text": "Ieri sono andato al mare con gli amici.", "translationJa": "昨日友達と海に行きました。", "noteJa": "andare は essere。" },
+      { "id": "it-passato-prossimo-auxiliary-ex2", "text": "Sabato ho mangiato una pizza buonissima.", "translationJa": "土曜日にとてもおいしいピザを食べました。", "noteJa": "mangiare は avere。" },
+      { "id": "it-passato-prossimo-auxiliary-ex3", "text": "Noi siamo tornati a casa tardi.", "translationJa": "私たちは遅くに帰宅しました。", "noteJa": null }
+    ],
+    "commonMistakes": [
+      { "id": "it-passato-prossimo-auxiliary-m1", "incorrect": "Ho andato al mare.", "correct": "Sono andato/a al mare.", "explanationJa": "andare は移動を表す自動詞なので essere を使います。" },
+      { "id": "it-passato-prossimo-auxiliary-m2", "incorrect": "Sono mangiato la pizza.", "correct": "Ho mangiato la pizza.", "explanationJa": "目的語をとる mangiare は avere を使います。" },
+      { "id": "it-passato-prossimo-auxiliary-m3", "incorrect": "Ho tornato a casa.", "correct": "Sono tornato/a a casa.", "explanationJa": "tornare（帰る）は essere です。" }
+    ],
+    "relatedTopics": ["it-passato-prossimo-agreement", "it-reflexive-passato"],
+    "keywords": ["近過去", "助動詞", "過去形", "avere", "essere", "passato prossimo", "ausiliare", "sono andato", "ho mangiato"],
+    "sourceReferences": [ { "id": "src-original-it-passato-prossimo-auxiliary", "kind": "original-note", "label": "本アプリ独自の学習メモ（生成AIの支援で作成・専門家による監修前）", "url": null } ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "監修前のドラフト教材です。correre や vivere など両方の助動詞をとる動詞は扱っていません。"
+  },
+  {
+    "id": "it-passato-prossimo-agreement",
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Accordo del participio passato con essere",
+    "titleJa": "essere を使う近過去の過去分詞の一致",
+    "level": "A2",
+    "category": "tense",
+    "description": "With the auxiliary essere, the past participle agrees with the subject in gender and number: Maria è andata, i ragazzi sono partiti, le ragazze sono arrivate.",
+    "usageJa": "助動詞が essere のとき、過去分詞の語尾を主語の性・数に合わせます（-o / -a / -i / -e）。",
+    "rules": [
+      { "id": "it-passato-prossimo-agreement-r1", "summaryJa": "男性単数 -o、女性単数 -a、男性（混合）複数 -i、女性複数 -e。", "pattern": "essere + 過去分詞（-o / -a / -i / -e）" }
+    ],
+    "examples": [
+      { "id": "it-passato-prossimo-agreement-ex1", "text": "Maria è andata a Milano.", "translationJa": "マリアはミラノに行きました。", "noteJa": null },
+      { "id": "it-passato-prossimo-agreement-ex2", "text": "Le ragazze sono arrivate tardi.", "translationJa": "女の子たちは遅れて着きました。", "noteJa": null },
+      { "id": "it-passato-prossimo-agreement-ex3", "text": "Paolo e Luca sono partiti ieri.", "translationJa": "パオロとルカは昨日出発しました。", "noteJa": null }
+    ],
+    "commonMistakes": [
+      { "id": "it-passato-prossimo-agreement-m1", "incorrect": "Maria è andato.", "correct": "Maria è andata.", "explanationJa": "主語が女性単数なので過去分詞は -a になります。" }
+    ],
+    "relatedTopics": ["it-passato-prossimo-auxiliary", "it-reflexive-passato"],
+    "keywords": ["過去分詞", "一致", "性数一致", "accordo", "participio", "andata", "partiti"],
+    "sourceReferences": [ { "id": "src-original-it-passato-prossimo-agreement", "kind": "original-note", "label": "本アプリ独自の学習メモ（生成AIの支援で作成・専門家による監修前）", "url": null } ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "ネイティブ講師による監修前のドラフト教材です。"
+  },
+  {
+    "id": "it-reflexive-verbs",
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Verbi riflessivi",
+    "titleJa": "再帰動詞の基本（alzarsi / chiamarsi / divertirsi）",
+    "level": "A2",
+    "category": "pronoun",
+    "description": "Reflexive verbs use a reflexive pronoun (mi, ti, si, ci, vi, si) before the conjugated verb: mi alzo, ti chiami, si diverte.",
+    "usageJa": "再帰動詞は「自分自身を〜する」を表し、活用した動詞の前に再帰代名詞 mi / ti / si / ci / vi / si を置きます。",
+    "rules": [
+      { "id": "it-reflexive-verbs-r1", "summaryJa": "再帰代名詞は主語に合わせる：io mi, tu ti, lui/lei si, noi ci, voi vi, loro si。", "pattern": "再帰代名詞 + 活用した動詞" },
+      { "id": "it-reflexive-verbs-r2", "summaryJa": "辞書形は -arsi / -ersi / -irsi（alzarsi、mettersi、divertirsi）。", "pattern": null }
+    ],
+    "examples": [
+      { "id": "it-reflexive-verbs-ex1", "text": "La mattina mi alzo alle sette.", "translationJa": "朝は7時に起きます。", "noteJa": null },
+      { "id": "it-reflexive-verbs-ex2", "text": "Come ti chiami?", "translationJa": "お名前は？", "noteJa": null },
+      { "id": "it-reflexive-verbs-ex3", "text": "I bambini si divertono al parco.", "translationJa": "子どもたちは公園で楽しんでいます。", "noteJa": null }
+    ],
+    "commonMistakes": [
+      { "id": "it-reflexive-verbs-m1", "incorrect": "Io alzo alle sette.", "correct": "Mi alzo alle sette.", "explanationJa": "「起きる」は再帰動詞 alzarsi なので再帰代名詞 mi が必要です。" }
+    ],
+    "relatedTopics": ["it-reflexive-passato", "it-present-regular"],
+    "keywords": ["再帰動詞", "再帰代名詞", "riflessivi", "mi alzo", "ti chiami", "si", "ci", "vi"],
+    "sourceReferences": [ { "id": "src-original-it-reflexive-verbs", "kind": "original-note", "label": "本アプリ独自の学習メモ（生成AIの支援で作成・専門家による監修前）", "url": null } ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "ネイティブ講師による監修前のドラフト教材です。"
+  },
+  {
+    "id": "it-reflexive-passato",
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Verbi riflessivi al passato prossimo",
+    "titleJa": "再帰動詞の近過去（mi sono alzato/a）",
+    "level": "A2",
+    "category": "tense",
+    "description": "Reflexive verbs always take essere in the passato prossimo, and the participle agrees with the subject: mi sono alzata, ci siamo divertiti.",
+    "usageJa": "再帰動詞の近過去は必ず essere を使い、過去分詞は主語の性・数に一致させます。",
+    "rules": [
+      { "id": "it-reflexive-passato-r1", "summaryJa": "再帰代名詞 + essere + 過去分詞（主語に一致）。", "pattern": "mi sono alzato/a, ci siamo divertiti/e" }
+    ],
+    "examples": [
+      { "id": "it-reflexive-passato-ex1", "text": "Stamattina mi sono alzata tardi.", "translationJa": "今朝は遅く起きました。", "noteJa": "話し手が女性の場合。" },
+      { "id": "it-reflexive-passato-ex2", "text": "Ieri sera ci siamo divertiti molto.", "translationJa": "昨夜はとても楽しみました。", "noteJa": null }
+    ],
+    "commonMistakes": [
+      { "id": "it-reflexive-passato-m1", "incorrect": "Mi ho alzato.", "correct": "Mi sono alzato/a.", "explanationJa": "再帰動詞の近過去は avere ではなく essere を使います。" }
+    ],
+    "relatedTopics": ["it-reflexive-verbs", "it-passato-prossimo-auxiliary", "it-passato-prossimo-agreement"],
+    "keywords": ["再帰動詞", "近過去", "mi sono", "ci siamo", "riflessivi passato"],
+    "sourceReferences": [ { "id": "src-original-it-reflexive-passato", "kind": "original-note", "label": "本アプリ独自の学習メモ（生成AIの支援で作成・専門家による監修前）", "url": null } ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "ネイティブ講師による監修前のドラフト教材です。"
+  },
+  {
+    "id": "it-piacere",
+    "language": "it",
+    "schemaVersion": 1,
+    "title": "Il verbo piacere",
+    "titleJa": "piacere（〜が好きだ）の構文",
+    "level": "A2",
+    "category": "construction",
+    "description": "With piacere the thing liked is the grammatical subject and the person is an indirect object: mi piace la pizza, mi piacciono gli spaghetti, a Marco piace leggere.",
+    "usageJa": "piacere は「〜が（人に）気に入る」という構文で、好きなものが主語、好きな人は間接目的語（mi / ti / gli / le / a + 人）になります。好きなものが複数なら piacciono です。",
+    "rules": [
+      { "id": "it-piacere-r1", "summaryJa": "好きなものが単数名詞・不定詞なら piace、複数名詞なら piacciono。", "pattern": "mi piace + 単数 / mi piacciono + 複数" },
+      { "id": "it-piacere-r2", "summaryJa": "人は間接目的語：mi, ti, gli（彼に）, le（彼女に）, ci, vi, gli、または a + 人。", "pattern": "a Marco piace ..." }
+    ],
+    "examples": [
+      { "id": "it-piacere-ex1", "text": "Mi piacciono molto gli spaghetti.", "translationJa": "スパゲッティが大好きです。", "noteJa": null },
+      { "id": "it-piacere-ex2", "text": "A Marco piace leggere.", "translationJa": "マルコは読書が好きです。", "noteJa": null },
+      { "id": "it-piacere-ex3", "text": "Ti piace la musica italiana?", "translationJa": "イタリアの音楽は好き？", "noteJa": null }
+    ],
+    "commonMistakes": [
+      { "id": "it-piacere-m1", "incorrect": "Io piaccio la pizza.", "correct": "Mi piace la pizza.", "explanationJa": "好きなもの（la pizza）が主語なので mi piace とします。" },
+      { "id": "it-piacere-m2", "incorrect": "Mi piace gli spaghetti.", "correct": "Mi piacciono gli spaghetti.", "explanationJa": "主語 gli spaghetti が複数なので piacciono です。" }
+    ],
+    "relatedTopics": [],
+    "keywords": ["好き", "piacere", "mi piace", "piacciono", "gli piace"],
+    "sourceReferences": [ { "id": "src-original-it-piacere", "kind": "original-note", "label": "本アプリ独自の学習メモ（生成AIの支援で作成・専門家による監修前）", "url": null } ],
+    "reviewStatus": "unreviewed",
+    "reviewNoteJa": "ネイティブ講師による監修前のドラフト教材です。"
+  }
+]

@@ -1,0 +1,68 @@
+name: Deploy React SPA and managed BFF
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'bff/**'
+      - 'lib/**'
+      - 'shared/**'
+      - 'public/**'
+      - 'index.html'
+      - 'vite.config.mts'
+      - 'tsconfig.json'
+      - 'staticwebapp.config.json'
+      - 'package.json'
+      - 'pnpm-workspace.yaml'
+      - 'pnpm-lock.yaml'
+      - '.github/workflows/deploy-swa.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'bff/**'
+      - 'lib/**'
+      - 'shared/**'
+      - 'public/**'
+      - 'index.html'
+      - 'vite.config.mts'
+      - 'tsconfig.json'
+      - 'staticwebapp.config.json'
+      - 'package.json'
+      - 'pnpm-workspace.yaml'
+      - 'pnpm-lock.yaml'
+      - '.github/workflows/deploy-swa.yml'
+  workflow_dispatch:
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: pnpm
+      - name: Build SPA and managed BFF
+        env:
+          # Public values for the LIFF app (not secrets). Set them as GitHub repository variables.
+          VITE_LIFF_ID: ${{ vars.LIFF_ID }}
+          VITE_LINE_OFFICIAL_ACCOUNT_URL: ${{ vars.LINE_OFFICIAL_ACCOUNT_URL }}
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm run build
+      - name: Deploy SPA and managed BFF (standalone Functions are NOT linked)
+        if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main'
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: upload
+          app_location: dist
+          api_location: bff
+          output_location: ''
+          skip_app_build: true
+          skip_api_build: true

@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "questionId": {
+      "type": "string"
+    },
+    "isCorrect": {
+      "type": "boolean"
+    },
+    "feedbackCode": {
+      "type": "string",
+      "enum": [
+        "correct",
+        "incorrect",
+        "accent-mismatch"
+      ]
+    },
+    "submittedAnswer": {
+      "type": "string"
+    },
+    "correctAnswer": {
+      "type": "string"
+    },
+    "acceptedAnswers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "explanationJa": {
+      "type": "string"
+    },
+    "grammarReferences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "topicId": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "titleJa": {
+            "type": "string"
+          },
+          "level": {
+            "type": "string",
+            "enum": [
+              "A1",
+              "A2",
+              "B1",
+              "B2",
+              "C1",
+              "C2"
+            ]
+          },
+          "rules": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "summaryJa": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "summaryJa"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "example": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "type": "string"
+                  },
+                  "translationJa": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "text",
+                  "translationJa"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "topicId",
+          "title",
+          "titleJa",
+          "level",
+          "rules",
+          "example"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "mastery": {
+      "type": "object",
+      "properties": {
+        "topicId": {
+          "type": "string"
+        },
+        "before": {
+          "type": "number"
+        },
+        "after": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "topicId",
+        "before",
+        "after"
+      ],
+      "additionalProperties": false
+    },
+    "alreadyAnswered": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "questionId",
+    "isCorrect",
+    "feedbackCode",
+    "submittedAnswer",
+    "correctAnswer",
+    "acceptedAnswers",
+    "explanationJa",
+    "grammarReferences",
+    "mastery",
+    "alreadyAnswered"
+  ],
+  "additionalProperties": false
+}
